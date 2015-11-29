@@ -1,0 +1,22 @@
+{
+  "jspm": {
+    "main": "templates/",
+    "dependencies": {
+      "express": "npm:express@^4.13.3",
+      "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
+      "react": "npm:react@^0.14.3",
+      "react-dom": "npm:react-dom@^0.14.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.15"
+  },
+  "scripts": {
+    "start": "jspm run server"
+  }
+}
