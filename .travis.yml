@@ -12,6 +12,7 @@ before_install:
 - npm i -g codeclimate-test-reporter jspm
 install: 
 - npm i
+- cd templates
 - jspm i
 script: npm test
 after_script:
