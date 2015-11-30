@@ -1,0 +1,115 @@
+# Slush Jspm-react-seed [![Build Status](https://secure.travis-ci.org/sloppylopez/slush-jspm-react-seed.png?branch=master)](https://travis-ci.org/sloppylopez/slush-jspm-react-seed) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
+
+> 
+
+
+## Getting Started
+
+Install `slush-jspm-react-seed` globally:
+
+```bash
+$ npm install -g slush-jspm-react-seed
+```
+
+### Usage
+
+Create a new folder for your project:
+
+```bash
+$ mkdir my-slush-jspm-react-seed
+```
+
+Run the generator from within the new folder and download deps after:
+
+```bash
+$ cd my-slush-jspm-react-seed && slush jspm-react-seed
+$ jspm i
+```
+
+## Npm commands
+
+Run Node server for locale environment:
+
+```bash
+$ npm start
+```
+
+Run Node server for prod environment (runs Babel transpiler and bundles all js and dependencies in 1 file):
+
+```bash
+$ npm start:build
+```
+
+### Bundling and Transpiling
+
+Transpile the jsx to js (you don't really need to do this, learning purpose only):
+
+```bash
+$ npm run babel
+```
+
+Transpile & bundle JS dependencies to bundle.js and generate a sourcemap:
+
+```bash
+$ npm run bundle
+```
+
+Transpile & bundle & minify JS dependencies to bundle.js and generate a sourcemap:
+
+```bash
+$ npm run minify
+```
+
+Removes the changes made by jspm to config.js while bundling:
+
+```bash
+$ npm run unbundle
+```
+
+## Common Pitfalls
+
+Don't forget install jspm dependencies after installing using:
+```bash
+$ jspm i
+```
+
+If your connection is terribly slow then:
+```bash
+$ jspm i
+```
+May have hiccups while doing dns look ups, just repeat few times until he manages to download all dependencies
+
+## Contributing
+
+See the [CONTRIBUTING Guidelines](https://github.com/sloppylopez/slush-jspm-react-seed/blob/master/CONTRIBUTING.md)
+
+## Support
+If you have any problem or suggestion please open an issue [here](https://github.com/sloppylopez/slush-jspm-react-seed/issues).
+
+## License 
+
+The MIT License
+
+Copyright (c) 2015, sloppylopez
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
