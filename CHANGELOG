@@ -1,3 +1,10 @@
+v0.1.1:
+  date: 2015-11-30
+  changes:
+    - Small refactor of index.html moved to root folder
+    - Added Babel transpiling capabilities to use via npm script.
+    - Added Jspm bundling capabilities to use via npm script.
+
 v0.1.0:
   date: 2015-11-29
   changes:

@@ -4,6 +4,8 @@ var server = express();
 
 server.use(express.static('.'));
 server.use(express.static('views'));
+server.use(express.static('build'));
+server.use(express.static('build/bundle'));
 server.use(express.static('./jspm_packages'));
 
 server.get('/', function (req, res) {
