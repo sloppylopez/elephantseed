@@ -19,19 +19,65 @@ Create a new folder for your project:
 $ mkdir my-slush-jspm-react-seed
 ```
 
-Run the generator from within the new folder:
+Run the generator from within the new folder and download deps after:
 
 ```bash
 $ cd my-slush-jspm-react-seed && slush jspm-react-seed
+$ jspm i
 ```
 
-## Getting To Know Slush
+## Npm commands
 
-Slush is a tool that uses Gulp for project scaffolding.
+Run Node server for locale environment:
 
-Slush does not contain anything "out of the box", except the ability to locate installed slush generators and to run them with liftoff.
+```bash
+$ npm start
+```
 
-To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
+Run Node server for prod environment (runs Babel transpiler and bundles all js and dependencies in 1 file):
+
+```bash
+$ npm start:build
+```
+
+### Bundling and Transpiling
+
+Transpile the jsx to js (you don't really need to do this, learning purpose only):
+
+```bash
+$ npm run babel
+```
+
+Transpile & bundle JS dependencies to bundle.js and generate a sourcemap:
+
+```bash
+$ npm run bundle
+```
+
+Transpile & bundle & minify JS dependencies to bundle.js and generate a sourcemap:
+
+```bash
+$ npm run minify
+```
+
+Removes the changes made by jspm to config.js while bundling:
+
+```bash
+$ npm run unbundle
+```
+
+## Common Pitfalls
+
+Don't forget install jspm dependencies after installing using:
+```bash
+$ jspm i
+```
+
+If your connection is terribly slow then:
+```bash
+$ jspm i
+```
+May have hiccups while doing dns look ups, just repeat few times until he manages to download all dependencies
 
 ## Contributing
 

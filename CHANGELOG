@@ -1,3 +1,10 @@
+v0.1.2:
+  date: 2015-12-01
+  changes:
+    - Removed unneeded plugin-jsx
+    - Added npm:react-router
+    - Removed jsx since they don't add much, and can cause trouble, plus babel transpiles js as well
+
 v0.1.1:
   date: 2015-11-30
   changes:
