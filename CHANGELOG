@@ -1,7 +1,13 @@
+v0.1.5:
+  date: 2015-12-02
+  changes:
+    - Added proper info to README.md
+
 v0.1.4:
   date: 2015-12-02
   changes:
     - Added proper info to README.md
+
 v0.1.3:
   date: 2015-12-02
   changes:
