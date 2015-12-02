@@ -1,8 +1,16 @@
+v0.1.3:
+  date: 2015-12-02
+  changes:
+    - Ditched npm:material-ui@^0.13.4, it simply does not work...
+    - :bug: Fix in package.json for the actions npm:start and npm run start:build because they were overlapping
+    - Refactor id="root" for id="app"
+
 v0.1.2:
   date: 2015-12-01
   changes:
     - Removed unneeded plugin-jsx
     - Added npm:react-router
+    - Added npm:history
     - Removed jsx since they don't add much, and can cause trouble, plus babel transpiles js as well
 
 v0.1.1:

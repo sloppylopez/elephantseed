@@ -18,10 +18,10 @@
     "jspm": "^0.16.15"
   },
   "scripts": {
-    "start": "jspm run server",
-    "start:build": "npm run minify && jspm run server",
-    "bundle": "jspm bundle app.jsx! dist/bundle.js --inject",
-    "minify": "jspm bundle app.jsx! dist/bundle.js --inject --minify",
+    "start": "npm run unbundle && jspm run server",
+    "start:build": "npm run unbundle && npm run minify && jspm run server",
+    "bundle": "jspm bundle app dist/bundle.js --inject",
+    "minify": "jspm bundle app dist/bundle.js --inject --minify",
     "unbundle": "jspm unbundle",
     "babel": "babel . --out-dir ES5_transpiled/",
     "cache": "npm run babel && jspm depcache ES5_transpiled/app.js",
