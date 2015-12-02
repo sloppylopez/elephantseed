@@ -4,11 +4,17 @@
 
 ## Goodies
 Jspm as universal multi-purpose Javascript package manager
+
 Babel as transpiler
+
 React as templating system
+
 Nodejs as JS runtime
+
 ES6 & ES7 Syntactic Sugar ready out-of-the-box
+
 Minimum possible configuration, maximum features, judge by yourself
+
 Working Out-of-the-box:
         Bundling (JSPM native)
         Minifying (JSPM native)
@@ -16,6 +22,7 @@ Working Out-of-the-box:
         Transpiling on build time(serve side) with NODE_ENV=production (BABEL native)
         Static Node server run in local (NPM native)
         Static Node server run with production like build in local (NPM native)
+
 No Grunt/Gulp/Broccoli/Cake/Whatever... needed (at the time of writing, let's see if we can mount 
 the whole seed without them (challenge accepted)
 

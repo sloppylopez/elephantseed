@@ -2,7 +2,7 @@ node_modules
 temp
 *.log
 .idea
-
+npm-debug.log
 
 # don't ignore .npmignore files
 !.npmignore
