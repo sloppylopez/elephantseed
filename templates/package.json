@@ -3,9 +3,10 @@
     "main": "templates/",
     "dependencies": {
       "express": "npm:express@^4.13.3",
-      "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
+      "history": "npm:history@^1.13.1",
       "react": "npm:react@^0.14.3",
-      "react-dom": "npm:react-dom@^0.14.3"
+      "react-dom": "npm:react-dom@^0.14.3",
+      "react-router": "npm:react-router@^1.0.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
@@ -17,10 +18,10 @@
     "jspm": "^0.16.15"
   },
   "scripts": {
-    "start": "jspm run server",
-    "start:build": "npm run minify && jspm run server",
-    "bundle": "jspm bundle app.jsx! dist/bundle.js --inject",
-    "minify": "jspm bundle app.jsx! dist/bundle.js --inject --minify",
+    "start": "npm run unbundle && jspm run server",
+    "start:build": "npm run unbundle && npm run minify && jspm run server",
+    "bundle": "jspm bundle app dist/bundle.js --inject",
+    "minify": "jspm bundle app dist/bundle.js --inject --minify",
     "unbundle": "jspm unbundle",
     "babel": "babel . --out-dir ES5_transpiled/",
     "cache": "npm run babel && jspm depcache ES5_transpiled/app.js",
