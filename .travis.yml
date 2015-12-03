@@ -10,10 +10,9 @@ branches:
   - master
 before_install:
 - set -e
-- npm i jspm
-install: 
-- npm i
+install:
 - cd templates
+- npm i
 - jspm i
 script: npm run travis
 after_script:
