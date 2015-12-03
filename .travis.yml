@@ -14,10 +14,15 @@ install:
 - cd templates
 - npm i
 - jspm i
+cache:
+  directories:
+  - assets
+  - jspm_modules
 script: npm run travis
 after_script:
 - echo "TRAVIS_PULL_REQUEST ${TRAVIS_PULL_REQUEST}"
 - echo "TRAVIS_BRANCH ${TRAVIS_BRANCH}"
 after_success:
+
 env:
   global:
