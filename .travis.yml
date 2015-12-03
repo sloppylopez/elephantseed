@@ -10,12 +10,12 @@ branches:
   - master
 before_install:
 - set -e
-- npm i -g codeclimate-test-reporter jspm
+- npm i jspm
 install: 
 - npm i
 - cd templates
 - jspm i
-script: npm test
+script: npm run travis
 after_script:
 - echo "TRAVIS_PULL_REQUEST ${TRAVIS_PULL_REQUEST}"
 - echo "TRAVIS_BRANCH ${TRAVIS_BRANCH}"
