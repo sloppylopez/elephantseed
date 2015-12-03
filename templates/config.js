@@ -17,12 +17,17 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
+    "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "express": "npm:express@4.13.3",
     "history": "npm:history@1.13.1",
+    "jquery": "npm:jquery@2.1.4",
     "react": "npm:react@0.14.3",
+    "react-bootstrap": "npm:react-bootstrap@0.28.1",
     "react-dom": "npm:react-dom@0.14.3",
     "react-router": "npm:react-router@1.0.0",
+    "react-router-bootstrap": "npm:react-router-bootstrap@0.19.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -179,6 +184,11 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0"
     },
+    "npm:classnames@2.2.1": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -278,9 +288,6 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "through": "npm:through@2.3.8"
     },
-    "npm:error-stack-parser@1.3.1": {
-      "stackframe": "npm:stackframe@0.3.1"
-    },
     "npm:esprima-fb@13001.1001.0-dev-harmony-fb": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -370,6 +377,9 @@ System.config({
       "loose-envify": "npm:loose-envify@1.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:jquery@2.1.4": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:jstransform@10.1.0": {
       "base62": "npm:base62@0.1.1",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -377,6 +387,9 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "source-map": "npm:source-map@0.1.31"
+    },
+    "npm:lodash-compat@3.10.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:loose-envify@1.1.0": {
       "js-tokens": "npm:js-tokens@1.0.2",
@@ -458,8 +471,41 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:react-bootstrap@0.28.1": {
+      "babel-runtime": "npm:babel-runtime@5.8.34",
+      "classnames": "npm:classnames@2.2.1",
+      "dom-helpers": "npm:dom-helpers@2.4.0",
+      "invariant": "npm:invariant@2.2.0",
+      "keycode": "npm:keycode@2.1.0",
+      "lodash-compat": "npm:lodash-compat@3.10.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@0.14.3",
+      "react-dom": "npm:react-dom@0.14.3",
+      "react-overlays": "npm:react-overlays@0.5.4",
+      "react-prop-types": "npm:react-prop-types@0.3.0",
+      "uncontrollable": "npm:uncontrollable@3.1.4",
+      "warning": "npm:warning@2.1.0"
+    },
     "npm:react-dom@0.14.3": {
       "react": "npm:react@0.14.3"
+    },
+    "npm:react-overlays@0.5.4": {
+      "classnames": "npm:classnames@2.2.1",
+      "dom-helpers": "npm:dom-helpers@2.4.0",
+      "react": "npm:react@0.14.3",
+      "react-dom": "npm:react-dom@0.14.3",
+      "react-prop-types": "npm:react-prop-types@0.2.2",
+      "warning": "npm:warning@2.1.0"
+    },
+    "npm:react-prop-types@0.2.2": {
+      "warning": "npm:warning@2.1.0"
+    },
+    "npm:react-prop-types@0.3.0": {
+      "warning": "npm:warning@2.1.0"
+    },
+    "npm:react-router-bootstrap@0.19.3": {
+      "react": "npm:react@0.14.3",
+      "react-router": "npm:react-router@1.0.0"
     },
     "npm:react-router@1.0.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -527,9 +573,6 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:stackframe@0.3.1": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:statuses@1.2.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -554,6 +597,11 @@ System.config({
     },
     "npm:ua-parser-js@0.7.9": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:uncontrollable@3.1.4": {
+      "invariant": "npm:invariant@2.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@0.14.3"
     },
     "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

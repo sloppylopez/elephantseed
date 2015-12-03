@@ -1,7 +1,18 @@
-v0.1.5:
-  date: 2015-12-02
+v0.1.6:
+  date: 2015-12-03
   changes:
-    - Added proper info to README.md
+    - Decorated README.md
+
+v0.1.6:
+  date: 2015-12-03
+  changes:
+    - Edited text
+
+v0.1.5:
+  date: 2015-12-03
+  changes:
+    - Added React-Boostrap which works charmly
+    - Added some goodies in package.json and extra relevant info about a :bug: in the cache of jspm (apparently)
 
 v0.1.4:
   date: 2015-12-02

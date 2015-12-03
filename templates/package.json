@@ -2,11 +2,15 @@
   "jspm": {
     "main": "templates/",
     "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.20",
       "express": "npm:express@^4.13.3",
       "history": "npm:history@^1.13.1",
+      "jquery": "npm:jquery@^2.1.4",
       "react": "npm:react@^0.14.3",
+      "react-bootstrap": "npm:react-bootstrap@^0.28.1",
       "react-dom": "npm:react-dom@^0.14.3",
-      "react-router": "npm:react-router@^1.0.0"
+      "react-router": "npm:react-router@^1.0.0",
+      "twbs/bootstrap": "github:twbs/bootstrap@^3.3.6"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
@@ -25,6 +29,8 @@
     "unbundle": "jspm unbundle",
     "babel": "babel . --out-dir ES5_transpiled/",
     "cache": "npm run babel && jspm depcache ES5_transpiled/app.js",
-    "cache-clear": "jspm cache-clear"
+    "cache-clear": "echo \"jspm cache-clear works buggy somehow.. AND cache as well.. need more investigation, possible bug in jspm\"",
+    "timeout:increase": "jspm config registries.npm.timeouts.lookup 240",
+    "clean:tree": "jspm i -f"
   }
 }
