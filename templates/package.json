@@ -32,5 +32,6 @@
     "cache-clear": "echo \"jspm cache-clear works buggy somehow.. AND cache as well.. need more investigation, possible bug in jspm\"",
     "timeout:increase": "jspm config registries.npm.timeouts.lookup 240",
     "clean:tree": "jspm i -f"
+    "travis": "jspm config registries.npm.timeouts.lookup 2000"
   }
 }
