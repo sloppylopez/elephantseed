@@ -1,6 +1,7 @@
 v0.1.8:
   date: 2015-12-03
   changes:
+    - Fixed README.md
     - :bug: Detected in Travil build... Github has a max qouta it seems. TODO localize bootstrap dependencies
 
 v0.1.7:

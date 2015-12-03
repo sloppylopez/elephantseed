@@ -4,7 +4,7 @@
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 
-![React Logo](https://facebook.github.io/react/favicon.ico)
+![React Logo](https://facebook.github.io/react/favicon.ico) + ![Jspm Logo](http://andrewhfarmer.com/img/2015-11-12-package-managers/jspm.png) + ![Jspm Logo](https://www.gravatar.com/avatar/1f69fbc8337dc301bb0479eef85376df?s=48&d=identicon)
 
 >
  
