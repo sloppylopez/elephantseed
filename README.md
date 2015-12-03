@@ -1,36 +1,38 @@
 # Slush Jspm-react-seed [![Build Status](https://secure.travis-ci.org/sloppylopez/slush-jspm-react-seed.png?branch=master)](https://travis-ci.org/sloppylopez/slush-jspm-react-seed) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
 
-> 
+>
+ 
+# Welcome to the future
 
 ## Goodies
-Jspm as universal multi-purpose Javascript package manager
+        NEW! Added React-bootstrap (css-less feel)
+        
+        Jspm as universal multi-purpose Javascript package manager
 
-Babel as transpiler
+        Babel as transpiler
 
-React as templating system
+        React as templating system
 
-Nodejs as JS runtime
+        Nodejs modules
 
-ES6 & ES7 Syntactic Sugar ready out-of-the-box
+        ES6 & ES7 Syntactic Sugar ready out-of-the-box
 
-Minimum possible configuration, maximum features, judge by yourself
-
-Working Out-of-the-box:
+        Minimum possible configuration, maximum features, judge by yourself
 
         Bundling (JSPM native)
-        
-        Minifying (JSPM native)
-        
-        Transpiling on runtime(browser side) with NODE_ENV=development || undefined (BABEL native)
-        
-        Transpiling on build time(serve side) with NODE_ENV=production (BABEL native)
-        
-        Static Node server run in local (NPM native)
-        
-        Static Node server run with production like build in local (NPM native)
 
-No Grunt/Gulp/Broccoli/Cake/Whatever... needed (at the time of writing, let's see if we can mount 
-the whole seed without them (challenge accepted)
+        Minifying (JSPM native)
+
+        Transpiling on runtime(browser side) with NODE_ENV=development (BABEL native)
+
+        Transpiling on build time(serve side) with NODE_ENV=production (BABEL native)
+
+        Static Node server run in local (JSPM native)
+
+        Static Node server run with production like build in local (JSPM native)
+
+        No Grunt/Gulp/Broccoli/Cake/Whatever... needed (at the time of writing, 
+        let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
 
@@ -70,12 +72,6 @@ $ npm start:build
 ```
 
 ### Bundling and Transpiling
-
-Transpile the jsx to js (you don't really need to do this, learning purpose only):
-
-```bash
-$ npm run babel
-```
 
 Transpile & bundle JS dependencies to bundle.js and generate a sourcemap:
 
@@ -119,7 +115,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 The MIT License
 
-Copyright (c) 2015, sloppylopez
+Copyright (c) 2015, Sergio Lopez
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
