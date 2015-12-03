@@ -1,6 +1,11 @@
 v0.1.6:
   date: 2015-12-03
   changes:
+    - Decorated README.md
+
+v0.1.6:
+  date: 2015-12-03
+  changes:
     - Edited text
 
 v0.1.5:

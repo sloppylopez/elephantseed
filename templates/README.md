@@ -1,11 +1,17 @@
 # Slush Jspm-react-seed [![Build Status](https://secure.travis-ci.org/sloppylopez/slush-jspm-react-seed.png?branch=master)](https://travis-ci.org/sloppylopez/slush-jspm-react-seed) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
 
+[![Travis](https://travis-ci.org/sloppylopez/angulpar.svg)](https://travis-ci.org/sloppylopez/angulpar)
+[![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
+[![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
+
+![React Logo](https://facebook.github.io/react/favicon.ico)
+
 >
  
-# Welcome to the future
+# Welcome to the FUTURE
 
-## Goodies
-        NEW! Added React-bootstrap (css-less feel)
+## Goodies Out-of the box
+        NEW! Added React-bootstrap (ausence of css feel)
         
         Jspm as universal multi-purpose Javascript package manager
 
@@ -23,9 +29,11 @@
 
         Minifying (JSPM native)
 
-        Transpiling on runtime(browser side) with NODE_ENV=development (BABEL native)
+        Transpiling on runtime(browser side)
+        with NODE_ENV=development (BABEL native)
 
-        Transpiling on build time(serve side) with NODE_ENV=production (BABEL native)
+        Transpiling on build time(serve side)
+        with NODE_ENV=production (BABEL native)
 
         Static Node server run in local (JSPM native)
 
