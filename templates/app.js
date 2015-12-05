@@ -2,41 +2,24 @@ import Jquery from 'jquery'
 import React from 'react'
 
 import AcmeNavbar from 'components/acme_nav_bar/acme-nav-bar.js'
+import AcmeBody from 'components/acme_body/acme-body.js'
 import AcmeFooter from 'components/acme_footer/acme-footer.js'
 
 import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
+import BootstrapCss2 from 'bootstrap/css/bootstrap.css!css'
 
 import { render } from 'react-dom'
-import { Router, Route, IndexRoute, Link, IndexLink, RouteHandler } from 'react-router'
+import { Router, Route, IndexRoute, RouteHandler } from 'react-router'
 import { createHistory, useBasename } from 'history'
 
-const ACTIVE = {color: 'black'};
-
+export default
 class App extends React.Component {
     render() {
         return (
             <div>
                 <AcmeNavbar></AcmeNavbar>
 
-                <div className="jumbotron">
-                    <div className="container">
-                        <h1>A little bit of frictionless SEED!</h1>
-                        <ul>
-                            <li><Link to="/" activeStyle={ACTIVE}>/</Link></li>
-                            <li><IndexLink to="/" activeStyle={ACTIVE}>/ IndexLink</IndexLink></li>
-
-                            <li><Link to="/users" activeStyle={ACTIVE}>/users</Link></li>
-                            <li><IndexLink to="/users" activeStyle={ACTIVE}>/users IndexLink</IndexLink></li>
-
-                            <li><Link to="/users/sloppy" activeStyle={ACTIVE}>/users/sloppy</Link></li>
-                            <li><Link to="/users/lopez" query={{ foo: 'bar' }}
-                                      activeStyle={ACTIVE}>/users/lopez?foo=bar</Link>
-                            </li>
-
-                            <li><Link to="/about" activeStyle={ACTIVE}>/about</Link></li>
-                        </ul>
-                    </div>
-                </div>
+                <AcmeBody></AcmeBody>
 
                 {this.props.children}
 

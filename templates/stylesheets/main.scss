@@ -15,7 +15,8 @@
 @import 'layout/header',
 'layout/footer';
 // 5. Components
-@import 'components/buttons';
+@import 'components/buttons',
+'components/acme-list-group';
 // 6. Page-specific styles
 @import 'pages/home';
 // 7. Themes
