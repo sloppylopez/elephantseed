@@ -3,12 +3,14 @@ v0.2.0
   changes:
     - Added Codeship ci-cd since seems better, I'll try them in parallel few weeks,
       but maybe Travis will die in the process
-    - Jspm installed npm:clean-css@  to fin Codeship build
+    - Jspm installed npm:clean-css@ to fix Codeship build
+    - Added example codeship_build_config_example.md
+    - Ditched Travis in favor of Codeship as preferred ci-cd system, it's simply better
 
 v0.1.9
   date: 2015-12-05
   changes:
-    - :bug: Fix Travis build using jspm registry
+    - :bug: Fix Codeship build using jspm registry
     - Fixed technical debt importing css from bootstrap
     - Created folder components, added header as part of a small refactor
 
