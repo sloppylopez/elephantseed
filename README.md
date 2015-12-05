@@ -1,6 +1,9 @@
-# Slush Jspm-react-seed [![Build Status](https://secure.travis-ci.org/sloppylopez/slush-jspm-react-seed.png?branch=master)](https://travis-ci.org/sloppylopez/slush-jspm-react-seed) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
+# Slush Jspm-react-seed 
 
+[![Build Status](https://secure.travis-ci.org/sloppylopez/slush-jspm-react-seed.png?branch=master)](https://travis-ci.org/sloppylopez/slush-jspm-react-seed) 
+[![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
 [![Travis](https://travis-ci.org/sloppylopez/angulpar.svg)](https://travis-ci.org/sloppylopez/angulpar)
+[![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 
@@ -8,10 +11,14 @@
 
 >
  
-# Welcome to the FUTURE
+# You ought to put a SEED in your life
 
-## Goodies Out-of the box
-        NEW! Added React-bootstrap (ausence of css feel)
+## Goodies working Out-of-the-box
+        NEW! Codeship Ready
+        
+        Travis ready
+        
+        Added React-bootstrap (ausence of css feel)
         
         Jspm as universal multi-purpose Javascript package manager
 
@@ -101,16 +108,26 @@ $ npm run unbundle
 
 ## Common Pitfalls
 
-Don't forget install jspm dependencies after installing using:
-```bash
-$ jspm i
-```
+Don't forget install jspm dependencies after installing using ```jspm i```
 
-If your connection is terribly slow then:
-```bash
-$ jspm i
+If your connection is terribly slow then ```jspm i``` may have hiccups while 
+doing look ups, just repeat few times until he manages to download all dependencies
+
+While using the seed with you preferred CI you may see this error:
 ```
-May have hiccups while doing dns look ups, just repeat few times until he manages to download all dependencies
+     Updating registry cache...
+     Looking up github:twbs/bootstrap
+     Downloading github:twbs/bootstrap@3.3.1
+
+err  Error downloading github:twbs/bootstrap
+
+     GitHub rate limit reached. To increase the limit use GitHub authentication.
+     Run jspm endpoint config github to set this up.
+
+warn Installation changes not saved.
+``` 
+Fear not, here you can see how to overcome the problem, unfortunately the seed can't do that for you:
+https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
 ## Contributing
 
