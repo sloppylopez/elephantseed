@@ -1,8 +1,16 @@
+v0.1.9
+  date: 2015-12-05
+  changes:
+    - :bug: Fix Travis build using jspm registry
+    - Fixed technical debt importing css from bootstrap
+    - Created folder components, added header as part of a small refactor
+    -
+
 v0.1.8:
   date: 2015-12-03
   changes:
     - Fixed README.md
-    - :bug: Detected in Travil build... Github has a max qouta it seems. TODO localize bootstrap dependencies
+    - :bug: Detected in Travil build... Github has a max qouta it seems. TODO localize bootstrap
 
 v0.1.7:
   date: 2015-12-03

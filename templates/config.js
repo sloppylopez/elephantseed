@@ -17,7 +17,7 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
-    "bootstrap": "github:twbs/bootstrap@3.3.6",
+    "bootstrap": "github:twbs/bootstrap@3.3.6/css/bootstrap.min.css",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "express": "npm:express@4.13.3",
@@ -28,6 +28,7 @@ System.config({
     "react-dom": "npm:react-dom@0.14.3",
     "react-router": "npm:react-router@1.0.0",
     "react-router-bootstrap": "npm:react-router-bootstrap@0.19.3",
+    "twbs/bootstrap": "github:twbs/bootstrap@3.3.6",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -93,6 +94,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:twbs/bootstrap@3.3.6": {
+      "jquery": "github:components/jquery@2.1.4"
     },
     "npm:accepts@1.2.13": {
       "mime-types": "npm:mime-types@2.1.8",
