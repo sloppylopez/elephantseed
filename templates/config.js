@@ -17,7 +17,7 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
-    "bootstrap": "github:twbs/bootstrap@3.3.6/css/bootstrap.min.css",
+    "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "express": "npm:express@4.13.3",
@@ -27,8 +27,6 @@ System.config({
     "react-bootstrap": "npm:react-bootstrap@0.28.1",
     "react-dom": "npm:react-dom@0.14.3",
     "react-router": "npm:react-router@1.0.0",
-    "react-router-bootstrap": "npm:react-router-bootstrap@0.19.3",
-    "twbs/bootstrap": "github:twbs/bootstrap@3.3.6",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -114,7 +112,7 @@ System.config({
     },
     "npm:asn1.js@4.2.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "inherits": "npm:inherits@2.0.1",
       "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
@@ -152,14 +150,14 @@ System.config({
       "inherits": "npm:inherits@2.0.1"
     },
     "npm:browserify-rsa@4.0.0": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "constants": "github:jspm/nodelibs-constants@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "randombytes": "npm:randombytes@2.0.1"
     },
     "npm:browserify-sign@4.0.0": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "browserify-rsa": "npm:browserify-rsa@4.0.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
@@ -213,7 +211,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:create-ecdh@4.0.0": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "elliptic": "npm:elliptic@6.0.2"
@@ -270,7 +268,7 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
     "npm:diffie-hellman@5.0.0": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "miller-rabin": "npm:miller-rabin@4.0.0",
@@ -281,7 +279,7 @@ System.config({
       "events": "github:jspm/nodelibs-events@0.1.1"
     },
     "npm:elliptic@6.0.2": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "brorand": "npm:brorand@1.0.5",
       "hash.js": "npm:hash.js@1.0.3",
       "inherits": "npm:inherits@2.0.1",
@@ -402,7 +400,7 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:miller-rabin@4.0.0": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "brorand": "npm:brorand@1.0.5"
     },
     "npm:mime-db@1.20.0": {
@@ -459,7 +457,7 @@ System.config({
       "ipaddr.js": "npm:ipaddr.js@1.0.4"
     },
     "npm:public-encrypt@4.0.0": {
-      "bn.js": "npm:bn.js@4.4.0",
+      "bn.js": "npm:bn.js@4.5.0",
       "browserify-rsa": "npm:browserify-rsa@4.0.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
@@ -506,10 +504,6 @@ System.config({
     },
     "npm:react-prop-types@0.3.0": {
       "warning": "npm:warning@2.1.0"
-    },
-    "npm:react-router-bootstrap@0.19.3": {
-      "react": "npm:react@0.14.3",
-      "react-router": "npm:react-router@1.0.0"
     },
     "npm:react-router@1.0.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",

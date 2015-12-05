@@ -3,6 +3,7 @@ v0.2.0
   changes:
     - Added Codeship ci-cd since seems better, I'll try them in parallel few weeks,
       but maybe Travis will die in the process
+    - Jspm installed npm:clean-css@  to fin Codeship build
 
 v0.1.9
   date: 2015-12-05
