@@ -4,7 +4,6 @@ v0.1.9
     - :bug: Fix Travis build using jspm registry
     - Fixed technical debt importing css from bootstrap
     - Created folder components, added header as part of a small refactor
-    -
 
 v0.1.8:
   date: 2015-12-03
