@@ -3,6 +3,7 @@ v0.2.1
   changes:
     - Added full Sass support
     - Added patter 7 to 1 for styles folder https://github.com/HugoGiraudel/sass-boilerplate
+    - Added sticky footer
 
 v0.2.0
   date: 2015-12-05

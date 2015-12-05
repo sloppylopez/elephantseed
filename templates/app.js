@@ -1,7 +1,8 @@
 import Jquery from 'jquery'
 import React from 'react'
 
-import AcmeNavbar from 'components/acme-nav-bar.js'
+import AcmeNavbar from 'components/acme_nav_bar/acme-nav-bar.js'
+import AcmeFooter from 'components/acme_footer/acme-footer.js'
 
 import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
 
@@ -17,28 +18,29 @@ class App extends React.Component {
             <div>
                 <AcmeNavbar></AcmeNavbar>
 
-                <h1>A little bit of frictionless SEED!</h1>
-                <ul>
-                    <li><Link to="/" activeStyle={ACTIVE}>/</Link></li>
-                    <li><IndexLink to="/" activeStyle={ACTIVE}>/ IndexLink</IndexLink></li>
+                <div className="jumbotron">
+                    <div className="container">
+                        <h1>A little bit of frictionless SEED!</h1>
+                        <ul>
+                            <li><Link to="/" activeStyle={ACTIVE}>/</Link></li>
+                            <li><IndexLink to="/" activeStyle={ACTIVE}>/ IndexLink</IndexLink></li>
 
-                    <li><Link to="/users" activeStyle={ACTIVE}>/users</Link></li>
-                    <li><IndexLink to="/users" activeStyle={ACTIVE}>/users IndexLink</IndexLink></li>
+                            <li><Link to="/users" activeStyle={ACTIVE}>/users</Link></li>
+                            <li><IndexLink to="/users" activeStyle={ACTIVE}>/users IndexLink</IndexLink></li>
 
-                    <li><Link to="/users/sloppy" activeStyle={ACTIVE}>/users/sloppy</Link></li>
-                    <li><Link to="/users/lopez" query={{ foo: 'bar' }} activeStyle={ACTIVE}>/users/lopez?foo=bar</Link>
-                    </li>
+                            <li><Link to="/users/sloppy" activeStyle={ACTIVE}>/users/sloppy</Link></li>
+                            <li><Link to="/users/lopez" query={{ foo: 'bar' }}
+                                      activeStyle={ACTIVE}>/users/lopez?foo=bar</Link>
+                            </li>
 
-                    <li><Link to="/about" activeStyle={ACTIVE}>/about</Link></li>
-                </ul>
+                            <li><Link to="/about" activeStyle={ACTIVE}>/about</Link></li>
+                        </ul>
+                    </div>
+                </div>
 
                 {this.props.children}
 
-                <footer className="footer">
-                    <div className="container">
-                        <p className="text-muted">Place sticky footer content here.</p>
-                    </div>
-                </footer>
+                <AcmeFooter></AcmeFooter>
             </div>
         )
     }
