@@ -15,6 +15,7 @@
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.8",
       "core-js": "npm:core-js@^1.1.4"
     }
   },
@@ -32,6 +33,6 @@
     "cache-clear": "echo \"jspm cache-clear works buggy somehow.. AND cache as well.. need more investigation, possible bug in jspm\"",
     "timeout:increase": "jspm config registries.npm.timeouts.lookup 240",
     "clean:tree": "jspm i -f",
-    "travis": "jspm config registries.npm.timeouts.lookup 2000"
+    "ci": "jspm config registries.npm.timeouts.lookup 2000"
   }
 }

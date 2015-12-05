@@ -1,3 +1,4 @@
+# Use this build example in your codeship to make connect it to your ci-cd
 # By default we use the Node.js version set in your package.json or the latest
 # version from the 0.10 release
 #
@@ -7,5 +8,6 @@ nvm install 5.1.0
 npm i
 # Install grunt-cli for running your tests or other tasks
 npm install -g jspm firebase-tools slush
+jspm run ci
 jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
 cd templates && jspm i
