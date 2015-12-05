@@ -1,22 +1,20 @@
 # Slush Jspm-react-seed 
 
-[![Build Status](https://secure.travis-ci.org/sloppylopez/slush-jspm-react-seed.png?branch=master)](https://travis-ci.org/sloppylopez/slush-jspm-react-seed) 
 [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
-[![Travis](https://travis-ci.org/sloppylopez/angulpar.svg)](https://travis-ci.org/sloppylopez/angulpar)
 [![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 
-![React Logo](https://facebook.github.io/react/favicon.ico) + ![Jspm Logo](http://andrewhfarmer.com/img/2015-11-12-package-managers/jspm.png) + ![Jspm Logo](https://www.gravatar.com/avatar/1f69fbc8337dc301bb0479eef85376df?s=48&d=identicon)
+![React Logo](https://facebook.github.io/react/favicon.ico)![Jspm Logo](http://andrewhfarmer.com/img/2015-11-12-package-managers/jspm.png)![Jspm Logo](https://www.gravatar.com/avatar/1f69fbc8337dc301bb0479eef85376df?s=48&d=identicon)
 
 >
  
 # You ought to put a SEED in your life
 
 ## Goodies working Out-of-the-box
-        NEW! Codeship Ready
+        NEW! Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
         
-        Travis ready
+        Codeship Ready
         
         Added React-bootstrap (ausence of css feel)
         

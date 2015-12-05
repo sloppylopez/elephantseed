@@ -7,6 +7,7 @@ server.use(express.static('views'));
 server.use(express.static('build'));
 server.use(express.static('build/bundle'));
 server.use(express.static('jspm_packages'));
+server.use(express.static('stylesheets/*'));
 
 server.get('/', function (req, res) {
     res.render('index')

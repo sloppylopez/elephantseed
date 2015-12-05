@@ -1,13 +1,15 @@
 import Jquery from 'jquery'
 import React from 'react'
-import Bootstrap from 'bootstrap/css/bootstrap.css!css'
+
 import AcmeNavbar from 'components/acme-nav-bar.js'
+
+import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
 
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, RouteHandler } from 'react-router'
 import { createHistory, useBasename } from 'history'
 
-const ACTIVE = {color: 'red'};
+const ACTIVE = {color: 'black'};
 
 class App extends React.Component {
     render() {
@@ -31,6 +33,12 @@ class App extends React.Component {
                 </ul>
 
                 {this.props.children}
+
+                <footer className="footer">
+                    <div className="container">
+                        <p className="text-muted">Place sticky footer content here.</p>
+                    </div>
+                </footer>
             </div>
         )
     }
