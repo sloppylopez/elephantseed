@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  li {
+    padding-right: 12px;
+  }
+}
+
+.list-group {
+  width: 100%;
+}
+
+a.list-group-item {
+  width: 215px;
+  float: left;
+}

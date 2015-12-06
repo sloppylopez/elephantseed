@@ -1,36 +1,29 @@
 import Jquery from 'jquery'
 import React from 'react'
-import Bootstrap from 'bootstrap/css/bootstrap.css!css'
-import AcmeNavbar from 'components/acme-nav-bar.js'
+
+import AcmeNavbar from 'components/acme_nav_bar/acme-nav-bar.js'
+import AcmeBody from 'components/acme_body/acme-body.js'
+import AcmeFooter from 'components/acme_footer/acme-footer.js'
+
+import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
+import BootstrapCss2 from 'bootstrap/css/bootstrap.css!css'
 
 import { render } from 'react-dom'
-import { Router, Route, IndexRoute, Link, IndexLink, RouteHandler } from 'react-router'
+import { Router, Route, IndexRoute, RouteHandler } from 'react-router'
 import { createHistory, useBasename } from 'history'
 
-const ACTIVE = {color: 'red'};
-
+export default
 class App extends React.Component {
     render() {
         return (
             <div>
                 <AcmeNavbar></AcmeNavbar>
 
-                <h1>A little bit of frictionless SEED!</h1>
-                <ul>
-                    <li><Link to="/" activeStyle={ACTIVE}>/</Link></li>
-                    <li><IndexLink to="/" activeStyle={ACTIVE}>/ IndexLink</IndexLink></li>
-
-                    <li><Link to="/users" activeStyle={ACTIVE}>/users</Link></li>
-                    <li><IndexLink to="/users" activeStyle={ACTIVE}>/users IndexLink</IndexLink></li>
-
-                    <li><Link to="/users/sloppy" activeStyle={ACTIVE}>/users/sloppy</Link></li>
-                    <li><Link to="/users/lopez" query={{ foo: 'bar' }} activeStyle={ACTIVE}>/users/lopez?foo=bar</Link>
-                    </li>
-
-                    <li><Link to="/about" activeStyle={ACTIVE}>/about</Link></li>
-                </ul>
+                <AcmeBody></AcmeBody>
 
                 {this.props.children}
+
+                <AcmeFooter></AcmeFooter>
             </div>
         )
     }
@@ -46,47 +39,97 @@ class Index extends React.Component {
     render() {
         return (
             <div>
-                <h2>Index!</h2>
+                <h2>Vaseline driven browser side boiler-plate annihilation. Period</h2>
             </div>
         )
     }
 }
 
-class Users extends React.Component {
+class Technologies extends React.Component {
     render() {
         return (
             <div>
-                <h2>Users</h2>
+                <h2>Technologies</h2>
             </div>
         )
     }
 }
 
-class UsersIndex extends React.Component {
+class TechnologiesIndex extends React.Component {
     render() {
         return (
             <div>
-                <h3>UsersIndex</h3>
+                <h3>TechnologiesIndex</h3>
             </div>
         )
     }
 }
 
-class User extends React.Component {
+class Technology extends React.Component {
     render() {
         return (
             <div>
-                <h3>User {this.props.params.id}</h3>
+                <h3>Technology {this.props.params.id}</h3>
             </div>
         )
     }
 }
 
-class About extends React.Component {
+class AcmeReact extends React.Component {
     render() {
         return (
             <div>
-                <h2>About</h2>
+                <h2>React</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeJspm extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Jspm</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeBabel extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Babel</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeNodejs extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>NodeJS</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeReactBootstrao extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>React-Bootstrap</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeBootstrao extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Bootstrap</h2>
             </div>
         )
     }
@@ -100,10 +143,15 @@ render((
     <Router history={history}>
         <Route path="/" component={App}>
             <IndexRoute component={Index}/>
-            <Route path="/about" component={About}/>
-            <Route path="users" component={Users}>
-                <IndexRoute component={UsersIndex}/>
-                <Route path=":id" component={User}/>
+            <Route path="/react" component={AcmeReact}/>
+            <Route path="/jspm" component={AcmeJspm}/>
+            <Route path="/babel" component={AcmeBabel}/>
+            <Route path="/nodejs" component={AcmeNodejs}/>
+            <Route path="/react-bootstrap" component={AcmeReactBootstrao}/>
+            <Route path="/bootstrap" component={AcmeBootstrao}/>
+            <Route path="technologies" component={Technologies}>
+                <IndexRoute component={TechnologiesIndex}/>
+                <Route path=":id" component={Technology}/>
             </Route>
         </Route>
     </Router>
