@@ -1,9 +1,12 @@
-v0.2.1
-  date: 2015-12-05
+v1.0.0
+  date: 2015-12-06
   changes:
     - Added full Sass support
-    - Added patter 7 to 1 for styles folder https://github.com/HugoGiraudel/sass-boilerplate
+    - Added pattern 7 to 1 for styles folder https://github.com/HugoGiraudel/sass-boilerplate
     - Added sticky footer
+    - Added proper Home
+    - Fist version ready!!
+    - Big Refactor
 
 v0.2.0
   date: 2015-12-05

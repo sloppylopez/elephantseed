@@ -1,32 +1,32 @@
-# Slush Jspm-react-seed 
+# Slush Jspm-React-seed 
 
 [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
-[![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
+[![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 
 ![React Logo](https://facebook.github.io/react/favicon.ico)![Jspm Logo](http://andrewhfarmer.com/img/2015-11-12-package-managers/jspm.png)![Jspm Logo](https://www.gravatar.com/avatar/1f69fbc8337dc301bb0479eef85376df?s=48&d=identicon)
 
 >
  
-# You ought to put a SEED in your life
+# Put a SEED in your life
 
 ## Goodies working Out-of-the-box
-        NEW! Added frictionless Sass support
-
-        NEW! Added 7 to 1 pattern for stilying https://github.com/HugoGiraudel/sass-boilerplate
+        NEW! Added proper home page with navigation
+        
+        NEW! Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
         
         Codeship Ready
         
         Added React-bootstrap (ausence of css feel)
         
-        Jspm as universal multi-purpose Javascript package manager
+        Jspm for universal multi-purpose Javascript package managing
 
-        Babel as transpiler
+        Babel for transpiling
 
-        React as templating system
+        React for templating
 
-        Nodejs modules
+        Nodejs modules (>= 200000 modules available)
 
         ES6 & ES7 Syntactic Sugar ready out-of-the-box
 
@@ -36,11 +36,9 @@
 
         Minifying (JSPM native)
 
-        Transpiling on runtime(browser side)
-        with NODE_ENV=development (BABEL native)
+        Transpiling at runtime on browser side (BABEL native)
 
-        Transpiling on build time(serve side)
-        with NODE_ENV=production (BABEL native)
+        Transpiling at build time on serve side (BABEL native)
 
         Static Node server run in local (JSPM native)
 
@@ -100,10 +98,16 @@ Transpile & bundle & minify JS dependencies to bundle.js and generate a sourcema
 $ npm run minify
 ```
 
-Removes the changes made by jspm to config.js while bundling:
+Removes the changes made by jspm to config.js while bundling 
+(you don't really need to do this, is for learning purposes only):
 
 ```bash
 $ npm run unbundle
+```
+Increase the timeout seconds for dns look ups in Jspm:
+
+```bash
+$ npm run ti
 ```
 
 ## Common Pitfalls

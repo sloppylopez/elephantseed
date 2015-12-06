@@ -39,47 +39,97 @@ class Index extends React.Component {
     render() {
         return (
             <div>
-                <h2>Index!</h2>
+                <h2>Vaseline driven browser side boiler-plate annihilation. Period</h2>
             </div>
         )
     }
 }
 
-class Users extends React.Component {
+class Technologies extends React.Component {
     render() {
         return (
             <div>
-                <h2>Users</h2>
+                <h2>Technologies</h2>
             </div>
         )
     }
 }
 
-class UsersIndex extends React.Component {
+class TechnologiesIndex extends React.Component {
     render() {
         return (
             <div>
-                <h3>UsersIndex</h3>
+                <h3>TechnologiesIndex</h3>
             </div>
         )
     }
 }
 
-class User extends React.Component {
+class Technology extends React.Component {
     render() {
         return (
             <div>
-                <h3>User {this.props.params.id}</h3>
+                <h3>Technology {this.props.params.id}</h3>
             </div>
         )
     }
 }
 
-class About extends React.Component {
+class AcmeReact extends React.Component {
     render() {
         return (
             <div>
-                <h2>About</h2>
+                <h2>React</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeJspm extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Jspm</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeBabel extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Babel</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeNodejs extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>NodeJS</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeReactBootstrao extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>React-Bootstrap</h2>
+            </div>
+        )
+    }
+}
+
+class AcmeBootstrao extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Bootstrap</h2>
             </div>
         )
     }
@@ -93,10 +143,15 @@ render((
     <Router history={history}>
         <Route path="/" component={App}>
             <IndexRoute component={Index}/>
-            <Route path="/about" component={About}/>
-            <Route path="users" component={Users}>
-                <IndexRoute component={UsersIndex}/>
-                <Route path=":id" component={User}/>
+            <Route path="/react" component={AcmeReact}/>
+            <Route path="/jspm" component={AcmeJspm}/>
+            <Route path="/babel" component={AcmeBabel}/>
+            <Route path="/nodejs" component={AcmeNodejs}/>
+            <Route path="/react-bootstrap" component={AcmeReactBootstrao}/>
+            <Route path="/bootstrap" component={AcmeBootstrao}/>
+            <Route path="technologies" component={Technologies}>
+                <IndexRoute component={TechnologiesIndex}/>
+                <Route path=":id" component={Technology}/>
             </Route>
         </Route>
     </Router>

@@ -7,4 +7,17 @@ h2 {
 
 ul {
   list-style-type: none;
+  font-size: 20px;
+  li {
+    padding-right: 12px;
+  }
+}
+
+.list-group {
+  width: 100%;
+}
+
+a.list-group-item {
+  width: 215px;
+  float: left;
 }
