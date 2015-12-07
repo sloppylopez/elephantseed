@@ -1,6 +1,8 @@
 v1.0.1
-  date: 2015-12-06
+  date: 2015-12-07
   changes:
+    - Fixed bug with resposiveness
+    - Added proper logo ElephantSeed
 
 v1.0.0
   date: 2015-12-06

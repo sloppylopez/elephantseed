@@ -6,7 +6,6 @@ import AcmeBody from 'components/acme_body/acme-body.js'
 import AcmeFooter from 'components/acme_footer/acme-footer.js'
 
 import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
-import BootstrapCss2 from 'bootstrap/css/bootstrap.css!css'
 
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, RouteHandler } from 'react-router'

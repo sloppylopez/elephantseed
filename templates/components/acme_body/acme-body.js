@@ -14,7 +14,8 @@ class AcmeBody extends Component {
             <div className="container">
                 <div className="jumbotron">
                     <div className="container">
-                        <h1>A little bit of frictionless SEED!</h1>
+                        <h1>A little bit of frictionless! <img style={{width:'200px', height:'200px'}}
+                                                               src="assets/images/ElephantSeed.png"></img></h1>
                     </div>
                 </div>
                 <AcmeListGroup></AcmeListGroup>

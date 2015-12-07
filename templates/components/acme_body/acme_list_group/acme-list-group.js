@@ -24,6 +24,8 @@ class AcmeListGroup extends Component {
                             based on
                             V8</ListGroupItem>
                     </LinkContainer>
+                </ListGroup>
+                <ListGroup>
                     <LinkContainer to="/react">
                         <ListGroupItem header="React" href="#">A Javasript Library for building
                             user
