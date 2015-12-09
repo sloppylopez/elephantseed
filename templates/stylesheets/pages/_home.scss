@@ -15,11 +15,14 @@ body {
   h2 {
     text-align: center;
   }
-
-  ul {
-    list-style-type: none;
+  ul li {
     font-size: 20px;
+  }
+  ul.features {
+    list-style-type: none;
+    text-align: center;
     li {
+      font-size: 30px;
       padding-right: 12px;
     }
   }
