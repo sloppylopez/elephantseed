@@ -37,8 +37,30 @@ class App extends React.Component {
 class Index extends React.Component {
     render() {
         return (
-            <div>
-                <h2>Vaseline driven browser side boiler-plate annihilation. Period</h2>
+            <div className="container">
+                <h2>
+                    Featuring
+                </h2>
+                <ul className="features">
+                    <li>
+                        No build process, just run your desired web server and have fun
+                    </li>
+                    <li>
+                        Minimum configuration, whola lotta next-gen features
+                    </li>
+                    <li>
+                        Client/Server React template rendering
+                    </li>
+                    <li>
+                        7 to 1 Sass folder structure
+                    </li>
+                    <li>
+                        ES6/ES* Transpilation
+                    </li>
+                    <li>
+                        Efortless use
+                    </li>
+                </ul>
             </div>
         )
     }

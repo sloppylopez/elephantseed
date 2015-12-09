@@ -1,23 +1,38 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-h2 {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  font-size: 20px;
-  li {
-    padding-right: 12px;
+body {
+  .jumbotron {
+    p, h1, img {
+      float: left;
+    }
   }
-}
 
-.list-group {
-  width: 100%;
-}
+  h1 {
+    margin-bottom: 0;
+  }
 
-a.list-group-item {
-  width: 215px;
-  float: left;
+  h2 {
+    text-align: center;
+  }
+  ul li {
+    font-size: 20px;
+  }
+  ul.features {
+    list-style-type: none;
+    text-align: center;
+    li {
+      font-size: 30px;
+      padding-right: 12px;
+    }
+  }
+
+  .list-group {
+    width: 100%;
+  }
+
+  a.list-group-item {
+    width: 215px;
+    float: left;
+  }
 }
