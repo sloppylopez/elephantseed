@@ -9,7 +9,7 @@
 
 >
  
-# Vaseline driven browser side boiler-plate annihilation. Period
+## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
         NEW! Added proper home page with navigation
