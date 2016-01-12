@@ -5,6 +5,7 @@
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sloppylopez/slush-jspm-react-seed/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 ![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)
 
 >
