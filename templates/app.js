@@ -55,10 +55,13 @@ class Index extends React.Component {
                         7 to 1 Sass folder structure
                     </li>
                     <li>
-                        ES6/ES* Transpilation
+                        ES6/ES* transpilation
                     </li>
                     <li>
                         Efortless use
+                    </li>
+                    <li>
+                        <a href="https://www.npmjs.com/package/slush-jspm-react-seed">Fork U!</a>
                     </li>
                 </ul>
             </div>
@@ -101,6 +104,12 @@ class AcmeReact extends React.Component {
         return (
             <div>
                 <h2>React</h2>
+
+                <ul className="features">
+                    <li>
+                        Modern library for developing user interfaces based entirely in Javascript
+                    </li>
+                </ul>
             </div>
         )
     }
@@ -111,6 +120,21 @@ class AcmeJspm extends React.Component {
         return (
             <div>
                 <h2>Jspm</h2>
+
+                <ul className="features">
+                    <li>
+                        Load ES6, AMD, CommonJS and globals universally using your preferred online source
+                    </li>
+                    <li>
+                        JSPM uses SystemJS module loader to provide ES6 loader features
+                    </li>
+                    <li>
+                        Compile static resources in the browser in development time
+                    </li>
+                    <li>
+                        Optimize static resources bundling them from production
+                    </li>
+                </ul>
             </div>
         )
     }
@@ -121,6 +145,15 @@ class AcmeBabel extends React.Component {
         return (
             <div>
                 <h2>Babel</h2>
+
+                <ul className="features">
+                    <li>
+                        Use the Javascript of tomorrow today, Babel transpiles your sources
+                    </li>
+                    <li>
+                        No need to patiently wait for browser support
+                    </li>
+                </ul>
             </div>
         )
     }
@@ -131,6 +164,15 @@ class AcmeNodejs extends React.Component {
         return (
             <div>
                 <h2>NodeJS</h2>
+
+                <ul className="features">
+                    <li>
+                        Runtime event-driven non-blocking I/O built on Chrome's V8 engine
+                    </li>
+                    <li>
+                        Biggest eco-system of open source code in the whole planet
+                    </li>
+                </ul>
             </div>
         )
     }
@@ -141,6 +183,12 @@ class AcmeReactBootstrao extends React.Component {
         return (
             <div>
                 <h2>React-Bootstrap</h2>
+
+                <ul className="features">
+                    <li>
+                        Rebuilding of the preferred framework for front-end in React
+                    </li>
+                </ul>
             </div>
         )
     }
@@ -151,6 +199,15 @@ class AcmeBootstrao extends React.Component {
         return (
             <div>
                 <h2>Bootstrap</h2>
+
+                <ul className="features">
+                    <li>
+                        Standard 'de facto' framework for front-end developing
+                    </li>
+                    <li>
+                        Responsive and extremely easy to user
+                    </li>
+                </ul>
             </div>
         )
     }

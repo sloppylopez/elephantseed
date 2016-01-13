@@ -2,7 +2,7 @@
  * slush-jspm-react-seed
  * https://github.com/sloppylopez/slush-jspm-react-seed
  *
- * Copyright (c) 2015, sloppylopez
+ * Copyright (c) 2015, Sergio Lopez
  * Licensed under the MIT license.
  */
 

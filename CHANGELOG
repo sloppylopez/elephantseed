@@ -1,3 +1,24 @@
+v1.0.4
+  date: 2016-01-14
+  changes:
+    - Fixed script in package.json redundant
+    - Fixed typo
+    - Fixed error in firebase.json about the public folder incorrectly setted
+    - Removed loading of firebase-rules from firebase.json
+  known bugs:
+    - It's very slow serving the website because of the browser side scss compilation and the Babel transpilation, needs fix
+    - The router does not allow hard-links at the moment
+
+v1.0.3
+  date: 2016-01-13
+  changes:
+    - Added additional info
+    - Fixed broken link
+    - Firebase ready
+    - Website online https://elephantseed.firebaseapp.com
+  known bugs:
+    - It's very slow serving the website because of the browser side scss compilation and the Babel transpilation, needs fix
+
 v1.0.2
   date: 2015-12-07
   changes:

@@ -42,7 +42,7 @@
   },
   "scripts": {
     "start": "npm run unbundle && jspm run server",
-    "start:build": "npm run unbundle && npm run minify && jspm run server",
+    "start:dist": "npm run minify && jspm run server",
     "bundle": "jspm bundle app dist/bundle.js --inject",
     "minify": "jspm bundle app dist/bundle.js --inject --minify",
     "unbundle": "jspm unbundle",
