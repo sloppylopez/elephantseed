@@ -41,7 +41,7 @@
     "jspm": "^0.16.15"
   },
   "scripts": {
-    "start": "npm run unbundle && jspm run server",
+    "start": "npm run unbundle && npm run cache:clear&& jspm run server",
     "start:dist": "npm run minify && jspm run server",
     "dist:sfx": "npm run minify:sfx && jspm run server",
     "bundle": "jspm bundle app dist/bundle.js --inject",
@@ -50,7 +50,7 @@
     "unbundle": "jspm unbundle",
     "babel": "babel . --out-dir ES5_transpiled/",
     "cache": "npm run babel && jspm depcache app.js",
-    "cache-clear": "jspm cache-clear",
+    "cache:clear": "jspm cache-clear",
     "clean:tree": "jspm i -f",
     "lookup": "jspm config registries.npm.timeouts.lookup 240",
     "continuous": "jspm config registries.npm.timeouts.lookup 2000"
