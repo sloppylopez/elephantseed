@@ -15,7 +15,8 @@ class AcmeBody extends Component {
                 <div className="jumbotron">
                     <div className="container">
                         <img style={{width:'200px', height:'200px'}}
-                             src="assets/images/ElephantSeed.png"></img>
+                             src="https://elephantseed.firebaseapp.com/assets/images/ElephantSeed.png"
+                             alt="Elephant Seed"></img>
 
                         <h1>A little bit of frictionless!</h1>
 

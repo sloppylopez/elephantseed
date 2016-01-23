@@ -51,6 +51,7 @@ var defaults = (function () {
 })();
 
 gulp.task('default', function (done) {
+
     var prompts = [{
         name: 'appName',
         message: 'What is the name of your project?',
@@ -86,11 +87,11 @@ gulp.task('default', function (done) {
                 return done();
             }
             answers.appNameSlug = _.slugify(answers.appName);
-            gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*'])
+            gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*', '!' + __dirname + '/templates/assets/**'])
                 .pipe(template(answers))
                 .pipe(rename(function (file) {
                     if (file.basename[0] === '_' && file.extname !== '.scss') {
-                        file.basename = '.' + file.basename.slice(1);//TODO not sure why slush needs to do this, but i'll figure it out
+                        file.basename = '.' + file.basename.slice(1);
                     }
                 }))
                 .pipe(conflict('./'))

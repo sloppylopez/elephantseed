@@ -1,3 +1,18 @@
+v1.0.5
+  date: 2016-01-23
+  changes:
+    - Quick Fix for image corruption when generating the seed since the official solution does not seem to work and I am wasting time with a minor
+      https://github.com/slushjs/slush/issues/46
+    - Re-styled to be more mobile friendly
+    - bundle sfx for being able to gtmetrix the production site
+    - Added jspm cache
+    - Added sfx bundling
+    - Removed redundant lines in server.js
+    - Added alt to image
+    - Execute 'jspm i' automatically after growing the seed
+  known bugs:
+    - The router does not allow deep-links at the moment
+
 v1.0.4
   date: 2016-01-14
   changes:
@@ -7,7 +22,7 @@ v1.0.4
     - Removed loading of firebase-rules from firebase.json
   known bugs:
     - It's very slow serving the website because of the browser side scss compilation and the Babel transpilation, needs fix
-    - The router does not allow hard-links at the moment
+    - The router does not allow deep-links at the moment
 
 v1.0.3
   date: 2016-01-13

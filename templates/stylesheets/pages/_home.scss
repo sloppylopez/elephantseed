@@ -3,8 +3,12 @@
 // -----------------------------------------------------------------------------
 body {
   .jumbotron {
+    background-color: #000;
     p, h1, img {
       float: left;
+    }
+    p {
+      font-size: 22px;
     }
   }
 
@@ -15,6 +19,11 @@ body {
   h2 {
     text-align: center;
   }
+
+  h4 {
+    font-size: 25px;
+    font-weight: 600;
+  }
   ul li {
     font-size: 20px;
   }
@@ -22,9 +31,13 @@ body {
     list-style-type: none;
     text-align: center;
     li {
-      font-size: 30px;
+      font-size: 26px;
       padding-right: 12px;
     }
+  }
+
+  p {
+    font-size: 21px
   }
 
   .list-group {

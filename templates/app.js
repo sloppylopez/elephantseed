@@ -38,24 +38,27 @@ class Index extends React.Component {
     render() {
         return (
             <div className="container">
-                <h2>
-                    Featuring
-                </h2>
                 <ul className="features">
                     <li>
-                        No build process, just run your desired web server and have fun
+                        Next-gen pure static front-end Gulpless/Gruntless Website template working out-of-the-box
                     </li>
                     <li>
-                        Minimum configuration, whola lotta next-gen features
+                        Firebase hosting friendly, just login and deploy with command line in seconds
                     </li>
                     <li>
-                        Client/Server React template rendering
+                        No build process, just run your desired web server and have fun playing
                     </li>
                     <li>
-                        7 to 1 Sass folder structure
+                        Minimum configuration, whola lotta features for smooth develop
                     </li>
                     <li>
-                        ES6/ES* transpilation
+                        Isomorphic Client/Server React template rendering
+                    </li>
+                    <li>
+                        Convenient 7 to 1 Sass folder structure
+                    </li>
+                    <li>
+                        Babel ES6/ES* transpilation
                     </li>
                     <li>
                         Efortless use
