@@ -1,7 +1,7 @@
 {
   "name": "slush-jspm-react-seed",
   "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
   "author": {
     "name": "Sergio Lopez",
@@ -43,14 +43,16 @@
   "scripts": {
     "start": "npm run unbundle && jspm run server",
     "start:dist": "npm run minify && jspm run server",
+    "dist:sfx": "npm run minify:sfx && jspm run server",
     "bundle": "jspm bundle app dist/bundle.js --inject",
     "minify": "jspm bundle app dist/bundle.js --inject --minify",
+    "minify:sfx": "jspm bundle-sfx app dist/bundle.js --inject --minify",
     "unbundle": "jspm unbundle",
     "babel": "babel . --out-dir ES5_transpiled/",
-    "cache": "npm run babel && jspm depcache ES5_transpiled/app.js",
-    "cache-clear": "echo \"jspm cache-clear works buggy somehow.. AND cache as well.. need more investigation, possible bug in jspm\"",
-    "ti": "jspm config registries.npm.timeouts.lookup 240",
+    "cache": "npm run babel && jspm depcache app.js",
+    "cache-clear": "jspm cache-clear",
     "clean:tree": "jspm i -f",
-    "ci": "jspm config registries.npm.timeouts.lookup 2000"
+    "lookup": "jspm config registries.npm.timeouts.lookup 240",
+    "continuous": "jspm config registries.npm.timeouts.lookup 2000"
   }
 }
