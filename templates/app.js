@@ -40,28 +40,28 @@ class Index extends React.Component {
             <div className="container">
                 <ul className="features">
                     <li>
-                        Next-gen pure static front-end Gulpless/Gruntless Website template working out-of-the-box
+                        Next-gen pure static front-end Gulpless/Gruntless Website template working out-of-the-box.
                     </li>
                     <li>
-                        Firebase hosting friendly, just login and deploy with command line in seconds
+                        Firebase hosting friendly, just login and deploy with command line in seconds.
                     </li>
                     <li>
-                        No build process, just run your desired web server and have fun playing
+                        No build process, just run your desired web server and have fun playing.
                     </li>
                     <li>
-                        Minimum configuration, whola lotta features for smooth develop
+                        Minimum configuration, whola lotta features for smooth develop.
                     </li>
                     <li>
-                        Isomorphic Client/Server React template rendering
+                        Isomorphic Client/Server React template rendering.
                     </li>
                     <li>
-                        Convenient 7 to 1 Sass folder structure
+                        Convenient 7 to 1 Sass folder structure.
                     </li>
                     <li>
-                        Babel ES6/ES* transpilation
+                        Babel ES6/ES* transpilation.
                     </li>
                     <li>
-                        Efortless use
+                        Efortless use.
                     </li>
                     <li>
                         <a href="https://www.npmjs.com/package/slush-jspm-react-seed">Fork U!</a>
