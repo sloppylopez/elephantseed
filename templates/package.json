@@ -1,7 +1,7 @@
 {
   "name": "slush-jspm-react-seed",
   "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
   "author": {
     "name": "Sergio Lopez",
@@ -49,10 +49,11 @@
     "minify:sfx": "jspm bundle-sfx app dist/bundle.js --inject --minify",
     "unbundle": "jspm unbundle",
     "babel": "babel . --out-dir ES5_transpiled/",
-    "cache": "npm run babel && jspm depcache app.js",
+    "depcache": "jspm depcache app.js",
     "cache:clear": "jspm cache-clear",
     "clean:tree": "jspm i -f",
     "lookup": "jspm config registries.npm.timeouts.lookup 240",
-    "continuous": "jspm config registries.npm.timeouts.lookup 2000"
+    "continuous": "jspm config registries.npm.timeouts.lookup 2000",
+    "prod": "npm run minify:sfx && npm run depcache && jspm run server"
   }
 }

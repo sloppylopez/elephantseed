@@ -13,9 +13,11 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! Added proper home page with navigation
+        NEW! Firebase friendly, just login with your account and deploy
         
-        NEW! Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
+        Added proper home page with navigation
+        
+        Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
         
         Codeship Ready
         
@@ -77,6 +79,12 @@ Run Node server for locale environment:
 
 ```bash
 $ npm start
+```
+
+Run Node server for production like environment:
+
+```bash
+$ npm run prod
 ```
 
 Run Node server for prod environment (runs Babel transpiler and bundles all js and dependencies in 1 file):
