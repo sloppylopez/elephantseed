@@ -32,7 +32,7 @@ class AcmeListGroup extends Component {
                             interfaces</ListGroupItem>
                     </LinkContainer>
                     <LinkContainer to="/bootstrap">
-                        <ListGroupItem header="Bootstrap" href="#">Bootstrap, a sleek, intuitive, and powerful mobile
+                        <ListGroupItem header="Bootstrap" href="#">Bootstrap, a mobile
                             first front-end framework for faster and easier web development</ListGroupItem>
                     </LinkContainer>
                     <LinkContainer to="/react-bootstrap">
