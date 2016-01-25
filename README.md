@@ -87,32 +87,6 @@ Run Node server for production like environment:
 $ npm run prod
 ```
 
-### Bundling and Transpiling
-
-Transpile & bundle JS dependencies to bundle.js and generate a sourcemap:
-
-```bash
-$ npm run bundle
-```
-
-Transpile & bundle & minify JS dependencies to bundle.js and generate a sourcemap:
-
-```bash
-$ npm run minify
-```
-
-Removes the changes made by jspm to config.js while bundling 
-(you don't really need to do this, is for learning purposes only):
-
-```bash
-$ npm run unbundle
-```
-Increase the timeout seconds for dns look ups in Jspm:
-
-```bash
-$ npm run ti
-```
-
 ## Common Pitfalls
 
 Don't forget install jspm dependencies after installing using ```jspm i```
