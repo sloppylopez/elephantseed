@@ -75,13 +75,13 @@ $ jspm i
 
 ## Npm commands
 
-Run Node server for locale environment:
+Run Node server for local environment:
 
 ```bash
 $ npm run dev
 ```
 
-Run Node server for production like environment:
+Run Node server for local production-like environment:
 
 ```bash
 $ npm run prod
