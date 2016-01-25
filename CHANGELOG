@@ -1,17 +1,37 @@
+v1.0.7
+  date: 2016-01-25
+  changes:
+    - Cosmetics changes mobile friendly
+    - Solved problem of slowness caused by compilation of scss browser side, now we create css before doing 'jspm server start'
+  known bugs:
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.6
+  date: 2016-01-24
+  changes:
+    - Cosmetics changes only
+  known bugs:
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
 v1.0.5
   date: 2016-01-23
   changes:
     - Quick Fix for image corruption when generating the seed since the official solution does not seem to work and I am wasting time with a minor
       https://github.com/slushjs/slush/issues/46
     - Re-styled to be more mobile friendly
-    - bundle sfx for being able to gtmetrix the production site
+    - Bundle sfx for being able to gtmetrix the production site
     - Added jspm cache
     - Added sfx bundling
     - Removed redundant lines in server.js
     - Added alt to image
-    - Execute 'jspm i' automatically after growing the seed
-  known bugs:
+  known bugs:jspm
     - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
 
 v1.0.4
   date: 2016-01-14
