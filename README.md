@@ -87,6 +87,12 @@ Run Node server for local production-like environment:
 $ npm run prod
 ```
 
+Deploy in Firebase (you have to login via command line in your OWN account):
+
+```bash
+$ firebase deploy
+```
+
 ## Common Pitfalls
 
 Don't forget install jspm dependencies after installing using ```jspm i```
