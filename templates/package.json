@@ -43,7 +43,7 @@
     "nodemon": "^1.8.1"
   },
   "scripts": {
-    "dev": "npm run cache:clear && npm run build-css && npm run build-css && npm run unbundle && jspm run server",
+    "dev": "npm run cache:clear && npm run build-css && npm run unbundle && jspm run server",
     "prod": "npm run depcache && npm run build-css && npm run minify && jspm run server",
     "sfx": "npm run depcache && npm run build-css && npm run minify:sfx && jspm run server",
     "bundle": "jspm bundle app dist/bundle.js --inject",
