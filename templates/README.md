@@ -75,42 +75,22 @@ $ jspm i
 
 ## Npm commands
 
-Run Node server for locale environment:
+Run Node server for local environment:
 
 ```bash
 $ npm run dev
 ```
 
-Run Node server for production like environment:
+Run Node server for local production-like environment:
 
 ```bash
 $ npm run prod
 ```
 
-### Bundling and Transpiling
-
-Transpile & bundle JS dependencies to bundle.js and generate a sourcemap:
+Deploy in Firebase (you have to login via command line in your OWN account):
 
 ```bash
-$ npm run bundle
-```
-
-Transpile & bundle & minify JS dependencies to bundle.js and generate a sourcemap:
-
-```bash
-$ npm run minify
-```
-
-Removes the changes made by jspm to config.js while bundling 
-(you don't really need to do this, is for learning purposes only):
-
-```bash
-$ npm run unbundle
-```
-Increase the timeout seconds for dns look ups in Jspm:
-
-```bash
-$ npm run ti
+$ firebase deploy
 ```
 
 ## Common Pitfalls
