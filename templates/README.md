@@ -4,17 +4,20 @@
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sloppylopez/slush-jspm-react-seed/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)
 
 >
  
-# Put a SEED in your life
+## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! Added proper home page with navigation
+        NEW! Firebase friendly, just login with your account and deploy
         
-        NEW! Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
+        Added proper home page with navigation
+        
+        Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
         
         Codeship Ready
         
@@ -75,13 +78,13 @@ $ jspm i
 Run Node server for locale environment:
 
 ```bash
-$ npm start
+$ npm run dev
 ```
 
-Run Node server for prod environment (runs Babel transpiler and bundles all js and dependencies in 1 file):
+Run Node server for production like environment:
 
 ```bash
-$ npm start:build
+$ npm run prod
 ```
 
 ### Bundling and Transpiling

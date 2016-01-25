@@ -14,13 +14,16 @@ class AcmeBody extends Component {
             <div className="container">
                 <div className="jumbotron">
                     <div className="container">
-                        <img style={{width:'200px', height:'200px'}}
-                             src="https://elephantseed.firebaseapp.com/assets/images/ElephantSeed.png"
-                             alt="Elephant Seed"></img>
+                        <div className="left">
+                            <img style={{width:'200px', height:'200px'}}
+                                 src="https://elephantseed.firebaseapp.com/assets/images/ElephantSeed.png"
+                                 alt="Elephant Seed"></img>
+                        </div>
+                        <div className="left">
+                            <h1>A little bit of frictionless!</h1>
 
-                        <h1>A little bit of frictionless!</h1>
-
-                        <p>Vaseline driven browser side boiler-plate annihilation. Period</p>
+                            <p>Vaseline driven browser side boiler-plate annihilation. Period</p>
+                        </div>
                     </div>
                 </div>
                 <AcmeListGroup></AcmeListGroup>
