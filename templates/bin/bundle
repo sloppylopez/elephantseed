@@ -1,0 +1,1 @@
+jspm bundle app dist/bundle.js --inject
