@@ -1,0 +1,3 @@
+npm run depcache
+npm run build-css
+npm run minify-sfx

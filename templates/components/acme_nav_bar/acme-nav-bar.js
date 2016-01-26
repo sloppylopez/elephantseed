@@ -11,7 +11,7 @@ class AcmeNavbar extends Component {
             <Navbar inverse>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="/">Elephant Seed</a>
+                        <a href="/">Elephant Seed!!</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

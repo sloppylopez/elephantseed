@@ -1,7 +1,7 @@
 {
   "name": "slush-jspm-react-seed",
   "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
   "author": {
     "name": "Sergio Lopez",
@@ -43,18 +43,20 @@
     "nodemon": "^1.8.1"
   },
   "scripts": {
-    "dev": "npm run cache:clear && npm run build-css && npm run unbundle && jspm run server",
-    "prod": "npm run depcache && npm run build-css && npm run minify && jspm run server",
-    "sfx": "npm run depcache && npm run build-css && npm run minify:sfx && jspm run server",
-    "bundle": "jspm bundle app dist/bundle.js --inject",
-    "minify": "jspm bundle app dist/bundle.js --inject --minify",
-    "minify:sfx": "jspm bundle-sfx app dist/bundle.js --inject --minify",
-    "unbundle": "jspm unbundle",
-    "depcache": "jspm depcache app.js",
-    "cache:clear": "jspm cache-clear",
-    "clean:tree": "jspm i -f",
-    "lookup": "jspm config registries.npm.timeouts.lookup 240",
-    "continuous": "jspm config registries.npm.timeouts.lookup 2000",
-    "build-css": "node-sass --include-path scss stylesheets/main.scss stylesheets/main.css"
+    "dev": "bin/dev",
+    "prod": "bin/prod",
+    "sfx": "bin/sfx",
+    "bundle": "bin/bundle",
+    "unbundle": "bin/unbundle",
+    "minify": "bin/minify",
+    "minify-sfx": "bin/minify-sfx",
+    "build-css": "bin/build-css",
+    "watch-css": "bin/watch-css",
+    "depcache": "bin/depcache",
+    "cache-clear": "bin/cache-clear",
+    "lookup": "bin/lookup",
+    "continuous": "bin/continuous",
+    "clean-tree": "bin/clean-tree",
+    "live-reload": "bin/live-reload"
   }
 }

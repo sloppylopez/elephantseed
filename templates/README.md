@@ -93,6 +93,12 @@ Deploy in Firebase (you have to login via command line in your OWN account):
 $ firebase deploy
 ```
 
+##LiveReload plug-in chrome
+This is a common pitfall in case you get stuck 
+because the seed cannot install the plugin for you.
+
+http://stackoverflow.com/questions/16730473/livereload-chrome-extention-unable-to-connect-to-guard-server-on-ubuntu-13-04-64
+
 ## Common Pitfalls
 
 Don't forget install jspm dependencies after installing using ```jspm i```

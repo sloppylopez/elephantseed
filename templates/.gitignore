@@ -1,5 +1,5 @@
-build
 jspm_packages
 node_modules
-ES5_transpiled
 dist
+npm-debug.log
+ES5_transpiled
