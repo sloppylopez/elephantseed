@@ -47,15 +47,15 @@
     "prod": "bin/prod",
     "sfx": "bin/sfx",
     "bundle": "bin/bundle",
+    "unbundle": "bin/unbundle",
     "minify": "bin/minify",
     "minify-sfx": "bin/minify-sfx",
-    "unbundle": "bin/unbundle",
+    "build-css": "./bin/build-css",
+    "watch-css": "bin/watch-css",
     "depcache": "bin/depcache",
     "cache-clear": "bin/cache-clear",
-    "clean-tree": "bin/clean-tree",
     "lookup": "bin/lookup",
     "continuous": "bin/continuous",
-    "build-css": "./bin/build-css",
-    "watch-css": "bin/watch-css"
+    "clean-tree": "bin/clean-tree"
   }
 }
