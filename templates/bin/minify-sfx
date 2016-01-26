@@ -1,0 +1,1 @@
+jspm bundle-sfx app dist/bundle.js --inject --minify

@@ -1,0 +1,1 @@
+npm run cache-clear && npm run build-css && npm run build-css && npm run unbundle && jspm run server
