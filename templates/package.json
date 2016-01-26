@@ -55,7 +55,7 @@
     "clean-tree": "bin/clean-tree",
     "lookup": "bin/lookup",
     "continuous": "bin/continuous",
-    "build-css": "bin/build-css",
+    "build-css": "./bin/build-css",
     "watch-css": "bin/watch-css"
   }
 }
