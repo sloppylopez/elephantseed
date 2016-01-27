@@ -43,6 +43,7 @@
     "nodemon": "^1.8.1"
   },
   "scripts": {
+    "start": "bin/live-reload",
     "dev": "bin/dev",
     "prod": "bin/prod",
     "sfx": "bin/sfx",
