@@ -2,4 +2,4 @@ npm run cache-clear
 npm run build-css
 npm run unbundle
 npm run build-css
-livereload -p 3000
+jspm run server

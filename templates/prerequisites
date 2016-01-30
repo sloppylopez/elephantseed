@@ -1,0 +1,4 @@
+#To enable browser live-reload in dev mode
+sudo gem install guard guard-livereload
+#sudo apt-get install python-pip
+#pip install livereload

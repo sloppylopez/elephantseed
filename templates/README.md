@@ -13,44 +13,37 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! Firebase friendly, just login with your account and deploy
+        NEW! LiveReload your browser with Guard and LiveReload Chrome plugin
         
-        Added proper home page with navigation
+        Firebase friendly, just login with your account and deploy
         
-        Added 7 to 1 for managing styles https://github.com/HugoGiraudel/sass-boilerplate
-        
-        Codeship Ready
+        Added 7 to 1 for managing styles 
+        https://github.com/HugoGiraudel/sass-boilerplate
         
         Added React-bootstrap (ausence of css feel)
         
         Jspm for universal multi-purpose Javascript package managing
 
-        Babel for transpiling
-
-        React for templating
+        Babel for transpiling & React for templating
 
         Nodejs modules (>= 200000 modules available)
 
         ES6 & ES7 Syntactic Sugar ready out-of-the-box
 
-        Minimum possible configuration, maximum features, judge by yourself
+        Minimum possible configuration, maximum features,
+        judge by yourself
 
-        Bundling (JSPM native)
-
-        Minifying (JSPM native)
+        Bundling & Minifying (JSPM native)
 
         Transpiling at runtime on browser side (BABEL native)
 
-        Transpiling at build time on serve side (BABEL native)
-
-        Static Node server run in local (JSPM native)
-
-        Static Node server run with production like build in local (JSPM native)
+        Static Node server run in local Production/Dev mode (JSPM native)
 
         No Grunt/Gulp/Broccoli/Cake/Whatever... needed (at the time of writing, 
         let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
+Check '''prerequisites''' first
 
 Install `slush-jspm-react-seed` globally:
 
@@ -75,16 +68,21 @@ $ jspm i
 
 ## Npm commands
 
-Run Node server for local environment:
+Disable dependencies cache, unbundle and unminify js files , scss2css:
 
 ```bash
 $ npm run dev
 ```
 
-Run Node server for local production-like environment:
+Enable dependencies cache, bundle and minify, scss2css:
 
 ```bash
 $ npm run prod
+```
+
+Run server
+```bash
+$ npm start
 ```
 
 Deploy in Firebase (you have to login via command line in your OWN account):
@@ -92,6 +90,12 @@ Deploy in Firebase (you have to login via command line in your OWN account):
 ```bash
 $ firebase deploy
 ```
+
+##LiveReload plug-in chrome
+This is a common pitfall in case you get stuck 
+because the seed cannot install the plugin for you.
+
+http://stackoverflow.com/questions/16730473/livereload-chrome-extention-unable-to-connect-to-guard-server-on-ubuntu-13-04-64
 
 ## Common Pitfalls
 
