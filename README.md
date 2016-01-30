@@ -43,6 +43,7 @@
         let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
+Check '''prerequisites''' first
 
 Install `slush-jspm-react-seed` globally:
 
