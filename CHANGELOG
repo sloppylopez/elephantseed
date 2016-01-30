@@ -1,3 +1,13 @@
+v1.1.0
+  date: 2016-01-30
+  changes:
+    - Added live reload in development mode
+    - Refactores package.json to user bin scripts, nicer for flexibility and scalability of the build process, 100% Gulpless/Gruntless
+  known bugs:
+    - In production mode you may see an error from the livereload Chrome plug in, this is normal, and maybe not solvable but it does not impct anything
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
 v1.0.8
   date: 2016-01-25
   changes:
