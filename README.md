@@ -98,6 +98,8 @@ because the seed cannot install the plugin for you.
 http://stackoverflow.com/questions/16730473/livereload-chrome-extention-unable-to-connect-to-guard-server-on-ubuntu-13-04-64
 
 ## Common Pitfalls
+If you don't want to or can;t install livereload plug-in for whichever reason, you can always do ```npm start:noreload``` and 
+have the same good experience just losing that feature.
 
 Don't forget install jspm dependencies after installing using ```jspm i```
 
