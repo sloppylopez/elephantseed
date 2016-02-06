@@ -15,7 +15,7 @@
     "url": "https://github.com/sloppylopez/slush-jspm-react-seed/issues"
   },
   "jspm": {
-    "main": "templates/",
+    "main": "/",
     "dependencies": {
       "bootstrap": "github:twbs/bootstrap@^3.3.6",
       "classnames": "npm:classnames@^2.2.1",
