@@ -230,8 +230,8 @@ render((
             <Route path="/nodejs" component={AcmeNodejs}/>
             <Route path="/react-bootstrap" component={AcmeReactBootstrao}/>
             <Route path="/bootstrap" component={AcmeBootstrao}/>
-            <Route path="technologies" component={Technologies}>
-                <IndexRoute component={TechnologiesIndex}/>
+            <Route path="/technologies" component={Technologies}>
+                <IndexRoute component={Index}/>
                 <Route path=":id" component={Technology}/>
             </Route>
         </Route>
