@@ -13,6 +13,8 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
+        NEW! Added floating notifications using toastr
+        
         NEW! Livereload using lite-server which is based in BrowserSync.
         
         Firebase friendly, just login with your account and deploy
