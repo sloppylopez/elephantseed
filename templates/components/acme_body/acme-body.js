@@ -16,7 +16,7 @@ class AcmeBody extends Component {
                     <div className="container">
                         <div className="left">
                             <img style={{width:'200px', height:'200px'}}
-                                 src="https://elephantseed.firebaseapp.com/assets/images/ElephantSeed.png"
+                                 src="https://raw.githubusercontent.com/sloppylopez/elephantseed/master/templates/assets/images/ElephantSeed.png"
                                  alt="Elephant Seed"></img>
                         </div>
                         <div className="left">
