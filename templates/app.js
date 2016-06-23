@@ -6,10 +6,14 @@ import AcmeBody from 'components/acme_body/acme-body.js'
 import AcmeFooter from 'components/acme_footer/acme-footer.js'
 
 import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
+import ToastrCss from 'stylesheets/toastr.css!css'
+import Toastr from 'toastr'
 
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, RouteHandler } from 'react-router'
 import { createHistory, useBasename } from 'history'
+
+Toastr.warning('this website uses Cookies, please accept to continue reading', 'Sloppy Lopez', {timeOut: 5000000, closeButton: true});
 
 export default
 class App extends React.Component {
