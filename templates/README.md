@@ -13,7 +13,7 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! LiveReload your browser with Guard and LiveReload Chrome plugin
+        NEW! Livereload using lite-server which is based in BrowserSync.
         
         Firebase friendly, just login with your account and deploy
         

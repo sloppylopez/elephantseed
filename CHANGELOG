@@ -1,3 +1,10 @@
+v1.1.1
+  date: 2016-06-23
+  changes:
+    - Added live reload in development mode using lite-server which is way more handly and less config involved
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
 v1.1.0
   date: 2016-01-30
   changes:

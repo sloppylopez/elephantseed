@@ -1,5 +1,4 @@
 npm run depcache
 npm run build-css
 npm run minify
-npm run watch-css &
-jspm run server
+lite-server
