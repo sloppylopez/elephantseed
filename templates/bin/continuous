@@ -1,1 +1,0 @@
-jspm config registries.npm.timeouts.lookup 2000

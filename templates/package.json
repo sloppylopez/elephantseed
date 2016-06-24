@@ -56,8 +56,6 @@
     "depcache": "bin/depcache",
     "cache-clear": "bin/cache-clear",
     "lookup": "bin/lookup",
-    "continuous": "bin/continuous",
-    "clean-tree": "bin/clean-tree",
-    "start:noreload": "bin/noreload"
+    "clean-tree": "bin/clean-tree"
   }
 }
