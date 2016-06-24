@@ -4,7 +4,6 @@
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sloppylopez/slush-jspm-react-seed/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)
 
@@ -13,9 +12,11 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! LiveReload your browser with Guard and LiveReload Chrome plugin
+        NEW! Added floating notifications using toastr
         
-        Firebase friendly, just login with your account and deploy
+        NEW! Livereload using lite-server which is based in BrowserSync.
+        
+        NEW! Firebase 3.0 friendly, just login with your account and deploy
         
         Added 7 to 1 for managing styles 
         https://github.com/HugoGiraudel/sass-boilerplate
@@ -90,12 +91,6 @@ Deploy in Firebase (you have to login via command line in your OWN account):
 ```bash
 $ firebase deploy
 ```
-
-##LiveReload plug-in chrome
-This is a common pitfall in case you get stuck 
-because the seed cannot install the plugin for you.
-
-http://stackoverflow.com/questions/16730473/livereload-chrome-extention-unable-to-connect-to-guard-server-on-ubuntu-13-04-64
 
 ## Common Pitfalls
 

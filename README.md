@@ -12,9 +12,11 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! LiveReload your browser with Guard and LiveReload Chrome plugin
+        NEW! Added floating notifications using toastr
         
-        Firebase friendly, just login with your account and deploy
+        NEW! Livereload using lite-server which is based in BrowserSync.
+        
+        NEW! Firebase 3.0 friendly, just login with your account and deploy
         
         Added 7 to 1 for managing styles 
         https://github.com/HugoGiraudel/sass-boilerplate
@@ -90,15 +92,7 @@ Deploy in Firebase (you have to login via command line in your OWN account):
 $ firebase deploy
 ```
 
-##LiveReload plug-in chrome
-This is a common pitfall in case you get stuck 
-because the seed cannot install the plugin for you.
-
-http://stackoverflow.com/questions/16730473/livereload-chrome-extention-unable-to-connect-to-guard-server-on-ubuntu-13-04-64
-
 ## Common Pitfalls
-If you don't want to or can;t install livereload plug-in for whichever reason, you can always do ```npm start:noreload``` and 
-have the same good experience just losing that feature.
 
 Don't forget install jspm dependencies after installing using ```jspm i```
 
