@@ -4,4 +4,3 @@ dist
 server.js
 config.js
 *.log
-Guardfile
