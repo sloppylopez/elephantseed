@@ -32,10 +32,10 @@ class App extends React.Component {
     }
 
     //arrow function automatically binds lexical "this"
-    handleClick = () => {
-        //do something in response to button click
-        console.log('handled!');
-    }
+    // handleClick = () => {
+    //     //do something in response to button click
+    //     console.log('handled!');
+    // }
 }
 
 class Index extends React.Component {
@@ -54,6 +54,9 @@ class Index extends React.Component {
                     </li>
                     <li>
                         Minimum configuration, whola lotta features for smooth develop
+                    </li>
+                    <li>
+                        Using ESlint the pluggable linting utility for JavaScript and JSX
                     </li>
                     <li>
                         Isomorphic Client/Server React template rendering
@@ -86,15 +89,15 @@ class Technologies extends React.Component {
     }
 }
 
-class TechnologiesIndex extends React.Component {
-    render() {
-        return (
-            <div>
-                <h3>TechnologiesIndex</h3>
-            </div>
-        )
-    }
-}
+// class TechnologiesIndex extends React.Component {
+//     render() {
+//         return (
+//             <div>
+//                 <h3>TechnologiesIndex</h3>
+//             </div>
+//         )
+//     }
+// }
 
 class Technology extends React.Component {
     render() {
@@ -220,9 +223,9 @@ class AcmeBootstrao extends React.Component {
     }
 }
 
-const history = useBasename(createHistory)({
-    basename: '/active-links'
-});
+const history = useBasename(createHistory)(
+    {basename: '/active-links'}
+);
 
 render((
     <Router history={history}>

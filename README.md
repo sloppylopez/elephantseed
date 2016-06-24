@@ -12,6 +12,8 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
+        NEW! Added ESlint latest version
+
         NEW! Added floating notifications using toastr
         
         NEW! Livereload using lite-server which is based in BrowserSync.
