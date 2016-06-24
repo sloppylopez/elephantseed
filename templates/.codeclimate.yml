@@ -19,5 +19,5 @@ ratings:
   - "**.jsx"
   - "**.module"
 exclude_paths: [
-  "./assets", "./bin", "./dist"
+  "./assets", "./bin", "./dist", "config.js"
 ]
