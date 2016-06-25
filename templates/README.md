@@ -77,17 +77,14 @@ Disable dependencies cache, unbundle and unminify js files , scss2css:
 
 ```bash
 $ npm run dev
+or
+$ npm start
 ```
 
 Enable dependencies cache, bundle and minify, scss2css:
 
 ```bash
 $ npm run prod
-```
-
-Run server
-```bash
-$ npm start
 ```
 
 Run ESlint
@@ -103,12 +100,12 @@ $ firebase deploy
 
 ## Common Pitfalls
 
-Don't forget install jspm dependencies after installing using ```jspm i```
+1. Don't forget install jspm dependencies after installing using ```jspm i```
 
-If your connection is terribly slow then ```jspm i``` may have hiccups while 
+2. If your connection is terribly slow then ```jspm i``` may have hiccups while 
 doing look ups, just repeat few times until he manages to download all dependencies
 
-While using the seed with you preferred CI you may see this error:
+3. While using the seed with you preferred CI you may see this error:
 ```
      Updating registry cache...
      Looking up github:twbs/bootstrap
@@ -124,6 +121,9 @@ warn Installation changes not saved.
 Fear not, here you can see how to overcome the problem, unfortunately the seed can't do that for you:
 https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
+4. When eslint finds an error you may see an error coming from npm, this ir normal, just fix the linting
+   error and you won't see it anymore
+
 ## Contributing
 
 See the [CONTRIBUTING Guidelines](https://github.com/sloppylopez/slush-jspm-react-seed/blob/master/CONTRIBUTING.md)
@@ -135,7 +135,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 The MIT License
 
-Copyright (c) 2015, Sergio Lopez
+Copyright (c) 2016, Sergio Lopez
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

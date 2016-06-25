@@ -9,13 +9,16 @@ import BootstrapCss from 'bootstrap/css/bootstrap.css!css'
 import ToastrCss from 'stylesheets/toastr.css!css'
 import Toastr from 'toastr'
 
-import { render } from 'react-dom'
-import { Router, Route, IndexRoute, RouteHandler, browserHistory } from 'react-router'
+import {render} from 'react-dom'
+import {Router, Route, IndexRoute, RouteHandler, browserHistory} from 'react-router'
 
-Toastr.warning('this website uses Cookies, please accept to continue reading', 'Elephant Seed', {timeOut: 5000000, closeButton: true});
+Toastr.warning('this website uses Cookies, please accept to continue reading', 'Elephant Seed', {
+    timeOut: 5000000,
+    closeButton: true
+});
 
 
-const App = ({ children }) => (
+const App = ({children}) => (
     <div>
         <AcmeNavbar></AcmeNavbar>
 
@@ -158,15 +161,16 @@ const AcmeESlint = () => (
 );
 
 render((
-    <Router history={browserHistory}>
-        <Route path="/" component={App}>
-            <IndexRoute component={Index}/>
-            <Route path="/react" component={AcmeReact}/>
-            <Route path="/jspm" component={AcmeJspm}/>
-            <Route path="/babel" component={AcmeBabel}/>
-            <Route path="/nodejs" component={AcmeNodejs}/>
-            <Route path="/react-bootstrap" component={AcmeReactBootstrao}/>
-            <Route path="/eslint" component={AcmeESlint}/>
-        </Route>
-    </Router>
-), document.getElementById('app'));
+        <Router history={browserHistory}>
+            <Route path="/" component={App}>
+                <IndexRoute component={Index}/>
+                <Route path="/react" component={AcmeReact}/>
+                <Route path="/jspm" component={AcmeJspm}/>
+                <Route path="/babel" component={AcmeBabel}/>
+                <Route path="/nodejs" component={AcmeNodejs}/>
+                <Route path="/react-bootstrap" component={AcmeReactBootstrao}/>
+                <Route path="/eslint" component={AcmeESlint}/>
+            </Route>
+        </Router>
+    ),
+    document.getElementById('app'));

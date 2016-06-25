@@ -16,7 +16,7 @@
         "react"
     ],
     "rules": {
-        "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
+        "no-unused-vars": 1,
         "accessor-pairs": "error",
         "array-bracket-spacing": "error",
         "array-callback-return": "error",
