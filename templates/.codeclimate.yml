@@ -9,6 +9,11 @@ engines:
       - javascript
   eslint:
     enabled: true
+      config:
+        extensions:
+        - .es6
+        - .js
+        - .jsx
   fixme:
     enabled: true
 ratings:
@@ -18,7 +23,10 @@ ratings:
   - "**.js"
   - "**.jsx"
   - "**.module"
+  - "**.es6"
+  - "**.js"
+  - "**.jsx"
 exclude_paths:
-  - "./assets"
-  - "./bin"
-  - "./dist"
+  - "./assets/*"
+  - "./bin/*"
+  - "./dist/*"
