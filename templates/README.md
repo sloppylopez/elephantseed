@@ -12,6 +12,10 @@
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
+        NEW! Added working ESlint out-of-the-box
+
+        NEW! Codeclimate ready
+        
         NEW! Added floating notifications using toastr
         
         NEW! Livereload using lite-server which is based in BrowserSync.
@@ -44,8 +48,6 @@
         let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
-Check '''prerequisites''' first
-
 Install `slush-jspm-react-seed` globally:
 
 ```bash
@@ -54,18 +56,20 @@ $ npm install -g slush-jspm-react-seed
 
 ### Usage
 
-Create a new folder for your project:
+1) Create a new folder for your project:
 
 ```bash
 $ mkdir my-slush-jspm-react-seed
 ```
 
-Run the generator from within the new folder and download deps after:
+2) Run the generator from within the new folder and download deps after:
 
 ```bash
 $ cd my-slush-jspm-react-seed && slush jspm-react-seed
 $ jspm i
 ```
+
+3) Execute 'install_global_dependencies' in your resulting root folder
 
 ## Npm commands
 
@@ -84,6 +88,11 @@ $ npm run prod
 Run server
 ```bash
 $ npm start
+```
+
+Run ESlint
+```bash
+$ npm run eslint
 ```
 
 Deploy in Firebase (you have to login via command line in your OWN account):

@@ -27,13 +27,12 @@ class AcmeListGroup extends Component {
                 </ListGroup>
                 <ListGroup>
                     <LinkContainer to="/react">
-                        <ListGroupItem header="React" href="#">A Javasript Library for building
+                        <ListGroupItem header="React" href="#">A Javascript Library for building
                             user
                             interfaces</ListGroupItem>
                     </LinkContainer>
-                    <LinkContainer to="/bootstrap">
-                        <ListGroupItem header="Bootstrap" href="#">Bootstrap, a sleek, intuitive, and powerful mobile
-                            first front-end framework for faster and easier web development</ListGroupItem>
+                    <LinkContainer to="/eslint">
+                        <ListGroupItem header="ESlint" href="#">Widely used linting library for keeping the code neat</ListGroupItem>
                     </LinkContainer>
                     <LinkContainer to="/react-bootstrap">
                         <ListGroupItem header="React-Bootstrap" href="#">The most popular front-end framework, rebuilt

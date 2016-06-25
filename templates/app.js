@@ -44,10 +44,13 @@ class Index extends React.Component {
             <div className="container">
                 <ul className="features">
                     <li>
-                        Next-gen pure static front-end Gulpless/Gruntless Website template working out-of-the-box
+                        This is a React based template for building Next-Gen SPA Web applications in a blink
                     </li>
                     <li>
-                        Firebase hosting friendly, just login and deploy with command line in seconds
+                        Gulpless/Gruntless fully functional workflow just using JSPM as a universal tool
+                    </li>
+                    <li>
+                        Firebase hosting friendly, deploy your project using command line in seconds
                     </li>
                     <li>
                         No build process, just run your desired web server and have fun playing
@@ -208,14 +211,14 @@ class AcmeBootstrao extends React.Component {
     render() {
         return (
             <div>
-                <h2>Bootstrap</h2>
+                <h2>ESlint</h2>
 
                 <ul className="features">
                     <li>
-                        Standard 'de facto' framework for front-end developing
+                        Code linting is a type of static analysis that is frequently used to find problematic patterns
                     </li>
                     <li>
-                        Responsive and extremely easy to user
+                        It's a standard 'de facto' in all modern Web applications
                     </li>
                 </ul>
             </div>
@@ -236,7 +239,7 @@ render((
             <Route path="/babel" component={AcmeBabel}/>
             <Route path="/nodejs" component={AcmeNodejs}/>
             <Route path="/react-bootstrap" component={AcmeReactBootstrao}/>
-            <Route path="/bootstrap" component={AcmeBootstrao}/>
+            <Route path="/eslint" component={AcmeBootstrao}/>
             <Route path="/technologies" component={Technologies}>
                 <IndexRoute component={Index}/>
                 <Route path=":id" component={Technology}/>

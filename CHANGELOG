@@ -1,7 +1,9 @@
 v1.1.4
-  date: 2016-06-24
+  date: 2016-06-25
   changes:
+    - Codeclimate ready
     - Added latest version of eslint
+    - Improved README.md files info
   TBR:
     - Execute 'jspm i' automatically after growing the seed
     - fix routing
