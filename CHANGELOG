@@ -1,3 +1,11 @@
+v1.1.5
+  date: 2016-06-25
+  changes:
+    - Added eslint script to package.json
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+    - fix routing
+
 v1.1.4
   date: 2016-06-25
   changes:
