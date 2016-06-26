@@ -1,6 +1,6 @@
 env:
   amd: true
-  browser: true
+  browser: false
   es6: true
   jquery: true
   node: true

@@ -1,4 +1,11 @@
 v1.2.1
+  date: 2016-06-27
+  changes:
+    - Optimized codeclimate measurements for the project and the resulting seed
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.2.1
   date: 2016-06-25
   changes:
     - Fixed code climate build
