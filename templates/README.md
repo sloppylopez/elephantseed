@@ -33,6 +33,8 @@
 
         Bundling & Minifying (JSPM native)
         
+        NodeSASS for doing scss2css 
+        
         Added 7 to 1 for managing styles 
         https://github.com/HugoGiraudel/sass-boilerplate
 
