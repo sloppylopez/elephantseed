@@ -28,5 +28,6 @@ exclude_paths:
   - "bin/"
   - "stylesheets/"
   - "config.js"
-  - "*.json"
+  - "package.json"
+  - "index.html"
   - "install_global_dependencies"
