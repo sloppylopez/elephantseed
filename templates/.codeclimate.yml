@@ -1,4 +1,3 @@
----
 engines:
   csslint:
     enabled: true
@@ -9,24 +8,25 @@ engines:
       - javascript
   eslint:
     enabled: true
-      config:
-        extensions:
-        - .es6
-        - .js
-        - .jsx
+    channel: "eslint-2"
+    config:
+      extensions:
+      - .es6
+      - .js
+      - .jsx
   fixme:
     enabled: true
 ratings:
   paths:
   - "**.css"
   - "**.inc"
-  - "**.js"
-  - "**.jsx"
   - "**.module"
   - "**.es6"
   - "**.js"
   - "**.jsx"
 exclude_paths:
-  - "./assets/*"
-  - "./bin/*"
-  - "./dist/*"
+  - "assets/"
+  - "bin/"
+  - "dist/"
+  - "config.js"
+  - "stylesheets/"

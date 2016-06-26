@@ -22,29 +22,21 @@
         
         NEW! Firebase 3.0 friendly, just login with your account and deploy
         
-        Added 7 to 1 for managing styles 
-        https://github.com/HugoGiraudel/sass-boilerplate
+        Minimum possible configuration, maximum features,
+        judge by yourself
         
-        Added React-bootstrap (ausence of css feel)
+        Use NodeJS packages (>= 300000 available)
         
-        Jspm for universal multi-purpose Javascript package managing
-
-        Babel for transpiling & React for templating
-
-        Nodejs modules (>= 200000 modules available)
+        JSPM for universal multi-purpose Javascript package managing
 
         ES6 & ES7 Syntactic Sugar ready out-of-the-box
 
-        Minimum possible configuration, maximum features,
-        judge by yourself
-
         Bundling & Minifying (JSPM native)
+        
+        Added 7 to 1 for managing styles 
+        https://github.com/HugoGiraudel/sass-boilerplate
 
-        Transpiling at runtime on browser side (BABEL native)
-
-        Static Node server run in local Production/Dev mode (JSPM native)
-
-        No Grunt/Gulp/Broccoli/Cake/Whatever... needed (at the time of writing, 
+        No Grunt/Gulp/Broccoli/Cake/Whatever... needed at the time of writing, 
         let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
@@ -56,20 +48,20 @@ $ npm install -g slush-jspm-react-seed
 
 ### Usage
 
-1) Create a new folder for your project:
+* Create a new folder for your project:
 
 ```bash
 $ mkdir my-slush-jspm-react-seed
 ```
 
-2) Run the generator from within the new folder and download deps after:
+* Run the generator from within the new folder and download deps after:
 
 ```bash
 $ cd my-slush-jspm-react-seed && slush jspm-react-seed
 $ jspm i
 ```
 
-3) Execute 'install_global_dependencies' in your resulting root folder
+* Execute 'install_global_dependencies' in your resulting root folder
 
 ## Npm commands
 
@@ -100,12 +92,12 @@ $ firebase deploy
 
 ## Common Pitfalls
 
-1. Don't forget install jspm dependencies after installing using ```jspm i```
+* Don't forget install jspm dependencies after installing using ```jspm i```
 
-2. If your connection is terribly slow then ```jspm i``` may have hiccups while 
+* If your connection is terribly slow then ```jspm i``` may have hiccups while 
 doing look ups, just repeat few times until he manages to download all dependencies
 
-3. While using the seed with you preferred CI you may see this error:
+* While using the seed with you preferred CI you may see this error:
 ```
      Updating registry cache...
      Looking up github:twbs/bootstrap
@@ -121,7 +113,7 @@ warn Installation changes not saved.
 Fear not, here you can see how to overcome the problem, unfortunately the seed can't do that for you:
 https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
-4. When eslint finds an error you may see an error coming from npm, this ir normal, just fix the linting
+* When eslint finds an error you may see an error message coming from npm, this is normal, just fix the linting
    error and you won't see it anymore
 
 ## Contributing

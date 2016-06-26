@@ -160,7 +160,7 @@ const AcmeESlint = () => (
     </div>
 );
 
-render((
+render(
         <Router history={browserHistory}>
             <Route path="/" component={App}>
                 <IndexRoute component={Index}/>
@@ -172,5 +172,5 @@ render((
                 <Route path="/eslint" component={AcmeESlint}/>
             </Route>
         </Router>
-    ),
+    ,
     document.getElementById('app'));
