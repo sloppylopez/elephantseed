@@ -15,7 +15,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     _ = require('underscore.string'),
     inquirer = require('inquirer'),
-    path = require('path');
+    path = require('path'),
+    shell = require('gulp-shell');
 
 function format(string) {
     var username = string.toLowerCase();
@@ -81,24 +82,23 @@ gulp.task('default', function (done) {
         message: 'Continue?'
     }];
     //Ask
-    inquirer.prompt(prompts,
-        function (answers) {
-            if (!answers.moveon) {
-                return done();
-            }
-            answers.appNameSlug = _.slugify(answers.appName);
-            gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*', '!' + __dirname + '/templates/assets/**'])
-                .pipe(template(answers))
-                .pipe(rename(function (file) {
-                    if (file.basename[0] === '_' && file.extname !== '.scss') {
-                        file.basename = '.' + file.basename.slice(1);
-                    }
-                }))
-                .pipe(conflict('./'))
-                .pipe(gulp.dest('./'))
-                .pipe(install())
-                .on('end', function () {
-                    done();
-                });
-        });
+    inquirer.prompt(prompts).then(function (answers) {
+        if (!answers.moveon) {
+            return done();
+        }
+        answers.appNameSlug = _.slugify(answers.appName);
+        gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*', '!' + __dirname + '/templates/assets/**'])
+            .pipe(template(answers))
+            .pipe(rename(function (file) {
+                if (file.basename[0] === '_' && file.extname !== '.scss') {
+                    file.basename = '.' + file.basename.slice(1);
+                }
+            }))
+            .pipe(conflict('./'))
+            .pipe(gulp.dest('./'))
+            .pipe(install())
+            .on('end', function () {
+                done();
+            });
+    });
 });

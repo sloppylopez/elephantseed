@@ -2,6 +2,7 @@ v1.2.4
   date: 2016-06-27
   changes:
     - Updated all dependencies of the slush part
+    - Critical bug fixed :missing lite-server dependency
 
 v1.2.3
   date: 2016-06-27

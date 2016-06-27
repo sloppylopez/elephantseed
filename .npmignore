@@ -1,8 +1,8 @@
 node_modules
-temp
 *.log
 .idea
 npm-debug.log
+jspm_
 
 # don't ignore .npmignore files
 !.npmignore

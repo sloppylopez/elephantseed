@@ -59,8 +59,9 @@ $ mkdir my-slush-jspm-react-seed
 * Run the generator from within the new folder and download deps after:
 
 ```bash
-$ cd my-slush-jspm-react-seed && slush jspm-react-seed
-$ jspm i
+$ cd my-slush-jspm-react-seed
+$ slush jspm-react-seed
+$ japm i
 ```
 
 * Execute 'install_global_dependencies' in your resulting root folder
