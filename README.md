@@ -68,9 +68,6 @@ $ jspm i
 ## During installation:
 
 * If Slush installer asks you to overwrite files due to conflicts press 'a' (Overwrite All)
-This is due the fact that I have to have them duplicated for my project codeclimate measurements, and for the resulting
-seed you are using and the routes are different, I will try to provide a better solution in the future
-but this is fair enough for now.
 
 ## Npm commands
 

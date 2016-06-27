@@ -1,4 +1,4 @@
-v1.2.1
+v1.2.2
   date: 2016-06-27
   changes:
     - Optimized codeclimate measurements for the project and the resulting seed

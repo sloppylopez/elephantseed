@@ -65,6 +65,10 @@ $ jspm i
 
 * Execute 'install_global_dependencies' in your resulting root folder
 
+## During installation:
+
+* If Slush installer asks you to overwrite files due to conflicts press 'a' (Overwrite All)
+
 ## Npm commands
 
 Disable dependencies cache, unbundle and unminify js files , scss2css:

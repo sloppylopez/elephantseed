@@ -24,3 +24,10 @@ ratings:
   - "**.es6"
   - "**.js"
   - "**.jsx"
+exclude_paths:
+  - "bin/"
+  - "stylesheets/"
+  - "config.js"
+  - "package.json"
+  - "index.html"
+  - "install_global_dependencies"
