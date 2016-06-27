@@ -42,8 +42,8 @@
     "babel-eslint": "^6.1.0",
     "eslint": "^2.13.1",
     "eslint-plugin-react": "^5.2.2",
-    "jspm": "^0.16.15",
-    "node-sass": "^3.4.2"
+    "jspm": "^0.16.39",
+    "node-sass": "^3.8.0"
   },
   "scripts": {
     "start": "bin/dev",
