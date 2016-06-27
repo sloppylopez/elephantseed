@@ -1,19 +1,31 @@
+v1.2.5
+  date: 2016-06-27
+  changes:
+    - Optimized all dependencies
+    - Execute 'jspm i' automatically after growing the seed
+
 v1.2.4
   date: 2016-06-27
   changes:
     - Updated all dependencies of the slush part
     - Critical bug fixed :missing lite-server dependency
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
 
 v1.2.3
   date: 2016-06-27
   changes:
     - Updated all dependencies
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
 
 v1.2.2
   date: 2016-06-27
   changes:
     - Optimized codeclimate measurements for the project and the resulting seed
     - Fixed linting errors
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
 
 v1.2.1
   date: 2016-06-25

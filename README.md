@@ -61,7 +61,6 @@ $ mkdir my-slush-jspm-react-seed
 ```bash
 $ cd my-slush-jspm-react-seed
 $ slush jspm-react-seed
-$ japm i
 ```
 
 * Execute 'install_global_dependencies' in your resulting root folder
@@ -98,8 +97,6 @@ $ firebase deploy
 ```
 
 ## Common Pitfalls
-
-* Don't forget install jspm dependencies after installing using ```jspm i```
 
 * If your connection is terribly slow then ```jspm i``` may have hiccups while 
 doing look ups, just repeat few times until he manages to download all dependencies
