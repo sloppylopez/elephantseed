@@ -1,25 +1,31 @@
+// eslint-disable-next-line
 import Jquery from "jquery";
+// eslint-disable-next-line 
 import React from "react";
 
+// eslint-disable-next-line 
 import AcmeNavbar from "components/acme_nav_bar/acme-nav-bar.js";
+// eslint-disable-next-line 
 import AcmeBody from "components/acme_body/acme-body.js";
+// eslint-disable-next-line 
 import AcmeFooter from "components/acme_footer/acme-footer.js";
-
+// eslint-disable-next-line 
 import BootstrapCss from "bootstrap/css/bootstrap.css!css";
+// eslint-disable-next-line 
 import ToastrCss from "stylesheets/toastr.css!css";
-import Toastr from "toastr";
 
+import Toastr from "toastr";
+// eslint-disable-next-line 
 import {render} from "react-dom";
-import {
-    Router, Route, IndexRoute, RouteHandler, browserHistory
-}
+// eslint-disable-next-line 
+import {Router, Route, IndexRoute, RouteHandler, browserHistory}
     from "react-router";
 
 Toastr.warning("this website uses Cookies, " +
     "please accept to continue reading", "Elephant Seed", {
-        "timeOut": 5000000,
-        "closeButton": true
-    });
+    "timeOut": 5000000,
+    "closeButton": true
+});
 
 
 const App = ({children}) => (
@@ -31,6 +37,95 @@ const App = ({children}) => (
         {children}
 
         <AcmeFooter></AcmeFooter>
+    </div>
+), AcmeBabel = () => (
+    <div>
+        <h2>Babel</h2>
+
+        <ul className="features">
+            <li>
+                Use the Javascript of tomorrow
+                today, Babel transpiles your sources
+            </li>
+            <li>
+                No need to patiently wait for browser support
+            </li>
+        </ul>
+    </div>
+), AcmeESlint = () => (
+    <div>
+        <h2>ESlint</h2>
+
+        <ul className="features">
+            <li>
+                Code linting is a type of static analysis
+                that is frequently used to find problematic patterns
+            </li>
+            <li>
+                It's a standard 'de facto'
+                in all modern Web applications
+            </li>
+        </ul>
+    </div>
+), AcmeJspm = () => (
+    <div>
+        <h2>Jspm</h2>
+
+        <ul className="features">
+            <li>
+                Load ES6, AMD, CommonJS and globals
+                universally using your preferred online source
+            </li>
+            <li>
+                JSPM uses SystemJS module loader
+                to provide ES6 loader features
+            </li>
+            <li>
+                Compile static resources in the
+                browser in development time
+            </li>
+            <li>
+                Optimize static resources
+                bundling them from production
+            </li>
+        </ul>
+    </div>
+), AcmeNodejs = () => (
+    <div>
+        <h2>NodeJS</h2>
+
+        <ul className="features">
+            <li>
+                Runtime event-driven non-blocking
+                I/O built on Chrome's V8 engine
+            </li>
+            <li>
+                Biggest eco-system of open source
+                code in the whole planet
+            </li>
+        </ul>
+    </div>
+), AcmeReactBootstrao = () => (
+    <div>
+        <h2>React-Bootstrap</h2>
+
+        <ul className="features">
+            <li>
+                Rebuilding of the preferred
+                framework for front-end in React
+            </li>
+        </ul>
+    </div>
+), AcmeReact = () => (
+    <div>
+        <h2>React</h2>
+
+        <ul className="features">
+            <li>
+                Modern library for developing user i
+                nterfaces based entirely in Javascript
+            </li>
+        </ul>
     </div>
 ), Index = () => (
     <div className="container">
@@ -76,95 +171,6 @@ const App = ({children}) => (
             <li>
                 <a href="https://www.npmjs.com/package/slush-jspm-react-seed">
                     Fork U!</a>
-            </li>
-        </ul>
-    </div>
-), AcmeReact = () => (
-    <div>
-        <h2>React</h2>
-
-        <ul className="features">
-            <li>
-                Modern library for developing user i
-                nterfaces based entirely in Javascript
-            </li>
-        </ul>
-    </div>
-), AcmeJspm = () => (
-    <div>
-        <h2>Jspm</h2>
-
-        <ul className="features">
-            <li>
-                Load ES6, AMD, CommonJS and globals
-                universally using your preferred online source
-            </li>
-            <li>
-                JSPM uses SystemJS module loader
-                to provide ES6 loader features
-            </li>
-            <li>
-                Compile static resources in the
-                browser in development time
-            </li>
-            <li>
-                Optimize static resources
-                bundling them from production
-            </li>
-        </ul>
-    </div>
-), AcmeBabel = () => (
-    <div>
-        <h2>Babel</h2>
-
-        <ul className="features">
-            <li>
-                Use the Javascript of tomorrow
-                today, Babel transpiles your sources
-            </li>
-            <li>
-                No need to patiently wait for browser support
-            </li>
-        </ul>
-    </div>
-), AcmeNodejs = () => (
-    <div>
-        <h2>NodeJS</h2>
-
-        <ul className="features">
-            <li>
-                Runtime event-driven non-blocking
-                I/O built on Chrome's V8 engine
-            </li>
-            <li>
-                Biggest eco-system of open source
-                code in the whole planet
-            </li>
-        </ul>
-    </div>
-), AcmeReactBootstrao = () => (
-    <div>
-        <h2>React-Bootstrap</h2>
-
-        <ul className="features">
-            <li>
-                Rebuilding of the preferred
-                framework for front-end in React
-            </li>
-        </ul>
-    </div>
-), AcmeESlint = () => (
-    <div>
-        <h2>ESlint</h2>
-
-        <ul className="features">
-            <li>
-                Code linting is a type of static analysis
-                that is frequently used to find problematic patterns
-            </li>
-            <li>
-                It's a standard 'de facto'
-                in all modern Web applications
             </li>
         </ul>
     </div>

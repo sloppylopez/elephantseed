@@ -1,4 +1,6 @@
+// eslint-disable-next-line 
 import React, {Component} from "react";
+// eslint-disable-next-line 
 import {render} from "react-dom";
 
 export default
