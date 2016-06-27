@@ -3,6 +3,8 @@ v1.2.5
   changes:
     - Optimized all dependencies
     - Execute 'jspm i' automatically after growing the seed
+    - Added dependencies badge
+    - Modified readme
 
 v1.2.4
   date: 2016-06-27
