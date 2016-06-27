@@ -31,3 +31,7 @@ exclude_paths:
   - "package.json"
   - "index.html"
   - "install_global_dependencies"
+  - "CHANGELOG"
+  - "LICENSE"
+  - "*.md"
+  - "*.json"
