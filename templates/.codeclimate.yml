@@ -33,5 +33,7 @@ exclude_paths:
   - "install_global_dependencies"
   - "CHANGELOG"
   - "LICENSE"
-  - "*.md"
-  - "*.json"
+  - "tbs-config.json"
+  - "tdatabase.rules.json"
+  - "firebase.json"
+
