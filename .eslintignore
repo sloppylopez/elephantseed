@@ -1,0 +1,11 @@
+**/*{.,-}min.js
+node_modules
+jspm_packages
+dist
+config.js
+*.log
+bin
+config.js
+package.json
+index.html
+install_global_dependencies
