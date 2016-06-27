@@ -1,7 +1,7 @@
 {
   "name": "slush-jspm-react-seed",
   "description": "Slush for scaffolding, Jspm for packaging, React for templating framework",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "homepage": "https://elephantseed.firebaseapp.com",
   "author": {
     "name": "Sergio Lopez",
@@ -25,17 +25,18 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-conflict": "^0.1.2",
-    "gulp-install": "^0.1.8",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-template": "^3.1.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-template": "^4.0.0",
     "iniparser": "^1.0.5",
-    "inquirer": "^0.8.5",
+    "inquirer": "^1.1.0",
+    "lodash": "^4.13.1",
     "slush": "^1.1.1",
-    "underscore.string": "^2.4.0"
+    "underscore.string": "^3.3.4"
   },
   "keywords": [
-    "seed",
     "slush",
     "jspm",
     "nodejs",
