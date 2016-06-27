@@ -1,12 +1,12 @@
-import Jquery from 'jquery'
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React, {Component} from "react";
+import {render} from "react-dom";
 
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from "react-bootstrap";
 
 export default
 class AcmeNavbar extends Component {
-    render() {
+    render () {
+
         return (
             <Navbar inverse>
                 <Navbar.Header>
@@ -18,7 +18,8 @@ class AcmeNavbar extends Component {
                 <Navbar.Collapse>
                     <Nav>
                         <NavItem eventKey={1} href="#">Link</NavItem>
-                        <NavDropdown eventKey={2} title="Dropdown" id="basic-nav-dropdown">
+                        <NavDropdown eventKey={2} title="Dropdown"
+                                     id="basic-nav-dropdown">
                             <MenuItem eventKey={2.1}>Action</MenuItem>
                             <MenuItem eventKey={2.2}>Another action</MenuItem>
                             <MenuItem eventKey={2.3}>Something else here</MenuItem>
@@ -31,6 +32,7 @@ class AcmeNavbar extends Component {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        )
+        );
+
     }
 }
