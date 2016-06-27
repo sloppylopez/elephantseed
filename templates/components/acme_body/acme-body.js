@@ -1,6 +1,8 @@
+// eslint-disable-next-line 
 import React, {Component} from "react";
+// eslint-disable-next-line 
 import {render} from "react-dom";
-
+// eslint-disable-next-line 
 import AcmeListGroup from "./acme_list_group/acme-list-group";
 
 export default
@@ -13,7 +15,7 @@ class AcmeBody extends Component {
                     <div className="container">
                         <div className="left">
                             <img style={{"width": "200px", "height": "200px"}}
-                                 src="https://raw.githubusercontent.com/sloppylopez/elephantseed/master/templates/assets/images/ElephantSeed.png"
+                                 src="https://raw.githubusercontent.com/sloppylopez/elephantseed/master/templates/assets/images/ElephantSeed.png" // eslint-disable-line max-len
                                  alt="Elephant Seed"></img>
                         </div>
                         <div className="left">
