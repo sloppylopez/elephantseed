@@ -4,8 +4,8 @@ jspm_packages
 dist
 config.js
 *.log
-bin
-config.js
-package.json
-index.html
-install_global_dependencies
+templates/bin
+templates/config.js
+templates/package.json
+templates/index.html
+templates/install_global_dependencies
