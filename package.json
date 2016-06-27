@@ -1,7 +1,7 @@
 {
   "name": "slush-jspm-react-seed",
   "description": "Slush for scaffolding, Jspm for packaging, React for templating framework",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "homepage": "https://elephantseed.firebaseapp.com",
   "author": {
     "name": "Sergio Lopez",
@@ -27,6 +27,7 @@
     "gulp": "^3.9.1",
     "gulp-conflict": "^0.4.0",
     "gulp-install": "^0.4.0",
+    "gulp-util": "^3.0.7",
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.2",
     "gulp-template": "^4.0.0",

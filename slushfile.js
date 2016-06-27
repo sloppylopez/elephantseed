@@ -16,7 +16,9 @@ var gulp = require('gulp'),
     _ = require('underscore.string'),
     inquirer = require('inquirer'),
     path = require('path'),
-    shell = require('gulp-shell');
+    shell = require('gulp-shell'),
+    spawn = require('child_process').spawn,
+    gutil = require('gulp-util');
 
 function format(string) {
     var username = string.toLowerCase();
@@ -81,11 +83,13 @@ gulp.task('default', function (done) {
         name: 'moveon',
         message: 'Continue?'
     }];
+
     //Ask
     inquirer.prompt(prompts).then(function (answers) {
         if (!answers.moveon) {
             return done();
         }
+        var deps = ["jspm config registries.github.timeouts.lookup 240", "jspm install"];
         answers.appNameSlug = _.slugify(answers.appName);
         gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*', '!' + __dirname + '/templates/assets/**'])
             .pipe(template(answers))
@@ -97,8 +101,17 @@ gulp.task('default', function (done) {
             .pipe(conflict('./'))
             .pipe(gulp.dest('./'))
             .pipe(install())
-            .on('end', function () {
-                done();
+            .on('finish', function () {
+                // Run jspm install since install package doesn't run it
+                var child = spawn('jspm', ['install'], {cwd: process.cwd()});
+                child.stdout.setEncoding('utf8');
+                child.stdout.on('data', function(data){
+                    gutil.log(data.substring(0, data.length-1));
+                });
+                child.stderr.setEncoding('utf8');
+                child.stderr.on('data', function(data){
+                    gutil.log(gutil.colors.red(data));
+                });
             });
     });
 });

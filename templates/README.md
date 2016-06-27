@@ -4,23 +4,27 @@
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
+[![Dependencies](https://david-dm.org/sloppylopez/elephantseed.svg)
+
 
 ![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)
+
+https://elephantseed.firebaseapp.com
 
 >
  
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! Added working ESlint out-of-the-box
+        Added working ESlint out-of-the-box
 
-        NEW! Codeclimate ready
+        Codeclimate ready
         
-        NEW! Added floating notifications using toastr
+        Added floating notifications using toastr
         
-        NEW! Livereload using lite-server which is based in BrowserSync.
+        Livereload using lite-server which is based in BrowserSync.
         
-        NEW! Firebase 3.0 friendly, just login with your account and deploy
+        Firebase 3.0 friendly, just login with your account and deploy
         
         Minimum possible configuration, maximum features,
         judge by yourself
@@ -61,7 +65,6 @@ $ mkdir my-slush-jspm-react-seed
 ```bash
 $ cd my-slush-jspm-react-seed
 $ slush jspm-react-seed
-$ japm i
 ```
 
 * Execute 'install_global_dependencies' in your resulting root folder
@@ -98,8 +101,6 @@ $ firebase deploy
 ```
 
 ## Common Pitfalls
-
-* Don't forget install jspm dependencies after installing using ```jspm i```
 
 * If your connection is terribly slow then ```jspm i``` may have hiccups while 
 doing look ups, just repeat few times until he manages to download all dependencies
