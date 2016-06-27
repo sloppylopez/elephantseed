@@ -60,5 +60,12 @@
     "lookup": "bin/lookup",
     "clean-tree": "bin/clean-tree",
     "eslint": "eslint --config=./.eslintrc *.js components/**/*.js --fix"
-  }
+  },
+  "keywords": [
+    "jspm",
+    "nodejs",
+    "react",
+    "boostrap",
+    "reactbootstrap"
+  ]
 }

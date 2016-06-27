@@ -35,8 +35,7 @@
     "underscore.string": "^2.3.3"
   },
   "keywords": [
-    "seed",
-    "slush",
+    "slushgenerator",
     "jspm",
     "nodejs",
     "react",
