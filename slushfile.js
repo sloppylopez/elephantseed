@@ -92,9 +92,7 @@ gulp.task('default', function (done) {
         var deps = ["jspm config registries.github.timeouts.lookup 240", "jspm install"];
         answers.appNameSlug = _.slugify(answers.appName);
         gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*', '!' + __dirname + '/templates/assets/**'])
-            .pipe(template(answers, {
-                interpolate: /<%=\s([\s\S]+?)%>/g
-            }))
+            .pipe(template(answers))
             .pipe(rename(function (file) {
                 if (file.basename[0] === '_' && file.extname !== '.scss') {
                     file.basename = '.' + file.basename.slice(1);
