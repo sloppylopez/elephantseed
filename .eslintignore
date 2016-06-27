@@ -2,10 +2,11 @@
 node_modules
 jspm_packages
 dist
-config.js
 *.log
+*.md
 templates/bin
 templates/config.js
 templates/package.json
 templates/index.html
 templates/install_global_dependencies
+slushfile.js

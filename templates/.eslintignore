@@ -2,10 +2,10 @@
 node_modules
 jspm_packages
 dist
-config.js
 *.log
+*.md
+*.json
 bin
 config.js
-package.json
 index.html
 install_global_dependencies

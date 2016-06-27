@@ -59,6 +59,6 @@
     "cache-clear": "bin/cache-clear",
     "lookup": "bin/lookup",
     "clean-tree": "bin/clean-tree",
-    "eslint": "eslint . --fix"
+    "eslint": "eslint --config=./.eslintrc *.js components/**/*.js --fix"
   }
 }
