@@ -1,6 +1,4 @@
 // eslint-disable-next-line
-import Jquery from "jquery";
-// eslint-disable-next-line 
 import React from "react";
 
 // eslint-disable-next-line 
@@ -10,38 +8,10 @@ import AcmeBody from "components/acme_body/acme-body.js";
 // eslint-disable-next-line 
 import AcmeFooter from "components/acme_footer/acme-footer.js";
 // eslint-disable-next-line 
- import BootstrapCss from "bootstrap/css/bootstrap.css!css";
-// eslint-disable-next-line 
-import ToastrCss from "stylesheets/toastr.css!css";
-
-import Toastr from "toastr";
-// eslint-disable-next-line 
 import {render} from "react-dom";
 // eslint-disable-next-line 
 import {Router, Route, IndexRoute, RouteHandler, browserHistory}
     from "react-router";
-
-Toastr.options = {
-    "closeButton": true,
-    "debug": false,
-    "newestOnTop": false,
-    "progressBar": false,
-    "positionClass": "toast-top-center",
-    "preventDuplicates": true,
-    "onclick": null,
-    "showDuration": "300",
-    "hideDuration": "1000",
-    "timeOut": 0,
-    "extendedTimeOut": 0,
-    "showEasing": "swing",
-    "hideEasing": "linear",
-    "showMethod": "fadeIn",
-    "hideMethod": "fadeOut",
-    "tapToDismiss": false
-};
-
-Toastr["warning"]("This website uses cookies, please accept to continue reading<br /><br /><button type='button' class='btn clear'>Yes</button>", "ElephantSeed");
-
 
 const App = ({children}) => (
     <div>
