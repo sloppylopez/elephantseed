@@ -1,6 +1,4 @@
 // eslint-disable-next-line
-import Jquery from "jquery";
-// eslint-disable-next-line 
 import React from "react";
 
 // eslint-disable-next-line 
@@ -10,23 +8,10 @@ import AcmeBody from "components/acme_body/acme-body.js";
 // eslint-disable-next-line 
 import AcmeFooter from "components/acme_footer/acme-footer.js";
 // eslint-disable-next-line 
- import BootstrapCss from "bootstrap/css/bootstrap.css!css";
-// eslint-disable-next-line 
-import ToastrCss from "stylesheets/toastr.css!css";
-
-import Toastr from "toastr";
-// eslint-disable-next-line 
 import {render} from "react-dom";
 // eslint-disable-next-line 
 import {Router, Route, IndexRoute, RouteHandler, browserHistory}
     from "react-router";
-
-Toastr.warning("this website uses Cookies, " +
-    "please accept to continue reading", "Elephant Seed", {
-    "timeOut": 5000000,
-    "closeButton": true
-});
-
 
 const App = ({children}) => (
     <div>

@@ -4,3 +4,4 @@ node_modules
 ES5_transpiled
 dist
 *.log
+install_locally

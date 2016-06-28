@@ -1,4 +1,2 @@
 #main css
 node-sass --include-path scss stylesheets/main.scss stylesheets/main.css
-#vendor css
-node-sass --include-path scss jspm_packages/npm/toastr@*/toastr.scss stylesheets/toastr.css
