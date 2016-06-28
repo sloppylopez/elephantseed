@@ -1,7 +1,7 @@
 {
   "name": "slush-jspm-react-seed",
   "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
   "author": {
     "name": "Sergio Lopez",
@@ -55,7 +55,6 @@
     "start": "bin/dev",
     "dev": "bin/dev",
     "prod": "bin/prod",
-    "sfx": "bin/sfx",
     "bundle": "bin/bundle",
     "unbundle": "bin/unbundle",
     "minify": "bin/minify",
