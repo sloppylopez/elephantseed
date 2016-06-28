@@ -1,8 +1,8 @@
 # Slush Jspm-React-seed 
 
+[![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
-[![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 ![Dependencies](https://david-dm.org/sloppylopez/elephantseed.svg)
 
@@ -73,7 +73,7 @@ $ slush jspm-react-seed
 
 * If Slush installer asks you to overwrite files due to conflicts press 'a' (Overwrite All)
 
-## Npm commands
+## After installation:Npm commands
 
 Disable dependencies cache, unbundle and unminify js files , scss2css:
 
@@ -84,7 +84,14 @@ $ npm start
 ```
 
 Enable dependencies cache, bundle and minify, scss2css:
-
+I strongly advise you to use this command for everything,
+for running the project while developing, and for making the
+package just before releasing the code in production doing
+`npm run prod` simply because it loads the page 4 times faster
+and you can still debug and enjoy the goodies of having a
+source map plus the build time it's practically the same
+as using `npm run dev`.
+ 
 ```bash
 $ npm run prod
 ```
@@ -102,9 +109,15 @@ $ firebase deploy
 
 ## Common Pitfalls
 
-* If your connection is terribly slow then ```jspm i``` may have hiccups while 
-doing look ups, just repeat few times until he manages to download all dependencies
-
+* If your connection is slow then sometimes `jspm i` may have hiccups while 
+doing look ups trying to download dependencies, just wait for it to finish and repeat `jspm i` 
+few times until it manages to download all dependencies,
+eventually you may try to `slush jspm-react-seed` again in a clean folder if the installer gets stuck.
+You may see messages like this is that situation
+```
+     warn It's taking a long time to process the dependencies of npm:core-util-is@1.0.2.
+          This package may need an ignore property to indicate test or example folders for jspm to skip.
+```
 * While using the seed with you preferred CI you may see this error:
 ```
      Updating registry cache...
@@ -123,6 +136,7 @@ https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
 * When eslint finds an error you may see an error message coming from npm, this is normal, just fix the linting
    error and you won't see it anymore
+
 
 ## Contributing
 

@@ -10,7 +10,7 @@ import AcmeBody from "components/acme_body/acme-body.js";
 // eslint-disable-next-line 
 import AcmeFooter from "components/acme_footer/acme-footer.js";
 // eslint-disable-next-line 
-import BootstrapCss from "bootstrap/css/bootstrap.css!css";
+ import BootstrapCss from "bootstrap/css/bootstrap.css!css";
 // eslint-disable-next-line 
 import ToastrCss from "stylesheets/toastr.css!css";
 

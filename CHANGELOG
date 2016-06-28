@@ -1,5 +1,10 @@
+v1.2.6
+  date: 2016-06-28
+  changes:
+    - Speeded up production loading times, from 5 seconds to 1 using sfx bundling
+
 v1.2.5
-  date: 2016-06-27
+  date: 2016-06-28
   changes:
     - Optimized all dependencies
     - Execute 'jspm i' automatically after growing the seed
