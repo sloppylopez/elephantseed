@@ -67,8 +67,6 @@ $ cd my-slush-jspm-react-seed
 $ slush jspm-react-seed
 ```
 
-* Execute 'install_global_dependencies' in your resulting root folder
-
 ## During installation:
 
 * If Slush installer asks you to overwrite files due to conflicts press 'a' (Overwrite All)

@@ -89,9 +89,8 @@ gulp.task('default', function (done) {
         if (!answers.moveon) {
             return done();
         }
-        var deps = ["jspm config registries.github.timeouts.lookup 240", "jspm install"];
         answers.appNameSlug = _.slugify(answers.appName);
-        gulp.src([__dirname + '/templates/**', __dirname + '/templates/.*', '!' + __dirname + '/templates/assets/**'])
+        gulp.src([__dirname + '/templates/**', '!' + __dirname + '/templates/assets/**'])
             .pipe(template(answers))
             .pipe(rename(function (file) {
                 if (file.basename[0] === '_' && file.extname !== '.scss') {
