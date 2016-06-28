@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+body {
+  .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-color: #a3d174;
+    border-color: #a3d174;
+  }
+
+  //TODO fix this !important
+  .list-group-item.active .list-group-item-text, .list-group-item.active:hover
+  .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+    color: #fff !important;
+  }
+
+  #app {
+    padding-bottom: 20px;
+  }
+
+  .list-group a {
+    width: 100%;
+  }
+}

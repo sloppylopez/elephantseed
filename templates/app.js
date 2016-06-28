@@ -21,11 +21,26 @@ import {render} from "react-dom";
 import {Router, Route, IndexRoute, RouteHandler, browserHistory}
     from "react-router";
 
-Toastr.warning("this website uses Cookies, " +
-    "please accept to continue reading", "Elephant Seed", {
-    "timeOut": 5000000,
-    "closeButton": true
-});
+Toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": false,
+    "positionClass": "toast-top-center",
+    "preventDuplicates": true,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": 0,
+    "extendedTimeOut": 0,
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut",
+    "tapToDismiss": false
+};
+
+Toastr["warning"]("This website uses cookies, please accept to continue reading<br /><br /><button type='button' class='btn clear'>Yes</button>", "ElephantSeed");
 
 
 const App = ({children}) => (
