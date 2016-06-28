@@ -1,6 +1,12 @@
 v1.2.6
   date: 2016-06-28
   changes:
+    - Removed repeated stylesheets folder
+
+
+v1.2.6
+  date: 2016-06-28
+  changes:
     - Speeded up production loading times, from 5 seconds to 1 using sfx bundling
 
 v1.2.5
