@@ -1,4 +1,3 @@
-npm run cache-clear
 npm run unbundle
 npm run build-css
 lite-server
