@@ -7,23 +7,23 @@ import AcmeListGroup from "./acme_list_group/acme-list-group";
 
 export default
 class AcmeBody extends Component {
-    render () {
+    render() {
 
         return ((
             <div className="container">
                 <div className="jumbotron">
                     <div className="container">
-                        <div className="left">
-                            <img style={{"width": "200px", "height": "200px"}}
-                                 src="https://raw.githubusercontent.com/sloppylopez/elephantseed/master/templates/assets/images/ElephantSeed.png" // eslint-disable-line max-len
-                                 alt="Elephant Seed"></img>
-                        </div>
-                        <div className="left">
-                            <h1>A little bit of frictionless!</h1>
+                        <img style={{"width": "200px", "height": "200px", "float": "left"}}
+                             src="https://raw.githubusercontent.com/sloppylopez/elephantseed/master/templates/assets/images/ElephantSeed.png" // eslint-disable-line max-len
+                             alt="Elephant Seed"/>
 
-                            <p>Vaseline driven browser side
-                                boiler-plate annihilation. Period</p>
-                        </div>
+                        <h1>A little bit of frictionless!</h1>
+
+                        <p>
+                            Vaseline driven browser side
+                            boiler-plate annihilation. Period
+                        </p>
+
                     </div>
                 </div>
                 <AcmeListGroup></AcmeListGroup>

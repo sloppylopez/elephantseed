@@ -1,4 +1,12 @@
-v1.2.6
+v1.2.8
+  date: 2016-06-29
+  changes:
+    - Fixed jumbotron responsivenes
+    - Fixed strange bug with font sizes for some 'features' in home page
+  TBR:
+    Live reloading does reload scss with lite-server per se, we will fix that
+
+v1.2.7
   date: 2016-06-28
   changes:
     - Removed repeated stylesheets folder
