@@ -65,27 +65,24 @@ body {
     float: left;
   }
 }
-//
-//@media screen and (max-width: 768px) {
-//  .container {
-//    width: 768px;
-//  }
-//  .jumbotron .h1, .jumbotron h1 {
-//    font-size: 45px;
-//  }
-//  .jumbotron > div > span {
-//    font-size: 18px;
-//  }
-//}
-//
-//@media screen and (max-width: 535px) {
-//  .jumbotron .h1, .jumbotron h1 {
-//    font-size: 40px;
-//  }
-//  .jumbotron > div > span {
-//    font-size: 11px;
-//  }
-//}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron > div > span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron > div > span {
+    font-size: 11px;
+  }
+}
 
 //@media (min-width: 1280px) {
 //  .container {
