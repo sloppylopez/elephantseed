@@ -48,6 +48,7 @@ https://elephantseed.firebaseapp.com
         let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
+Make sure you have jspm installed before proceeding `npm install -g jspm`
 Install `slush-jspm-react-seed` globally:
 
 ```bash
@@ -67,6 +68,7 @@ $ mkdir my-slush-jspm-react-seed
 ```bash
 $ cd my-slush-jspm-react-seed
 $ slush jspm-react-seed
+$ jspm i
 ```
 
 ## During installation:

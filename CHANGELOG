@@ -1,3 +1,10 @@
+v1.3.0
+  date: 2016-09-25
+  changes:
+    - The automatic jspm installation is causing problems in some devices, reverted to manual install
+  TBR:
+    Live reloading does reload scss with lite-server per se, we will fix that
+
 v1.2.9
   date: 2016-06-29
   changes:
