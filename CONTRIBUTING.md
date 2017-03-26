@@ -1,4 +1,4 @@
-# Contributing to jspm-react-seed
+# Contributing to whalephant
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -93,11 +93,11 @@ project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/slush-jspm-react-seed
+   git clone https://github.com/<your-username>/slush-whalephant
    # Navigate to the newly cloned directory
-   cd slush-jspm-react-seed
+   cd slush-whalephant
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/sloppylopez/slush-jspm-react-seed
+   git remote add upstream https://github.com/sloppylopez/slush-whalephant
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
@@ -137,7 +137,7 @@ project:
 
 ## Conventions of commit messages
 
-Addding files on repo
+Adding files on repo
 
 ```bash
 git commit -m "Add filename"

@@ -17,7 +17,7 @@ class AcmeBody extends Component {
                              src="https://raw.githubusercontent.com/sloppylopez/elephantseed/master/templates/assets/images/ElephantSeed.png" // eslint-disable-line max-len
                              alt="Elephant Seed"/>
 
-                        <h1>A little bit of frictionless!</h1>
+                        <h1>A little bit of frictionless!!!</h1>
 
                         <p>
                             Vaseline driven browser side

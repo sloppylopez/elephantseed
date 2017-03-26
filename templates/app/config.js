@@ -90,9 +90,6 @@ System.config({
       "sass.js": "npm:sass.js@0.9.4",
       "url": "github:jspm/nodelibs-url@0.1.0"
     },
-    "github:twbs/bootstrap@3.3.6": {
-      "jquery": "github:components/jquery@2.1.4"
-    },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "module": "github:jspm/nodelibs-module@0.1.0",

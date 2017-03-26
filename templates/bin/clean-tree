@@ -1,1 +1,2 @@
-jspm i -f
+cd app &&\
+./node_modules/.bin/jspm i -f

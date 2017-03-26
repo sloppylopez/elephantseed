@@ -1,1 +1,2 @@
-jspm config registries.npm.timeouts.lookup 240
+cd app &&\
+./node_modules/.bin/jspm config registries.npm.timeouts.lookup 240

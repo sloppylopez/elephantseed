@@ -1,0 +1,35 @@
+version: '3'
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-container
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs
+#      - ./conf:/etc/nginx/conf.d
+    links:
+      - node-server:node-server
+
+  node-server:
+    build: .
+    command: node_modules/.bin/nodemon --debug=5858
+    container_name: node-container
+    ports:
+      - 8080:8080
+      - 5858:5858
+    volumes:
+      - .:/home/whalephant
+      - nodemodules_app:/home/whalephant/app/node_modules
+      - jspm_packages_app:/home/whalephant/app/jspm_packages
+      - nodemodules_server:/home/whalephant/node_modules
+    environment:
+      - VIRTUAL_HOST=docker.nginx.node.com
+      - VIRTUAL_PORT=8080
+
+volumes:
+  nodemodules_server:
+  nodemodules_app:
+  jspm_packages_app:

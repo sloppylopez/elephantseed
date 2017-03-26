@@ -1,0 +1,35 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    ".jspm",
+    ".config",
+    ".*ignore",
+    ".bash_history",
+    "npm-shrinkwrap.json",
+    "*.sh",
+    "node_modules/**/node_modules",
+    "app/node_modules/**/node_modules",
+    "app/jspm_packages/github/**",
+    "app/jspm_packages/npm/**",
+    "bin",
+    "conf",
+    "*.md",
+    "LICENSE",
+    "*.yml",
+    "Dockerfile"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "app/",
+    "certs/",
+    "server.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json html"
+}

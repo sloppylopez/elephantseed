@@ -1,3 +1,3 @@
 npm run unbundle
 npm run build-css
-lite-server
+npm start

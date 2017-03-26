@@ -1,8 +1,8 @@
 /*
- * slush-jspm-react-seed
- * https://github.com/sloppylopez/slush-jspm-react-seed
+ * slush-whalephant
+ * https://github.com/sloppylopez/slush-whalephant
  *
- * Copyright (c) 2016, Sergio Lopez
+ * Copyright (c) 2017, Sloppy Lopez
  * Licensed under the MIT license.
  */
 
@@ -15,10 +15,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     _ = require('underscore.string'),
     inquirer = require('inquirer'),
-    path = require('path'),
-    shell = require('gulp-shell'),
-    spawn = require('child_process').spawn,
-    gutil = require('gulp-util');
+    path = require('path');
 
 function format(string) {
     var username = string.toLowerCase();
@@ -27,7 +24,7 @@ function format(string) {
 
 var defaults = (function () {
     var workingDirName = path.basename(process.cwd()),
-        homeDir, osUserName, configFile, user;
+      homeDir, osUserName, configFile, user;
 
     if (process.platform === 'win32') {
         homeDir = process.env.USERPROFILE;
@@ -54,7 +51,6 @@ var defaults = (function () {
 })();
 
 gulp.task('default', function (done) {
-
     var prompts = [{
         name: 'appName',
         message: 'What is the name of your project?',
@@ -83,25 +79,25 @@ gulp.task('default', function (done) {
         name: 'moveon',
         message: 'Continue?'
     }];
-
     //Ask
-    inquirer.prompt(prompts).then(function (answers) {
-        if (!answers.moveon) {
-            return done();
-        }
-        answers.appNameSlug = _.slugify(answers.appName);
-        gulp.src([__dirname + '/templates/**', '!' + __dirname + '/templates/assets/**'])
-            .pipe(template(answers))
-            .pipe(rename(function (file) {
-                if (file.basename[0] === '_' && file.extname !== '.scss') {
-                    file.basename = '.' + file.basename.slice(1);
-                }
-            }))
-            .pipe(conflict('./'))
-            .pipe(gulp.dest('./'))
-            .pipe(install())
-            .on('end', function () {
-                done();
-            });
-    });
+    inquirer.prompt(prompts,
+        function (answers) {
+            if (!answers.moveon) {
+                return done();
+            }
+            answers.appNameSlug = _.slugify(answers.appName);
+          gulp.src([__dirname + '/templates/**', '!' + __dirname + '/templates/assets/**'])
+                .pipe(template(answers))
+                .pipe(rename(function (file) {
+                    if (file.basename[0] === '_' && file.extname !== '.scss') {
+                        file.basename = '.' + file.basename.slice(1);
+                    }
+                }))
+                .pipe(conflict('./'))
+                .pipe(gulp.dest('./'))
+                .pipe(install())
+                .on('end', function () {
+                    done();
+                });
+        });
 });
