@@ -1,0 +1,96 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+body {
+  .jumbotron {
+    //p, h1, img {
+    //}
+    p {
+      font-size: 23px;
+      float: left;
+    }
+    #main {
+      display: flex;
+    }
+
+    #main div {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 40px;
+      min-height: 100px;
+    }
+
+  }
+  #myBlueDiv > span > h1 > span{
+    font-size: 55px;
+  }
+  h1 {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  ul li {
+    font-size: 20px;
+  }
+  ul.features {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 45px;
+    li {
+      font-size: 26px;
+      padding-right: 12px;
+    }
+  }
+  div.jumbotron > div > span {
+    font-size: 25px;
+  }
+  p {
+    font-size: 18px
+  }
+
+  .list-group {
+    width: 100%;
+  }
+
+  a.list-group-item {
+    width: 215px;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron > div > span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron > div > span {
+    font-size: 11px;
+  }
+}
+
+//@media (min-width: 1280px) {
+//  .container {
+//    width: 1280px;
+//  }
+//}
+//@media (min-width: 768px) {
+//  .container {
+//    width: 768px;
+//  }
+//}

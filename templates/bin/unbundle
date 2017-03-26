@@ -1,1 +1,2 @@
-jspm unbundle
+cd app &&\
+./node_modules/.bin/jspm unbundle
