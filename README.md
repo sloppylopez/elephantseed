@@ -3,7 +3,7 @@
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
-[![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=sloppylopez&repoName=elephantseed&branch=master&pipelineName=elephantseed&accountName=sloppylopez&type=cf-2)]( https://g.codefresh.io/repositories/sloppylopez/elephantseed/builds?filter=trigger:build;branch:master;service:58d81f4c7be5fe010094e007~elephantseed)
 ![Dependencies](https://david-dm.org/sloppylopez/elephantseed.svg)
 
 
