@@ -1,1 +1,5 @@
-docker ps -aqf "name=node-container"
+if [ $(docker ps -qf "name=node-container") == "" ]; then
+  echo "Proxy Docker container not running"
+else
+  docker ps -qf "name=node-container"
+fi

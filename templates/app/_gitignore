@@ -39,7 +39,7 @@ jspm_packages
 .bash_history
 
 #app
-conf/default.conf
+
 .config
 .jspm
 .npmrc

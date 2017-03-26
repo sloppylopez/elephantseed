@@ -25,15 +25,12 @@ ratings:
   - "**.js"
   - "**.jsx"
 exclude_paths:
-  - "bin/"
   - "stylesheets/"
   - "config.js"
   - "package.json"
   - "index.html"
-  - "install_global_dependencies"
   - "CHANGELOG"
   - "LICENSE"
-  - "tbs-config.json"
-  - "tdatabase.rules.json"
+  - "database.rules.json"
   - "firebase.json"
 

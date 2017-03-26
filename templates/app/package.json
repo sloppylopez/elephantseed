@@ -1,6 +1,6 @@
 {
-  "name": "whalephant-seed",
-  "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
+  "name": "whalephant-seed-frontend",
+  "description": "Yeoman for scaffolding, Jspm for packaging, React as templating framework",
   "version": "1.0.0",
   "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
   "author": {

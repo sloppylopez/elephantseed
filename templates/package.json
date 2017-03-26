@@ -1,7 +1,7 @@
 {
-  "name": "whalefantseed",
+  "name": "docker-nginx-node",
   "version": "2.0.1",
-  "description": "Docker Nginx Node SlushGenerator React",
+  "description": "Docker Nginx Node",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,8 @@
     "stop": "docker stop $(docker ps -a -q)",
     "dev": "bin/dev",
     "prod": "bin/prod",
+    "dev:docker": "bin/dev-docker",
+    "prod:docker": "bin/prod-docker",
     "bundle": "bin/bundle",
     "unbundle": "bin/unbundle",
     "minify": "bin/minify",
@@ -33,7 +35,7 @@
     "jspm",
     "react",
     "slushgenerator",
-    "slush"
+    "slush-generator"
   ],
   "author": "Sloppy Lopez",
   "license": "MIT",

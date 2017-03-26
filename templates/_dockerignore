@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+.bash_history
+.config
+templates/app/node_modules
+templates/app/jspm_packages
+.jspm
