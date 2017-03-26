@@ -1,7 +1,7 @@
 {
-  "name": "docker-nginx-node",
+  "name": "whalefantseed",
   "version": "2.0.1",
-  "description": "Docker Nginx Node",
+  "description": "Docker Nginx Node SlushGenerator React",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
