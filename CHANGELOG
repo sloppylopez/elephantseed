@@ -1,3 +1,334 @@
+v2.0.0
+  date: 2017-03-26
+  changes:
+    - Added Docker support
+    - Added live-reload inter-container with nodemon
+    - Blazingly fast builds and development experience
+    - Shrinkwrapped
+
+  TBR:
+    Live reloading does reload scss with lite-server per se, we will fix that
+
+v1.3.0
+  date: 2016-09-25
+  changes:
+    - The automatic jspm installation is causing problems in some devices, reverted to manual install
+  TBR:
+    Live reloading does reload scss with lite-server per se, we will fix that
+
+v1.2.9
+  date: 2016-06-29
+  changes:
+    - Fixed bug in letters size
+  TBR:
+    Live reloading does reload scss with lite-server per se, we will fix that
+
+v1.2.8
+  date: 2016-06-29
+  changes:
+    - Fixed jumbotron responsivenes
+    - Fixed strange bug with font sizes for some 'features' in home page
+  TBR:
+    Live reloading does reload scss with lite-server per se, we will fix that
+
+v1.2.7
+  date: 2016-06-28
+  changes:
+    - Removed repeated stylesheets folder
+
+
+v1.2.6
+  date: 2016-06-28
+  changes:
+    - Speeded up production loading times, from 5 seconds to 1 using sfx bundling
+
+v1.2.5
+  date: 2016-06-28
+  changes:
+    - Optimized all dependencies
+    - Execute 'jspm i' automatically after growing the seed
+    - Added dependencies badge
+    - Modified readme
+
+v1.2.4
+  date: 2016-06-27
+  changes:
+    - Updated all dependencies of the slush part
+    - Critical bug fixed :missing lite-server dependency
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.2.3
+  date: 2016-06-27
+  changes:
+    - Updated all dependencies
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.2.2
+  date: 2016-06-27
+  changes:
+    - Optimized codeclimate measurements for the project and the resulting seed
+    - Fixed linting errors
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.2.1
+  date: 2016-06-25
+  changes:
+    - Fixed code climate build
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.2.0
+  date: 2016-06-25
+  changes:
+    - Fixed bug in documentation
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.9
+  date: 2016-06-25
+  changes:
+    - Updated readme information again, simplified
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.8
+  date: 2016-06-25
+  changes:
+    - Updated readme information
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.7
+  date: 2016-06-25
+  changes:
+    - Removed unneeded server.js
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.6
+  date: 2016-06-25
+  changes:
+    - Fixed routing DEEPLINKING day 0 bug, changed history for browserhistory front react router
+    - Refactored app.js using ES6 syntactic sugar
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.5
+  date: 2016-06-25
+  changes:
+    - Added eslint script to package.json
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+    - fix routing
+
+v1.1.4
+  date: 2016-06-25
+  changes:
+    - Codeclimate ready
+    - Added latest version of eslint
+    - Improved README.md files info
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+    - fix routing
+
+v1.1.3
+  date: 2016-06-24
+  changes:
+    - Upgraded to firebase 3.0
+    - Changed README.md
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.2
+  date: 2016-06-23
+  changes:
+    - Added missing image
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.1
+  date: 2016-06-23
+  changes:
+    - Added live reload in development mode using lite-server which is way more handly and less config involved
+    - Added floating notifications using toastr
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.1.0
+  date: 2016-01-30
+  changes:
+    - Added live reload in development mode
+    - Refactores package.json to user bin scripts, nicer for flexibility and scalability of the build process, 100% Gulpless/Gruntless
+  known bugs:
+    - In production mode you may see an error from the livereload Chrome plug in, this is normal, and maybe not solvable but it does not impct anything
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.9
+  date: 2016-01-26
+  changes:
+    - Refactored npm scripts to folder bin for scalability
+    - Added watch feature for doing scss -> css using nodemon
+  known bugs:
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.8
+  date: 2016-01-25
+  changes:
+    - Modified README
+  known bugs:
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.7
+  date: 2016-01-25
+  changes:
+    - Cosmetics changes mobile friendly
+    - Solved problem of slowness caused by compilation of scss browser side, now we create css before doing 'jspm server start'
+  known bugs:
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.6
+  date: 2016-01-24
+  changes:
+    - Cosmetics changes only
+  known bugs:
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.5
+  date: 2016-01-23
+  changes:
+    - Quick Fix for image corruption when generating the seed since the official solution does not seem to work and I am wasting time with a minor
+      https://github.com/slushjs/slush/issues/46
+    - Re-styled to be more mobile friendly
+    - Bundle sfx for being able to gtmetrix the production site
+    - Added jspm cache
+    - Added sfx bundling
+    - Removed redundant lines in server.js
+    - Added alt to image
+  known bugs:jspm
+    - The router does not allow deep-links at the moment
+  TBR:
+    - Execute 'jspm i' automatically after growing the seed
+
+v1.0.4
+  date: 2016-01-14
+  changes:
+    - Fixed script in package.json redundant
+    - Fixed typo
+    - Fixed error in firebase.json about the public folder incorrectly setted
+    - Removed loading of firebase-rules from firebase.json
+  known bugs:
+    - It's very slow serving the website because of the browser side scss compilation and the Babel transpilation, needs fix
+    - The router does not allow deep-links at the moment
+
+v1.0.3
+  date: 2016-01-13
+  changes:
+    - Added additional info
+    - Fixed broken link
+    - Firebase ready
+    - Website online https://elephantseed.firebaseapp.com
+  known bugs:
+    - It's very slow serving the website because of the browser side scss compilation and the Babel transpilation, needs fix
+
+v1.0.2
+  date: 2015-12-07
+  changes:
+    - Improved logo
+    - Added features info
+    - Minor css changes
+
+v1.0.1
+  date: 2015-12-07
+  changes:
+    - Fixed bug with resposiveness
+    - Added proper logo ElephantSeed
+
+v1.0.0
+  date: 2015-12-06
+  changes:
+    - Added full Sass support
+    - Added pattern 7 to 1 for styles folder https://github.com/HugoGiraudel/sass-boilerplate
+    - Added sticky footer
+    - Added proper Home
+    - Fist version ready!!
+    - Big Refactor
+
+v0.2.0
+  date: 2015-12-05
+  changes:
+    - Jspm installed npm:clean-css@ to fix Codeship build
+    - Added example codeship_build_config_example.md
+    - Ditched Travis in favor of Codeship as preferred ci-cd system, it's simply better
+
+v0.1.9
+  date: 2015-12-05
+  changes:
+    - :bug: Fix Codeship build using jspm registry
+    - Fixed technical debt importing css from bootstrap
+    - Created folder components, added header as part of a small refactor
+
+v0.1.8:
+  date: 2015-12-03
+  changes:
+    - Fixed README.md
+    - :bug: Detected in Travil build... Github has a max quota it seems. TODO localize bootstrap
+
+v0.1.7:
+  date: 2015-12-03
+  changes:
+    - Decorated README.md
+    _ Fix Travis build
+
+v0.1.6:
+  date: 2015-12-03
+  changes:
+    - Edited text
+
+v0.1.5:
+  date: 2015-12-03
+  changes:
+    - Added React-Boostrap which works charmly
+    - Added some goodies in package.json and extra relevant info about a :bug: in the cache of jspm (apparently)
+
+v0.1.4:
+  date: 2015-12-02
+  changes:
+    - Added proper info to README.md
+
+v0.1.3:
+  date: 2015-12-02
+  changes:
+    - Ditched npm:material-ui@^0.13.4, it simply does not work...
+    - :bug: Fix in package.json for the actions npm:start and npm run start:build because they were overlapping
+    - Refactor id="root" for id="app"
+
+v0.1.2:
+  date: 2015-12-01
+  changes:
+    - Removed unneeded plugin-jsx
+    - Added npm:react-router
+    - Added npm:history
+    - Removed jsx since they don't add much, and can cause trouble, plus babel transpiles js as well
+
+v0.1.1:
+  date: 2015-11-30
+  changes:
+    - Small refactor of index.html moved to root folder
+    - Added Babel transpiling capabilities to use via npm script.
+    - Added Jspm bundling capabilities to use via npm script.
+
 v0.1.0:
   date: 2017-3-26
   changes:
