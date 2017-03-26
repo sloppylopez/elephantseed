@@ -1,6 +1,6 @@
 {
-  "name": "docker-nginx-node",
-  "version": "2.0.1",
+  "name": "slush-jspm-react-seed",
+  "version": "2.0.0",
   "description": "Docker Nginx Node",
   "main": "server.js",
   "scripts": {
