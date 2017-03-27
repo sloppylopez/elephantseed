@@ -3,8 +3,8 @@ ENV HOME=/home/whalephant
 ENV JSPM_GITHUB_AUTH_TOKEN=$JSPM_GITHUB_AUTH_TOKEN
 
 LABEL vendor=SloppyLopez\
-      com.whalephant-seed.version="1.0.0" \
-      com.whalephant-seed.release-date="2017-03-25"
+      com.whalephantseed.version="1.0.0" \
+      com.whalephantseed.release-date="2017-03-25"
 
 RUN useradd -ms /bin/bash whalephant
 
@@ -16,6 +16,8 @@ USER whalephant
 WORKDIR $HOME
 RUN npm i &&\
     cd app && npm i &&\
-    node_modules/.bin/jspm i --lock
+    node_modules/.bin/jspm i --lock &&\
+    ls -thrall &&\
+    echo 'All tasks done'
 
 CMD ["node", "server.js"]
