@@ -5,8 +5,8 @@ steps:
     type: build
     image_name: sloppylopez/whalephantseed
     working_directory: ./templates/
-    dockerfile:
-      Dockerfile
+    dockerfile: Dockerfile
+
   RunningDeployScript:
     title: Running Deploy Script
     image: '${{BuildingDockerImage}}'
