@@ -17,7 +17,6 @@ WORKDIR $HOME
 RUN npm i &&\
     cd app && npm i &&\
     node_modules/.bin/jspm i --lock &&\
-    ls -thrall &&\
-    echo 'All tasks done'
+    ls -thrall
 
 CMD ["node", "server.js"]
