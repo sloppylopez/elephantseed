@@ -1,5 +1,0 @@
-node_modules
-jspm_packages
-dist
-config.js
-*.log

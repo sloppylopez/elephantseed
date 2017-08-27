@@ -1,51 +1,48 @@
 {
-  "name": "docker-nginx-node",
-  "version": "2.0.1",
-  "description": "Docker Nginx Node",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "serve": "docker-compose up",
-    "build": "docker-compose build",
-    "node:standalone": "docker-compose up -d node-server",
-    "stop": "docker stop $(docker ps -a -q)",
-    "dev": "bin/dev",
-    "dev:docker": "bin/dev-docker",
-    "prod": "bin/prod",
-    "prod:docker": "bin/prod-docker",
-    "bundle": "bin/bundle",
-    "unbundle": "bin/unbundle",
-    "minify": "bin/minify",
-    "minify-sfx": "bin/minify-sfx",
-    "build-css": "bin/build-css",
-    "depcache": "bin/depcache",
-    "cache-clear": "bin/cache-clear",
-    "lookup": "bin/lookup",
-    "clean-tree": "bin/clean-tree"
+  "name": "slush-jspm-react-seed",
+  "description": "Slush for scaffolding, Jspm for packaging, React for templating framework",
+  "version": "2.0.0",
+  "homepage": "https://elephantseed.firebaseapp.com",
+  "author": {
+    "name": "Sergio Lopez",
+    "email": "sloppy@sloppylopez.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sloppylopez/docker-nginx-node.git"
+    "url": "git://github.com/sloppylopez/slush-jspm-react-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sloppylopez/slush-jspm-react-seed/issues"
+  },
+  "license": "MIT",
+  "main": "slushfile.js",
+  "engines": {
+    "node": ">= 0.12.0",
+    "npm": ">=1.4.3"
+  },
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.4.0",
+    "gulp-util": "^3.0.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-template": "^4.0.0",
+    "iniparser": "^1.0.5",
+    "inquirer": "^1.1.0",
+    "lodash": "^4.13.1",
+    "slush": "^1.1.1",
+    "underscore.string": "^3.3.4"
   },
   "keywords": [
-    "docker",
-    "nginx",
-    "node",
+    "slush",
     "jspm",
+    "nodejs",
     "react",
-    "slushgenerator",
-    "slush"
-  ],
-  "author": "Sloppy Lopez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sloppylopez/docker-nginx-node/issues"
-  },
-  "homepage": "https://github.com/sloppylopez/docker-nginx-node#readme",
-  "devDependencies": {
-    "express": "^4.15.2",
-    "nodemon": "^1.11.0",
-    "socket.io": "^1.7.3"
-  }
+    "boostrap",
+    "reactbootstrap"
+  ]
 }

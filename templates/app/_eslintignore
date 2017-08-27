@@ -1,9 +1,0 @@
-**/*{.,-}min.js
-node_modules
-jspm_packages
-dist
-*.log
-*.md
-*.json
-config.js
-index.html

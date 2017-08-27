@@ -1,2 +1,0 @@
-cd app &&\
-./node_modules/.bin/jspm cache-clear

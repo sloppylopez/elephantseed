@@ -107,8 +107,8 @@ const App = ({children}) => (
 
         <ul className="features">
             <li>
-                Modern library for developing user i
-                nterfaces based entirely in Javascript
+                Modern library for developing user
+                interfaces based in Javascript entirely
             </li>
         </ul>
     </div>
