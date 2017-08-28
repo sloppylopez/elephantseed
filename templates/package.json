@@ -1,6 +1,6 @@
 {
   "name": "docker-nginx-node",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Docker Nginx Node",
   "main": "server.js",
   "scripts": {

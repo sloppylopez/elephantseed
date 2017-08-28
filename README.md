@@ -12,7 +12,11 @@ https://elephantseed.firebaseapp.com
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
 ## Goodies working Out-of-the-box
-        NEW! Improved loading times in production bundle
+        NEW! Added Docker support
+        
+        NEW! Added live reload with Browser-Sync
+        
+        Improved loading times in production bundle
 
         Added working ESlint out-of-the-box
 
