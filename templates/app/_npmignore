@@ -1,9 +1,8 @@
 node_modules
-temp
 *.log
 .idea
-templates/app/node_modules
-templates/app/jspm_packages
+npm-debug.log
+jspm_
 
 # don't ignore .npmignore files
 !.npmignore

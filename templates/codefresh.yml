@@ -1,0 +1,40 @@
+version: '1.0'
+steps:
+  BuildingDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: sloppylopez/whalephantseed
+    working_directory: ./templates/
+    dockerfile: Dockerfile
+
+  RunningDeployScript:
+    title: Running Deploy Script
+    image: '${{BuildingDockerImage}}'
+    working_directory: IMAGE_WORK_DIR
+    entry_point:
+      - /bin/sh
+      - /codefresh/volume/cf-generated/deploy_script
+    create_file:
+      path: /codefresh/volume/cf-generated
+      name: deploy_script
+      content: |2-
+         # Required Environment Variables:
+         #
+         # SSH_KEY - private SSH key, used to access Docker swarm master machine.
+         #           need to replace 'newline' character with SPLIT_CHAR character.
+         # SPLIT_CHAR - split character, you've used to replace newline in SSH key. Recommendation: use ',' (comma character).
+         #
+         # Swarm delpoy command arguments:
+         #
+         # RDOCKER_HOST - remote Docker swarm master machine, accessible over SSH (for example, ubuntu@ec2-public-ip)
+         # STACK_NAME - is new Docker stack name
+         #
+         # Use command below to deploy compose application to a Swarm cluster
+         # rdocker ${{RDOCKER_HOST}} docker stack deploy --compose-file docker-stack.yml ${{STACK_NAME}}
+         #
+         # read more here: https://docs.codefresh.io/docs/docker-swarm
+        cd app
+        echo 'I am in: '
+        pwd
+        ls -thrall
+        ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"

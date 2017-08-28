@@ -1,7 +1,6 @@
-build
-jspm_packages
-node_modules
-ES5_transpiled
-dist
+node_modules/
+temp
 *.log
-install_locally
+.idea
+templates/app/node_modules
+templates/app/jspm_packages
