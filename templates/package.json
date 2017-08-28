@@ -1,29 +1,32 @@
 {
-  "name": "slush-jspm-react-seed",
+  "name": "docker-nginx-node",
   "version": "2.0.0",
   "description": "Docker Nginx Node",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "serve": "docker-compose up",
-    "build": "docker-compose build",
-    "node:standalone": "docker-compose up -d node-server",
-    "stop": "docker stop $(docker ps -a -q)",
-    "dev": "bin/dev",
-    "prod": "bin/prod",
-    "dev:docker": "bin/dev-docker",
-    "prod:docker": "bin/prod-docker",
-    "bundle": "bin/bundle",
-    "unbundle": "bin/unbundle",
-    "minify": "bin/minify",
-    "minify-sfx": "bin/minify-sfx",
-    "build-css": "bin/build-css",
-    "depcache": "bin/depcache",
-    "cache-clear": "bin/cache-clear",
-    "lookup": "bin/lookup",
-    "clean-tree": "bin/clean-tree",
-    "fireabase:tokeb": "firebase login:ci"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "npm run start:node",
+    "init": "bin/utils/init",
+    "build:jspm": "bin/jspm/build",
+    "bundle:jspm": "bin/jspm/bundle",
+    "unbundle:jspm": "bin/jspm/unbundle",
+    "minify:jspm": "bin/jspm/minify",
+    "minifysfx:jspm": "bin/jspm/minifysfx",
+    "depcache:jspm": "bin/jspm/depcache",
+    "cacheclear:jspm": "bin/jspm/cacheclear",
+    "lookup:jspm": "bin/jspm/lookup",
+    "cleantree:jspm": "bin/jspm/cleantree",
+    "start:node": "bin/node/start",
+    "stop:node": "bin/node/stop",
+    "buildcss:nodesass": "bin/nodesass/buildcss",
+    "start:docker": "bin/docker/start",
+    "stop:docker": "bin/docker/stop",
+    "build:docker": "bin/docker/build",
+    "clean:docker": "bin/docker/clean",
+    "exec:docker": "bin/docker/exec",
+    "enter:docker": "bin/docker/enter",
+    "clean-volume:docker": "bin/docker/clean-volume",
+    "node:docker-standalone": "bin/docker/docker-standalone"
   },
   "repository": {
     "type": "git",
@@ -36,7 +39,7 @@
     "jspm",
     "react",
     "slushgenerator",
-    "slush-generator"
+    "slush"
   ],
   "author": "Sloppy Lopez",
   "license": "MIT",
@@ -45,8 +48,11 @@
   },
   "homepage": "https://github.com/sloppylopez/docker-nginx-node#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "chalk": "^2.1.0",
     "express": "^4.15.2",
-    "nodemon": "^1.11.0",
-    "socket.io": "^1.7.3"
+    "jspm": "^0.16.53",
+    "rimraf": "^2.6.1",
+    "shelljs": "^0.7.8"
   }
 }

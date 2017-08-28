@@ -8,14 +8,17 @@ services:
       - 443:443
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./certs:/etc/nginx/certs
-#      - ./conf:/etc/nginx/conf.d
+      - ./server/nginx/certs:/etc/nginx/certs
     links:
       - node-server:node-server
 
   node-server:
-    build: .
-    command: node_modules/.bin/nodemon --debug=5858
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - JSPM_GITHUB_AUTH_TOKEN=$JSPM_GITHUB_AUTH_TOKEN
+    command: npm start
     container_name: node-container
     ports:
       - 8080:8080
@@ -24,7 +27,8 @@ services:
       - .:/home/whalephant
       - nodemodules_app:/home/whalephant/app/node_modules
       - jspm_packages_app:/home/whalephant/app/jspm_packages
-      - nodemodules_server:/home/whalephant/node_modules
+      - github_packages_app:/home/whalephant/app/jspm_packages/github
+      - npm_packages_app:/home/whalephant/app/jspm_packages/npm
     environment:
       - VIRTUAL_HOST=docker.nginx.node.com
       - VIRTUAL_PORT=8080
@@ -33,3 +37,5 @@ volumes:
   nodemodules_server:
   nodemodules_app:
   jspm_packages_app:
+  github_packages_app:
+  npm_packages_app:

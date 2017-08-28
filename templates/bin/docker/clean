@@ -1,0 +1,4 @@
+npm run stop:docker
+npm run clean-volume:docker &>/dev/null || echo "No volumes to remove"
+docker rmi dockernginxnode_node-server
+docker system prune -f

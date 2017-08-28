@@ -5,5 +5,7 @@ dist
 *.log
 *.md
 *.json
+bin
 config.js
 index.html
+install_global_dependencies

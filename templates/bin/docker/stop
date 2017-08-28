@@ -1,0 +1,4 @@
+npm run stop:node
+docker-compose stop
+docker stop $(docker ps -aqf "name=node-container") &>/dev/null || echo "No node-container instances to remove"
+docker stop $(docker ps -aqf "name=nginx-container") &>/dev/null || echo "No nginx-container instances to remove"

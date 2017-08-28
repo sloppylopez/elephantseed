@@ -3,7 +3,7 @@
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-jspm-react-seed.png)](http://badges.enytc.com/for/npm/slush-jspm-react-seed)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
-[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=sloppylopez&repoName=elephantseed&branch=master&pipelineName=elephantseed&accountName=sloppylopez&type=cf-2)]( https://g.codefresh.io/repositories/sloppylopez/elephantseed/builds?filter=trigger:build;branch:master;service:58d81f4c7be5fe010094e007~elephantseed)
+[![Codeship Status for sloppylopez/slush-jspm-react-seed](https://codeship.com/projects/64f5f2f0-7dab-0133-7e41-6a5cc34fb59d/status?branch=master)](https://codeship.com/projects/120218)
 ![Dependencies](https://david-dm.org/sloppylopez/elephantseed.svg)
 
 
@@ -48,7 +48,6 @@ https://elephantseed.firebaseapp.com
         let's see if we can build the whole seed without them (challenge accepted)
 
 ## Getting Started
-Make sure you have jspm installed before proceeding `npm install -g jspm`
 Install `slush-jspm-react-seed` globally:
 
 ```bash
@@ -68,7 +67,7 @@ $ mkdir my-slush-jspm-react-seed
 ```bash
 $ cd my-slush-jspm-react-seed
 $ slush jspm-react-seed
-$ jspm i
+$ npm run init
 ```
 
 ## During installation:
@@ -80,8 +79,6 @@ $ jspm i
 Disable dependencies cache, unbundle and unminify js files , scss2css:
 
 ```bash
-$ npm run dev
-or
 $ npm start
 ```
 
@@ -138,7 +135,12 @@ https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
 * When eslint finds an error you may see an error message coming from npm, this is normal, just fix the linting
    error and you won't see it anymore
+   
+* No space left on device!, you can solve it deleting this file
 
+```bash
+$ ls -lah ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2
+``` 
 
 ## Contributing
 
@@ -151,7 +153,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 The MIT License
 
-Copyright (c) 2017, Sergio Lopez
+Copyright (c) 2016, Sergio Lopez
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
