@@ -72,26 +72,38 @@ $ npm run init
 
 ## After installation:Npm commands
 
-Disable dependencies cache, unbundle and unminify js files , scss2css:
+Dockerless NodeJS Server
 
 ```bash
 $ npm start
 ```
 
-Enable dependencies cache, bundle and minify, scss2css:
-I strongly advise you to use this command for everything,
-for running the project while developing, and for making the
-package just before releasing the code in production doing
-`npm run prod` simply because it loads the page 4 times faster
-and you can still debug and enjoy the goodies of having a
-source map plus the build time it's practically the same
-as using `npm run dev`.
- 
+Docker Nginx + Docker NodeJS Server connected using HTTPS and Custom Domain
+
 ```bash
-$ npm run prod
+$ npm run start:docker
+```
+
+Stop Docker process
+
+```bash
+$ npm run stop:docker
+```
+
+Run arbitrary command inside the container
+
+```bash
+$ npm run exec:docker -- echo 'I am inside the container'
+```
+
+Run arbitrary command inside the container (docker natively)
+
+```bash
+$ docker-compose run --rm node-server /bin/bash -c 'echo "I am inside the container"'
 ```
 
 Run ESlint
+
 ```bash
 $ npm run eslint
 ```
@@ -149,7 +161,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 The MIT License
 
-Copyright (c) 2016, Sergio Lopez
+Copyright (c) 2017, Sergio Lopez
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
