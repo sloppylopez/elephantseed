@@ -327,6 +327,6 @@ v0.1.1:
     - Added Jspm bundling capabilities to use via npm script.
 
 v0.1.0:
-  date: 2017-3-26
+  date: 2015-3-26
   changes:
     - Initial release.

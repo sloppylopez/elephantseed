@@ -1,18 +1,18 @@
 {
   "name": "docker-nginx-node",
   "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "1.0.0",
-  "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
+  "version": "2.0.0",
+  "homepage": "https://github.com/sloppylopez/elephantseed",
   "author": {
     "name": "Sergio Lopez",
     "email": "sloppy@sloppylopez.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sloppylopez/slush-jspm-react-seed.git"
+    "url": "git://github.com/sloppylopez/elephantseed.git"
   },
   "bugs": {
-    "url": "https://github.com/sloppylopez/slush-jspm-react-seed/issues"
+    "url": "https://github.com/sloppylopez/elephantseed/issues"
   },
   "jspm": {
     "main": "./app.js",
