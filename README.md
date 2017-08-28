@@ -74,6 +74,18 @@ $ npm run init
 
 ## After installation:Npm commands
 
+Bundle application dependencies
+
+```bash
+$ npm run bundle:jspm
+```
+
+Unbundle application dependencies
+
+```bash
+$ npm run unbundle:jspm
+```
+
 Dockerless NodeJS Server
 
 ```bash
@@ -102,6 +114,18 @@ Run arbitrary command inside the container (docker natively)
 
 ```bash
 $ docker-compose run --rm node-server /bin/bash -c 'echo "I am inside the container"'
+```
+
+Enter running Docker Node container
+
+```bash
+$ npm run enter:docker
+```
+
+Docker-compose build
+
+```bash
+$ npm run build:docker
 ```
 
 Run ESlint

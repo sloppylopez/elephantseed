@@ -101,6 +101,7 @@ gulp.task('default', function (done) {
       .pipe(install());
 
     gulp.src([__dirname + '/templates/server/**'])
+      .pipe(conflict('./'))
       .pipe(gulp.dest('./server'))
       .on('end', function () {
         done();

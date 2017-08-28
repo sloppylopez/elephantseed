@@ -2,11 +2,11 @@
 import React from "react";
 
 // eslint-disable-next-line 
-import AcmeNavbar from "components/acme_nav_bar/acme-nav-bar.js";
+import AcmeNavbar from "components/nav_bar/nav-bar.js";
 // eslint-disable-next-line 
-import AcmeBody from "components/acme_body/acme-body.js";
+import AcmeBody from "components/body/body.js";
 // eslint-disable-next-line 
-import AcmeFooter from "components/acme_footer/acme-footer.js";
+import AcmeFooter from "components/footer/footer.js";
 // eslint-disable-next-line 
 import {render} from "react-dom";
 // eslint-disable-next-line 

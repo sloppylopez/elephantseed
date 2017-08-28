@@ -26,7 +26,8 @@
     "exec:docker": "bin/docker/exec",
     "enter:docker": "bin/docker/enter",
     "clean-volume:docker": "bin/docker/clean-volume",
-    "standalone-node:docker": "bin/docker/standalone-node"
+    "standalone-node:docker": "bin/docker/standalone-node",
+    "check:eslint": "bin/eslint/check"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,8 @@
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "chalk": "^2.1.0",
+    "eslint": "^4.5.0",
+    "eslint-plugin-react": "^7.3.0",
     "express": "^4.15.2",
     "jspm": "^0.16.53",
     "rimraf": "^2.6.1",
