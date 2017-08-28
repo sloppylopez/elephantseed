@@ -22,7 +22,7 @@
   },
   "scripts": {
     "test": "echo \"No tests\"",
-    "test:app": "./test-app"
+    "test:local": "sh local-build"
   },
   "dependencies": {
     "gulp": "^3.9.1",

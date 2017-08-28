@@ -1,1 +1,1 @@
-cd app && npm i && jspm i && npm run bundle:jspm
+cd app && npm i && jspm i
