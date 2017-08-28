@@ -6,7 +6,7 @@ const PORT = 8080,
 bs.init(null, {
     "proxy": `http://docker.nginx.node.com:${PORT}`,
     "browser": "google chrome",
-    "open": "external",
+    "open": "local",
     "port": BS_PORT,
     "https": {
         "key": "./server/nginx/certs/docker.nginx.node.com.key",

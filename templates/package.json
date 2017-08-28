@@ -26,11 +26,11 @@
     "exec:docker": "bin/docker/exec",
     "enter:docker": "bin/docker/enter",
     "clean-volume:docker": "bin/docker/clean-volume",
-    "node:docker-standalone": "bin/docker/docker-standalone"
+    "standalone-node:docker": "bin/docker/standalone-node"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sloppylopez/docker-nginx-node.git"
+    "url": "git+https://github.com/sloppylopez/elephantseed.git"
   },
   "keywords": [
     "docker",
@@ -43,10 +43,6 @@
   ],
   "author": "Sloppy Lopez",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sloppylopez/docker-nginx-node/issues"
-  },
-  "homepage": "https://github.com/sloppylopez/docker-nginx-node#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "chalk": "^2.1.0",
