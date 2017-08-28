@@ -67,6 +67,7 @@ $ mkdir my-slush-jspm-react-seed
 ```bash
 $ cd my-slush-jspm-react-seed
 $ slush jspm-react-seed
+$ npm run init
 ```
 
 ## During installation:
@@ -78,8 +79,6 @@ $ slush jspm-react-seed
 Disable dependencies cache, unbundle and unminify js files , scss2css:
 
 ```bash
-$ npm run dev
-or
 $ npm start
 ```
 
@@ -136,7 +135,12 @@ https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
 * When eslint finds an error you may see an error message coming from npm, this is normal, just fix the linting
    error and you won't see it anymore
+   
+* No space left on device!, you can solve it deleting this file
 
+```bash
+$ ls -lah ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2
+``` 
 
 ## Contributing
 

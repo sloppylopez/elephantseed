@@ -1,61 +1,58 @@
 {
-  "name": "slush-jspm-react-seed",
-  "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "1.2.9",
-  "homepage": "https://github.com/sloppylopez/slush-jspm-react-seed",
-  "author": {
-    "name": "Sergio Lopez",
-    "email": "sloppy@sloppylopez.com"
+  "name": "docker-nginx-node",
+  "version": "2.0.0",
+  "description": "Docker Nginx Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "npm run start:node",
+    "init": "bin/utils/init",
+    "build:jspm": "bin/jspm/build",
+    "bundle:jspm": "bin/jspm/bundle",
+    "unbundle:jspm": "bin/jspm/unbundle",
+    "minify:jspm": "bin/jspm/minify",
+    "minifysfx:jspm": "bin/jspm/minifysfx",
+    "depcache:jspm": "bin/jspm/depcache",
+    "cacheclear:jspm": "bin/jspm/cacheclear",
+    "lookup:jspm": "bin/jspm/lookup",
+    "cleantree:jspm": "bin/jspm/cleantree",
+    "start:node": "bin/node/start",
+    "stop:node": "bin/node/stop",
+    "buildcss:nodesass": "bin/nodesass/buildcss",
+    "start:docker": "bin/docker/start",
+    "stop:docker": "bin/docker/stop",
+    "build:docker": "bin/docker/build",
+    "clean:docker": "bin/docker/clean",
+    "exec:docker": "bin/docker/exec",
+    "enter:docker": "bin/docker/enter",
+    "clean-volume:docker": "bin/docker/clean-volume",
+    "node:docker-standalone": "bin/docker/docker-standalone"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sloppylopez/slush-jspm-react-seed.git"
+    "url": "git+https://github.com/sloppylopez/docker-nginx-node.git"
   },
+  "keywords": [
+    "docker",
+    "nginx",
+    "node",
+    "jspm",
+    "react",
+    "slushgenerator",
+    "slush"
+  ],
+  "author": "Sloppy Lopez",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sloppylopez/slush-jspm-react-seed/issues"
+    "url": "https://github.com/sloppylopez/docker-nginx-node/issues"
   },
-  "jspm": {
-    "main": "/",
-    "dependencies": {
-      "classnames": "npm:classnames@^2.2.1",
-      "css": "github:systemjs/plugin-css@^0.1.20",
-      "react": "npm:react@^0.14.3",
-      "react-bootstrap": "npm:react-bootstrap@^0.28.1",
-      "react-dom": "npm:react-dom@^0.14.3",
-      "react-router": "npm:react-router@^1.0.0",
-      "react-router-bootstrap": "npm:react-router-bootstrap@^0.19.3",
-      "scss": "github:mobilexag/plugin-sass@^0.1.0"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "clean-css": "npm:clean-css@^3.4.18",
-      "core-js": "npm:core-js@^1.1.4"
-    }
-  },
+  "homepage": "https://github.com/sloppylopez/docker-nginx-node#readme",
   "devDependencies": {
-    "lite-server": "^2.2.2",
-    "eslint": "^2.13.1",
-    "eslint-config-standard": "^5.3.1",
-    "eslint-plugin-promise": "^1.3.2",
-    "eslint-plugin-react": "^5.2.2",
-    "eslint-plugin-standard": "^1.3.2",
-    "jspm": "^0.16.39",
-    "node-sass": "^3.8.0"
-  },
-  "scripts": {
-    "start": "bin/dev",
-    "dev": "bin/dev",
-    "prod": "bin/prod",
-    "bundle": "bin/bundle",
-    "unbundle": "bin/unbundle",
-    "minify": "bin/minify",
-    "minify-sfx": "bin/minify-sfx",
-    "build-css": "bin/build-css",
-    "depcache": "bin/depcache",
-    "cache-clear": "bin/cache-clear",
-    "lookup": "bin/lookup",
-    "clean-tree": "bin/clean-tree",
-    "eslint": "eslint --config=./.eslintrc *.js components/**/*.js --fix"
+    "browser-sync": "^2.18.13",
+    "chalk": "^2.1.0",
+    "express": "^4.15.2",
+    "jspm": "^0.16.53",
+    "rimraf": "^2.6.1",
+    "shelljs": "^0.7.8"
   }
 }

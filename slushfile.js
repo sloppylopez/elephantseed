@@ -2,7 +2,7 @@
  * slush-jspm-react-seed
  * https://github.com/sloppylopez/slush-jspm-react-seed
  *
- * Copyright (c) 2016, Sergio Lopez
+ * Copyright (c) 2017, Sergio Lopez
  * Licensed under the MIT license.
  */
 
@@ -15,10 +15,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     _ = require('underscore.string'),
     inquirer = require('inquirer'),
-    path = require('path'),
-    shell = require('gulp-shell'),
-    spawn = require('child_process').spawn,
-    gutil = require('gulp-util');
+    path = require('path');
 
 function format(string) {
     var username = string.toLowerCase();
@@ -90,7 +87,8 @@ gulp.task('default', function (done) {
             return done();
         }
         answers.appNameSlug = _.slugify(answers.appName);
-        gulp.src([__dirname + '/templates/**', '!' + __dirname + '/templates/assets/**'])
+
+        gulp.src([__dirname + '/templates/**', '!' + __dirname + '/templates/assets/**', '!' + __dirname + '/templates/server/**'])
             .pipe(template(answers))
             .pipe(rename(function (file) {
                 if (file.basename[0] === '_' && file.extname !== '.scss') {
@@ -99,28 +97,13 @@ gulp.task('default', function (done) {
             }))
             .pipe(conflict('./'))
             .pipe(gulp.dest('./'))
-            .pipe(install())
-            .on('finish', function () {
-                //TODO fixme, there is a problem executing jspm the 'gulp way' so we are doing it like this not to get stuck and keep it simple
-                var child = spawn('jspm', ['config', 'registries.npm.timeouts.lookup' ,'240'], {cwd: process.cwd()});
-                child.stdout.setEncoding('utf8');
-                child.stdout.on('data', function(data){
-                    gutil.log(data.substring(0, data.length-1));
-                });
-                child.stderr.setEncoding('utf8');
-                child.stderr.on('data', function(data){
-                    gutil.log(gutil.colors.red(data));
-                });
-                // Run jspm install since install package doesn't run it
-                var childInstall = spawn('jspm', ['install'], {cwd: process.cwd()});
-                childInstall.stdout.setEncoding('utf8');
-                childInstall.stdout.on('data', function(data){
-                    gutil.log(data.substring(0, data.length-1));
-                });
-                childInstall.stderr.setEncoding('utf8');
-                childInstall.stderr.on('data', function(data){
-                    gutil.log(gutil.colors.red(data));
-                });
+            .pipe(install());
+
+          gulp.src([__dirname + '/templates/server/**'])
+            .pipe(conflict('./'))
+            .pipe(gulp.dest('./server'))
+            .on('end', function() {
+              done();
             });
     });
 });
