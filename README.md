@@ -24,8 +24,6 @@ https://elephantseed.firebaseapp.com
         
         Added floating notifications using toastr
         
-        Livereload using lite-server which is based in BrowserSync.
-        
         Firebase 3.0 friendly, just login with your account and deploy
         
         Minimum possible configuration, maximum features,
