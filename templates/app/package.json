@@ -1,7 +1,7 @@
 {
   "name": "docker-nginx-node",
   "description": "Slush for scaffolding, Jspm for packaging, React as templating framework",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "homepage": "https://github.com/sloppylopez/elephantseed",
   "author": {
     "name": "Sergio Lopez",
