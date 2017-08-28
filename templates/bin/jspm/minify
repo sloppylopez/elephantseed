@@ -1,0 +1,2 @@
+cd app &&\
+./node_modules/.bin/jspm bundle app dist/bundle.js --inject --minify

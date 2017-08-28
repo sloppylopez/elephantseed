@@ -1,0 +1,8 @@
+npm-debug.log
+.bash_history
+.config
+app/node_modules
+app/jspm_packages
+app/dist
+.jspm
+container_settings.json

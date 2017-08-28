@@ -1,0 +1,2 @@
+npm run stop:docker
+docker-compose up -d node-server

@@ -1,0 +1,2 @@
+npm run stop:node
+node server/node/server
