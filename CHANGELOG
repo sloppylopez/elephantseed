@@ -1,10 +1,10 @@
 v2.0.0
-  date: 2017-03-26
+  date: 2017-09-28
   changes:
     - Added Docker support
-    - Added live-reload inter-container with nodemon
-    - Blazingly fast builds and development experience
-    - Shrinkwrapped
+    - Added live-reload inter-container with browser-sync
+    - Blazingly fast builds and smooth development experience
+    - Shrinkwrapped for being idempotent
 
   TBR:
     Live reloading does reload scss with lite-server per se, we will fix that

@@ -4,3 +4,4 @@ temp
 .idea
 templates/app/node_modules
 templates/app/jspm_packages
+test-build-folder

@@ -89,7 +89,7 @@ gulp.task('default', function (done) {
     answers.appNameSlug = _.slugify(answers.appName);
 
     gulp.src([
-      __dirname + '/templates/**', '!' + __dirname + '/templates/assets/**', '!' + __dirname + '/templates/server/**'])
+      __dirname + '/templates/**', '!' + __dirname + '/templates/assets/', '!' + __dirname + '/templates/server/**'])
       .pipe(template(answers))
       .pipe(rename(function (file) {
         if (file.basename[0] === '_' && file.extname !== '.scss') {
@@ -100,7 +100,7 @@ gulp.task('default', function (done) {
       .pipe(gulp.dest('./'))
       .pipe(install());
 
-    gulp.src([__dirname + '/templates/server/*'])
+    gulp.src([__dirname + '/templates/server/**'])
       .pipe(gulp.dest('./server'))
       .on('end', function () {
         done();
