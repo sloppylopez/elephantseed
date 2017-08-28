@@ -7,7 +7,7 @@ import AcmeListGroup from "./acme_list_group/acme-list-group";
 
 export default
 class AcmeBody extends Component {
-    render() {
+    render () {
         return (
             <div className="container">
                 <div className="jumbotron">

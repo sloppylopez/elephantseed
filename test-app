@@ -1,9 +1,0 @@
-cd ~/workspace/elephantseed || cd ~/elephantseed
-npm link .
-npm install -g slush-jspm-react-seed
-cd ~/workspace || cd ~/
-rm -rf test-my-app/
-mkdir test-my-app
-cd test-my-app
-slush jspm-react-seed
-npm run init
