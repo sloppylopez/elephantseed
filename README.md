@@ -8,8 +8,6 @@
 ![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)
 
 https://elephantseed.firebaseapp.com
-
->
  
 ## Vaseline driven browser side boiler-plate annihilation. Period
 
