@@ -170,7 +170,7 @@ rules:
   one-var: 2
   operator-assignment: 2
   operator-linebreak: 2
-  padded-blocks: 2
+  padded-blocks: 0
   quote-props: 2
   quotes: 2
   require-jsdoc: 2

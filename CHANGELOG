@@ -6,9 +6,6 @@ v2.0.0
     - Blazingly fast builds and smooth development experience
     - Shrinkwrapped for being idempotent
 
-  TBR:
-    Live reloading does reload scss with lite-server per se, we will fix that
-
 v1.3.0
   date: 2016-09-25
   changes:

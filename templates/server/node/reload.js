@@ -28,19 +28,14 @@ const fs = require("fs"),
     appChanges = function (event, file) {
 
         return new Promise((resolve) => {
-
             if (event === "change") {
 
                 log(chalk.magenta("(づ ￣ ³￣)づ ") + chalk.green(`${event} => ${file}`));
                 this.getDistFiles()
         .then((files) => exec(files.length > 0 ? BUNDLE : UNBUNDLE, {"async": true}));
-
             } else {
-
                 resolve();
-
             }
-
         });
 
     };
