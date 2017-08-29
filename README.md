@@ -79,8 +79,9 @@ using https via Browser-Sync
 $ npm run dev:node
 ```
 
-Dockerless NodeJS Server with bundled dependencies 
-using https via Browser-Sync (includes live reload and source maps)
+Dockerless NodeJS Server with bundled dependencies using https via Browser-Sync 
+
+(includes live reload and source maps)
 
 ```bash
 $ npm run prod:node

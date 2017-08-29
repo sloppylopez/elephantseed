@@ -1,3 +1,8 @@
+v2.1.0
+  date: 2017-09-29
+  changes:
+    - Fixed infinite loop on cssbuild
+
 v2.0.8
   date: 2017-09-29
   changes:

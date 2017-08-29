@@ -13,8 +13,8 @@ const app = function app (event, file) {
                 log(chalk.magenta("(づ ￣ ³￣)づ ") +
                 chalk.green(`${event} => ${file}`));
                 getDistFiles()
-                    .then((files) =>
-                      exec(getBundleCommand(files.length), options))
+                    .then((files) => getBundleCommand(files.length))
+                    .then((bundleCommand) => exec(bundleCommand, options))
                     .then(() => resolve());
             } else {
                 return resolve();

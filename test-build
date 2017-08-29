@@ -1,7 +1,7 @@
 set -e
 npm link .
 npm install -g slush-jspm-react-seed
-rm -rf test-build-folder/
+rm -rf test-build-folder/ || echo 'No test-build-folder found to remove'
 mkdir test-build-folder/
 cd test-build-folder
 slush jspm-react-seed
