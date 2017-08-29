@@ -1,8 +1,9 @@
 const BUILDCSS = "npm run buildcss:nodesass",
     chalk = require("chalk"),
+    core = require("./core"),
     exec = require("./exec"),
-    getBundleCommand = require("./core").getBundleCommand,
-    getDistFiles = require("./core").getDistFiles,
+    getBundleCommand = core.getBundleCommand,
+    getDistFiles = core.getDistFiles,
     log = console.log,
     options = {"async": true};
 

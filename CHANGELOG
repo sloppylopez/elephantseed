@@ -1,6 +1,11 @@
 v2.0.8
   date: 2017-09-29
   changes:
+    - Improved documentation
+
+v2.0.8
+  date: 2017-09-29
+  changes:
     - Fixed bug with css automatic building
     - Added ESlint
 

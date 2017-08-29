@@ -1,15 +1,16 @@
-# Slush Jspm-React-seed 
+# Elephant Seed 
 
 [![oficial site](https://img.shields.io/badge/sloppy-lopez-pink.svg)](http://sloppylopez.com)
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 ![Dependencies](https://david-dm.org/sloppylopez/elephantseed.svg)
 [![CircleCI](https://circleci.com/gh/sloppylopez/elephantseed.svg?style=svg)](https://circleci.com/gh/sloppylopez/elephantseed)
-[![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)](https://elephantseed.firebaseapp.com)
 
+[![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)](https://elephantseed.firebaseapp.com)
  
 ### Vaseline driven browser side boiler-plate annihilation. Period
 
 #### Features working out-of-the-box
+
         NEW! Added Docker support
         
         NEW! Added live reload with Browser-Sync
@@ -42,6 +43,7 @@
 
         No Grunt/Gulp/Broccoli/Cake/Whatever... needed at the time of writing, 
         let's see if we can build the whole seed without them (challenge accepted)
+        
 
 #### Getting Started
 Install `slush-jspm-react-seed` globally:
@@ -55,47 +57,46 @@ $ npm install -g slush-jspm-react-seed
 * Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-jspm-react-seed
+$ mkdir my-elephant-seed
 ```
 
 * Run the generator from within the new folder and download deps after:
 
 ```bash
-$ cd my-slush-jspm-react-seed
+$ cd my-elephant-seed
 $ slush jspm-react-seed
 $ npm run init
 ```
 
-#### After installation:Npm commands
+#### Node Commands
 
-Bundle application dependencies
+Dockerless NodeJS Server with unbundled dependencies 
+using https via Browser-Sync 
 
-```bash
-$ npm run bundle:jspm
-```
-
-Unbundle application dependencies
-
-```bash
-$ npm run unbundle:jspm
-```
-
-Dockerless NodeJS Server unbundled dependencies
+(includes live reload, Browser-Sync will open the website for you)
 
 ```bash
 $ npm run dev:node
 ```
 
-Dockerless NodeJS Server bundled dependencies (source maps included)
+Dockerless NodeJS Server with bundled dependencies 
+using https via Browser-Sync (includes live reload and source maps)
 
 ```bash
 $ npm run prod:node
 ```
 
-Docker Nginx + Docker NodeJS Server connected using HTTPS and Custom Domain
+#### Docker Commands
+
+Docker Nginx + Docker NodeJS Server with HTTPS and custom domain
+
+(Observe that is not possible to reload and focus the browser from 
+inside a container, every change you made will be reflected 
+but you will have to manually refresh the website)
 
 ```bash
 $ npm run start:docker
+$ open https://docker.nginx.node.com
 ```
 
 Run arbitrary command inside the container
@@ -122,13 +123,41 @@ Docker-compose build
 $ npm run build:docker
 ```
 
-Run ESlint
+Stop and clean all instances, images, containers and volumes of this application
+
+```bash
+$ npm run clean:docker
+```
+
+#### JSPM Commands
+
+Bundle application dependencies
+
+```bash
+$ npm run bundle:jspm
+```
+
+Unbundle application dependencies
+
+```bash
+$ npm run unbundle:jspm
+```
+
+#### ESlint Commands
 
 ```bash
 $ npm run check:eslint
 ```
 
-Deploy in Firebase (you have to login via command line in your OWN account):
+#### NodeSass Commands
+
+```bash
+$ npm run buildcss:nodesass
+```
+
+#### Deploy in Firebase 
+
+You have to login via command line in your OWN account):
 
 ```bash
 $ firebase deploy
@@ -168,6 +197,21 @@ https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 
 ```bash
 $ ls -lah ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2
+``` 
+
+* Not connecting to the Docker container:
+
+```
+ERROR: dial unix /Users/sloppylopez/Library/Containers/com.docker.docker/Data/00000003.00000948: connect: connection refused
+
+npm ERR! Darwin 16.7.0
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "start:docker"
+```
+
+Solve it using :
+
+```bash
+$ npm run clean:docker
 ``` 
 
 #### Contributing

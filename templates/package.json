@@ -1,11 +1,11 @@
 {
   "name": "docker-nginx-node",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "Docker Nginx Node",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "npm run start:node",
+    "start": "npm run prod:node",
     "init": "bin/utils/init",
     "build:jspm": "bin/jspm/build",
     "bundle:jspm": "bin/jspm/bundle",
