@@ -1,6 +1,6 @@
 {
   "name": "docker-nginx-node",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Docker Nginx Node",
   "main": "server.js",
   "scripts": {
@@ -16,9 +16,13 @@
     "cacheclear:jspm": "bin/jspm/cacheclear",
     "lookup:jspm": "bin/jspm/lookup",
     "cleantree:jspm": "bin/jspm/cleantree",
+    "dev:node": "bin/node/dev",
+    "prod:node": "bin/node/prod",
     "start:node": "bin/node/start",
     "stop:node": "bin/node/stop",
     "buildcss:nodesass": "bin/nodesass/buildcss",
+    "dev:docker": "bin/docker/dev",
+    "prod:docker": "bin/docker/prod",
     "start:docker": "bin/docker/start",
     "stop:docker": "bin/docker/stop",
     "build:docker": "bin/docker/build",
@@ -45,6 +49,7 @@
   "author": "Sloppy Lopez",
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "browser-sync": "^2.18.13",
     "chalk": "^2.1.0",
     "eslint": "^4.5.0",

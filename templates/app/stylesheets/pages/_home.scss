@@ -20,8 +20,14 @@ body {
       min-height: 100px;
     }
 
+    img {
+      width: 200px;
+      height: 200px;
+      float: left
+    }
+
   }
-  #myBlueDiv > span > h1 > span{
+  #myBlueDiv > span > h1 > span {
     font-size: 55px;
   }
   h1 {

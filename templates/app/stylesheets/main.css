@@ -501,6 +501,11 @@ body .jumbotron #main div {
   flex-basis: 40px;
   min-height: 100px; }
 
+body .jumbotron img {
+  width: 200px;
+  height: 200px;
+  float: left; }
+
 body #myBlueDiv > span > h1 > span {
   font-size: 55px; }
 

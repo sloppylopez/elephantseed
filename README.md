@@ -4,14 +4,12 @@
 [![built without gulp](https://img.shields.io/badge/build%20without-gulp-brightgreen.svg)](http://jspm.com)
 ![Dependencies](https://david-dm.org/sloppylopez/elephantseed.svg)
 [![CircleCI](https://circleci.com/gh/sloppylopez/elephantseed.svg?style=svg)](https://circleci.com/gh/sloppylopez/elephantseed)
+[![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)](https://elephantseed.firebaseapp.com)
 
-![Elephant Seed](https://raw.githubusercontent.com/sloppylopez/slush-jspm-react-seed/master/templates/assets/images/ElephantSeed.png)
-
-https://elephantseed.firebaseapp.com
  
-## Vaseline driven browser side boiler-plate annihilation. Period
+### Vaseline driven browser side boiler-plate annihilation. Period
 
-## Goodies working Out-of-the-box
+#### Features working out-of-the-box
         NEW! Added Docker support
         
         NEW! Added live reload with Browser-Sync
@@ -45,14 +43,14 @@ https://elephantseed.firebaseapp.com
         No Grunt/Gulp/Broccoli/Cake/Whatever... needed at the time of writing, 
         let's see if we can build the whole seed without them (challenge accepted)
 
-## Getting Started
+#### Getting Started
 Install `slush-jspm-react-seed` globally:
 
 ```bash
 $ npm install -g slush-jspm-react-seed
 ```
 
-### Usage
+#### Usage
 
 * Create a new folder for your project:
 
@@ -68,11 +66,7 @@ $ slush jspm-react-seed
 $ npm run init
 ```
 
-## During installation:
-
-* If Slush installer asks you to overwrite files due to conflicts press 'a' (Overwrite All)
-
-## After installation:Npm commands
+#### After installation:Npm commands
 
 Bundle application dependencies
 
@@ -86,22 +80,22 @@ Unbundle application dependencies
 $ npm run unbundle:jspm
 ```
 
-Dockerless NodeJS Server
+Dockerless NodeJS Server unbundled dependencies
 
 ```bash
-$ npm start
+$ npm run dev:node
+```
+
+Dockerless NodeJS Server bundled dependencies (source maps included)
+
+```bash
+$ npm run prod:node
 ```
 
 Docker Nginx + Docker NodeJS Server connected using HTTPS and Custom Domain
 
 ```bash
 $ npm run start:docker
-```
-
-Stop Docker process
-
-```bash
-$ npm run stop:docker
 ```
 
 Run arbitrary command inside the container
@@ -131,7 +125,7 @@ $ npm run build:docker
 Run ESlint
 
 ```bash
-$ npm run eslint
+$ npm run check:eslint
 ```
 
 Deploy in Firebase (you have to login via command line in your OWN account):
@@ -140,7 +134,7 @@ Deploy in Firebase (you have to login via command line in your OWN account):
 $ firebase deploy
 ```
 
-## Common Pitfalls
+#### Common Pitfalls
 
 * If your connection is slow then sometimes `jspm i` may have hiccups while 
 doing look ups trying to download dependencies, just wait for it to finish and repeat `jspm i` 
@@ -176,14 +170,14 @@ https://github.com/jspm/jspm-cli/blob/master/docs/registries.md
 $ ls -lah ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2
 ``` 
 
-## Contributing
+#### Contributing
 
 See the [CONTRIBUTING Guidelines](https://github.com/sloppylopez/slush-jspm-react-seed/blob/master/CONTRIBUTING.md)
 
-## Support
+#### Support
 If you have any problem or suggestion please open an issue [here](https://github.com/sloppylopez/slush-jspm-react-seed/issues).
 
-## License 
+#### License 
 
 The MIT License
 

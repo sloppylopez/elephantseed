@@ -1,5 +1,5 @@
-const PORT = 8080,
-    BS_PORT = 7000,
+const BS_PORT = 7000,
+    PORT = 8080,
     bs = require("browser-sync").create(),
     reload = require("./reload");
 
@@ -17,14 +17,19 @@ bs.init(null, {
     },
     "files": [
         "./app/index.html",
+        "./app/stylesheets/*.css",
         {
-            "match": ["./app/components", "./app/stylesheets"],
+            "match": ["./app/components"],
             "fn": (event, file) => {
-
-        // TODO improve the number of files reloaded making it smarter and using aritmetic jspm
-                reload.appChanges(event, file)
-          .then(bs.reload());
-
+                // TODO improve the number of files reloaded
+                // making it smarter and using aritmetic jspm
+                reload.app(event, file).then(() => bs.reload());
+            }
+        },
+        {
+            "match": ["./app/stylesheets/**/*.scss"],
+            "fn": (event, file) => {
+                reload.css(event, file);
             }
         }
     ]

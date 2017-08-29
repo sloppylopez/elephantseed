@@ -1,22 +1,27 @@
 const PORT = 8080,
-    express = require("express"),
-    path = require("path"),
-    app = express(),
     chalk = require("chalk"),
-    log = console.log;
+    express = require("express"),
+    log = console.log,
+    path = require("path"),
+    server = express();
 
 require("./browsersync.init");
 
-app.use(express.static(path.join(__dirname, "../../app")));
-app.use(express.static(path.join(__dirname, "../../app/jspm_packages/github")));
-app.use(express.static(path.join(__dirname, "../../app/jspm_packages/npm")));
+server.use(express.static(
+    path.join(__dirname, "../../app"))
+);
+server.use(express.static(
+    path.join(__dirname, "../../app/jspm_packages/github"))
+);
+server.use(express.static(
+    path.join(__dirname, "../../app/jspm_packages/npm"))
+);
 
-app.get("/", (req, res) => {
-
+server.get("/", (req, res) => {
     res.sendFile(path.join(`${__dirname  }../../app/index.html`));
-
 });
 
-app.listen(PORT);
+server.listen(PORT);
 
-log(chalk.magenta("(づ ￣ ³￣)づ ") + chalk.blue(`Node server listening on *:${PORT}`));
+log(chalk.magenta("(づ ￣ ³￣)づ ") +
+  chalk.blue(`Node server listening on *:${PORT}`));

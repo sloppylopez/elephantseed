@@ -1,47 +1,29 @@
-const fs = require("fs"),
-    path = require("path"),
+const BUILDCSS = "npm run buildcss:nodesass",
     chalk = require("chalk"),
-    exec = require("./shell"),
+    exec = require("./exec"),
+    getBundleCommand = require("./core").getBundleCommand,
+    getDistFiles = require("./core").getDistFiles,
     log = console.log,
-    DIST_FOLDER = path.join(__dirname, "../../app/dist"),
-    BUNDLE = "npm run bundle:jspm",
-    UNBUNDLE = "npm run unbundle:jspm",
+    options = {"async": true};
 
-    getDistFiles = function () {
-
-        return new Promise((resolve, reject) => {
-
-            if(fs.existsSync(DIST_FOLDER)) {
-
-                fs.readdir(DIST_FOLDER, (err, files) => {
-
-                    if (err) reject(err);
-                    resolve(files);
-
-                });
-
-            }
-
-        });
-
-    },
-    appChanges = function (event, file) {
-
+const app = function app (event, file) {
         return new Promise((resolve) => {
             if (event === "change") {
-
-                log(chalk.magenta("(づ ￣ ³￣)づ ") + chalk.green(`${event} => ${file}`));
-                this.getDistFiles()
-        .then((files) => exec(files.length > 0 ? BUNDLE : UNBUNDLE, {"async": true}));
+                log(chalk.magenta("(づ ￣ ³￣)づ ") +
+                chalk.green(`${event} => ${file}`));
+                getDistFiles()
+                    .then((files) =>
+                      exec(getBundleCommand(files.length), options))
+                    .then(() => resolve());
             } else {
-                resolve();
+                return resolve();
             }
         });
-
+    }, css = function css () {
+        return new Promise(() => exec(BUILDCSS, options));
     };
 
 module.exports = {
-    exec,
-    getDistFiles,
-    appChanges
+    app,
+    css
 };

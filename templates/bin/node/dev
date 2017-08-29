@@ -1,0 +1,3 @@
+npm run buildcss:nodesass
+npm run unbundle:jspm
+npm start
